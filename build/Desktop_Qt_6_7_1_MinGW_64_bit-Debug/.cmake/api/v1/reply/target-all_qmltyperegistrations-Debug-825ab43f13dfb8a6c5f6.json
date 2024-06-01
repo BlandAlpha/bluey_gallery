@@ -1,0 +1,75 @@
+{
+	"backtrace" : 4,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"_qt_internal_qml_type_registration",
+			"qt6_add_qml_module",
+			"qt_add_qml_module",
+			"add_dependencies"
+		],
+		"files" : 
+		[
+			"D:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake",
+			"FluentUI/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 133,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 776,
+				"parent" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 541,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 3042,
+				"parent" : 3
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 3045,
+				"parent" : 3
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 5,
+			"id" : "fluentuiplugin_qmltyperegistration::@7366c80dbef1255836ce"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "QtInternalTargets"
+	},
+	"id" : "all_qmltyperegistrations::@7366c80dbef1255836ce",
+	"name" : "all_qmltyperegistrations",
+	"paths" : 
+	{
+		"build" : "FluentUI",
+		"source" : "FluentUI"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

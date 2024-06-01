@@ -1,0 +1,10 @@
+-I
+D:/Qt/6.7.1/mingw_64/qml
+-I
+D:/Qt/6.7.1/mingw_64/./qml
+--resource
+D:/PROJECTS/QT_Projects/bluey_gallery/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/FluentUI/.qt/rcc/qmake_FluentUI.qrc
+--resource
+D:/PROJECTS/QT_Projects/bluey_gallery/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/FluentUI/.qt/rcc/fluentuiplugin_raw_qml_0.qrc
+--module
+FluentUI

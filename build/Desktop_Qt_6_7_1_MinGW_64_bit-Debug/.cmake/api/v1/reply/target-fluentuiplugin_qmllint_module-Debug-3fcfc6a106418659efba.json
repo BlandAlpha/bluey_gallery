@@ -1,0 +1,105 @@
+{
+	"backtrace" : 5,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"_qt_internal_target_enable_qmllint",
+			"qt6_target_qml_sources",
+			"qt6_add_qml_module",
+			"qt_add_qml_module"
+		],
+		"files" : 
+		[
+			"D:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake",
+			"FluentUI/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 133,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 776,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 647,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 2549,
+				"parent" : 3
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 1032,
+				"parent" : 4
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "all_qmltyperegistrations::@7366c80dbef1255836ce"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "QtInternalTargets/QmlLinter"
+	},
+	"id" : "fluentuiplugin_qmllint_module::@7366c80dbef1255836ce",
+	"name" : "fluentuiplugin_qmllint_module",
+	"paths" : 
+	{
+		"build" : "FluentUI",
+		"source" : "FluentUI"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/FluentUI/CMakeFiles/fluentuiplugin_qmllint_module",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/FluentUI/CMakeFiles/fluentuiplugin_qmllint_module.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

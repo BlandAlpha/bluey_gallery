@@ -1,0 +1,134 @@
+{
+    "classes": [
+        {
+            "classInfos": [
+                {
+                    "name": "QML.Element",
+                    "value": "FluApp"
+                },
+                {
+                    "name": "QML.Singleton",
+                    "value": "true"
+                }
+            ],
+            "className": "FluApp",
+            "methods": [
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "target",
+                            "type": "QObject*"
+                        },
+                        {
+                            "name": "locale",
+                            "type": "QLocale"
+                        }
+                    ],
+                    "name": "init",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "target",
+                            "type": "QObject*"
+                        }
+                    ],
+                    "isCloned": true,
+                    "name": "init",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "keyword",
+                            "type": "QString"
+                        }
+                    ],
+                    "name": "iconDatas",
+                    "returnType": "QJsonArray"
+                },
+                {
+                    "access": "public",
+                    "isCloned": true,
+                    "name": "iconDatas",
+                    "returnType": "QJsonArray"
+                }
+            ],
+            "object": true,
+            "properties": [
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 0,
+                    "member": "_useSystemAppBar",
+                    "name": "useSystemAppBar",
+                    "notify": "useSystemAppBarChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "bool",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 1,
+                    "member": "_windowIcon",
+                    "name": "windowIcon",
+                    "notify": "windowIconChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 2,
+                    "member": "_locale",
+                    "name": "locale",
+                    "notify": "localeChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QLocale",
+                    "user": false
+                }
+            ],
+            "qualifiedClassName": "FluApp",
+            "signals": [
+                {
+                    "access": "public",
+                    "name": "useSystemAppBarChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "windowIconChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "localeChanged",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "FluApp.h",
+    "outputRevision": 68
+}

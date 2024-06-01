@@ -1,0 +1,29 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>App.qml</file>
+        <file>logo.ico</file>
+        <file>global/GlobalModel.qml</file>
+        <file>global/ItemsFooter.qml</file>
+        <file>global/ItemsOriginal.qml</file>
+        <file>page/Settings.qml</file>
+        <file>component/CodeExpander.qml</file>
+        <file>page/About.qml</file>
+        <file>page/Home.qml</file>
+        <file>window/PageWindow.qml</file>
+        <file>global/qmldir</file>
+        <file>res/img/add.png</file>
+        <file>res/img/characters.png</file>
+        <file>res/img/cinema.png</file>
+        <file>res/img/info.png</file>
+        <file>res/img/mainBanner.jpg</file>
+        <file>res/img/poster.jpg</file>
+        <file>res/img/favicon.png</file>
+        <file>res/img/favicon.ico</file>
+        <file>page/Add.qml</file>
+        <file>page/Characters.qml</file>
+        <file>page/Series.qml</file>
+        <file>res/img/seriesBanner.jpg</file>
+        <file>res/img/charactersBanner.jpg</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,103 @@
+{
+    "classes": [
+        {
+            "classInfos": [
+                {
+                    "name": "QML.Element",
+                    "value": "FluQrCodeItem"
+                }
+            ],
+            "className": "FluQrCodeItem",
+            "object": true,
+            "properties": [
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 0,
+                    "member": "_text",
+                    "name": "text",
+                    "notify": "textChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 1,
+                    "member": "_color",
+                    "name": "color",
+                    "notify": "colorChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QColor",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 2,
+                    "member": "_bgColor",
+                    "name": "bgColor",
+                    "notify": "bgColorChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QColor",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 3,
+                    "member": "_size",
+                    "name": "size",
+                    "notify": "sizeChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "int",
+                    "user": false
+                }
+            ],
+            "qualifiedClassName": "FluQrCodeItem",
+            "signals": [
+                {
+                    "access": "public",
+                    "name": "textChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "colorChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "bgColorChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "sizeChanged",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QQuickPaintedItem"
+                }
+            ]
+        }
+    ],
+    "inputFile": "FluQrCodeItem.h",
+    "outputRevision": 68
+}

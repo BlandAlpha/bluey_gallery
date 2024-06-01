@@ -1,0 +1,271 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "FluentUI",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-FluentUI-Debug-db0de1862dc6bc33d469.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "FluentUI",
+					"targetIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				},
+				{
+					"build" : "src",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-src-Debug-f2b14cf34cc3c6b62a63.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src",
+					"targetIndexes" : 
+					[
+						0,
+						5,
+						6,
+						7,
+						8,
+						9,
+						18
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0,
+						2
+					],
+					"name" : "bluey_gallery",
+					"targetIndexes" : 
+					[
+						0,
+						5,
+						6,
+						7,
+						8,
+						9,
+						18
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "fluentuiplugin",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 2,
+					"id" : "Script-UpdateTranslations::@145eef247bfb46b6828c",
+					"jsonFile" : "target-Script-UpdateTranslations-Debug-1c23bc6f7d017eda3a43.json",
+					"name" : "Script-UpdateTranslations",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "all_qmllint::@7366c80dbef1255836ce",
+					"jsonFile" : "target-all_qmllint-Debug-a3dd4947f5ecc96379d6.json",
+					"name" : "all_qmllint",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "all_qmllint_json::@7366c80dbef1255836ce",
+					"jsonFile" : "target-all_qmllint_json-Debug-063c845c7c1a23536719.json",
+					"name" : "all_qmllint_json",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "all_qmllint_module::@7366c80dbef1255836ce",
+					"jsonFile" : "target-all_qmllint_module-Debug-c67304eba6b24db6c06a.json",
+					"name" : "all_qmllint_module",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "all_qmltyperegistrations::@7366c80dbef1255836ce",
+					"jsonFile" : "target-all_qmltyperegistrations-Debug-825ab43f13dfb8a6c5f6.json",
+					"name" : "all_qmltyperegistrations",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "big_resources_qml::@145eef247bfb46b6828c",
+					"jsonFile" : "target-big_resources_qml-Debug-d99cf0bb81adec5b033e.json",
+					"name" : "big_resources_qml",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "bluey_gallery::@145eef247bfb46b6828c",
+					"jsonFile" : "target-bluey_gallery-Debug-5fd5376a0682cc7ae877.json",
+					"name" : "bluey_gallery",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "bluey_gallery_autogen::@145eef247bfb46b6828c",
+					"jsonFile" : "target-bluey_gallery_autogen-Debug-381ef48dcf54e6fefc30.json",
+					"name" : "bluey_gallery_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "bluey_gallery_autogen_timestamp_deps::@145eef247bfb46b6828c",
+					"jsonFile" : "target-bluey_gallery_autogen_timestamp_deps-Debug-27117ab81e7d453394ec.json",
+					"name" : "bluey_gallery_autogen_timestamp_deps",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "bluey_gallery_qmlimportscan::@145eef247bfb46b6828c",
+					"jsonFile" : "target-bluey_gallery_qmlimportscan-Debug-f06916a4143c402e8e0f.json",
+					"name" : "bluey_gallery_qmlimportscan",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "fluentuiplugin::@7366c80dbef1255836ce",
+					"jsonFile" : "target-fluentuiplugin-Debug-10986ef7c0e9cd27585c.json",
+					"name" : "fluentuiplugin",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "fluentuiplugin_autogen::@7366c80dbef1255836ce",
+					"jsonFile" : "target-fluentuiplugin_autogen-Debug-af797e7661d09d11135a.json",
+					"name" : "fluentuiplugin_autogen",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "fluentuiplugin_autogen_timestamp_deps::@7366c80dbef1255836ce",
+					"jsonFile" : "target-fluentuiplugin_autogen_timestamp_deps-Debug-3905c866a72f31dec286.json",
+					"name" : "fluentuiplugin_autogen_timestamp_deps",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "fluentuiplugin_qmllint::@7366c80dbef1255836ce",
+					"jsonFile" : "target-fluentuiplugin_qmllint-Debug-da1b19de202261b95025.json",
+					"name" : "fluentuiplugin_qmllint",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "fluentuiplugin_qmllint_json::@7366c80dbef1255836ce",
+					"jsonFile" : "target-fluentuiplugin_qmllint_json-Debug-843adb05b3b9ea51827e.json",
+					"name" : "fluentuiplugin_qmllint_json",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "fluentuiplugin_qmllint_module::@7366c80dbef1255836ce",
+					"jsonFile" : "target-fluentuiplugin_qmllint_module-Debug-3fcfc6a106418659efba.json",
+					"name" : "fluentuiplugin_qmllint_module",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "fluentuiplugin_qmltyperegistration::@7366c80dbef1255836ce",
+					"jsonFile" : "target-fluentuiplugin_qmltyperegistration-Debug-e80bde6144fd366ab2fc.json",
+					"name" : "fluentuiplugin_qmltyperegistration",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "fluentuiplugin_tooling::@7366c80dbef1255836ce",
+					"jsonFile" : "target-fluentuiplugin_tooling-Debug-f3eb175fae6a54324715.json",
+					"name" : "fluentuiplugin_tooling",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "rcc_object_qml::@145eef247bfb46b6828c",
+					"jsonFile" : "target-rcc_object_qml-Debug-7af09f1137ff3dc960fd.json",
+					"name" : "rcc_object_qml",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/PROJECTS/QT_Projects/bluey_gallery/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug",
+		"source" : "D:/PROJECTS/QT_Projects/bluey_gallery"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

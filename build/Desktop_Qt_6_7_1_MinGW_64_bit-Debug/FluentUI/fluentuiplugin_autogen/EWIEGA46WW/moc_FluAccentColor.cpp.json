@@ -1,0 +1,160 @@
+{
+    "classes": [
+        {
+            "classInfos": [
+                {
+                    "name": "QML.Element",
+                    "value": "FluAccentColor"
+                }
+            ],
+            "className": "FluAccentColor",
+            "object": true,
+            "properties": [
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 0,
+                    "member": "_darkest",
+                    "name": "darkest",
+                    "notify": "darkestChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QColor",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 1,
+                    "member": "_darker",
+                    "name": "darker",
+                    "notify": "darkerChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QColor",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 2,
+                    "member": "_dark",
+                    "name": "dark",
+                    "notify": "darkChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QColor",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 3,
+                    "member": "_normal",
+                    "name": "normal",
+                    "notify": "normalChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QColor",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 4,
+                    "member": "_light",
+                    "name": "light",
+                    "notify": "lightChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QColor",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 5,
+                    "member": "_lighter",
+                    "name": "lighter",
+                    "notify": "lighterChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QColor",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 6,
+                    "member": "_lightest",
+                    "name": "lightest",
+                    "notify": "lightestChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QColor",
+                    "user": false
+                }
+            ],
+            "qualifiedClassName": "FluAccentColor",
+            "signals": [
+                {
+                    "access": "public",
+                    "name": "darkestChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "darkerChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "darkChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "normalChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "lightChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "lighterChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "lightestChanged",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "FluAccentColor.h",
+    "outputRevision": 68
+}
