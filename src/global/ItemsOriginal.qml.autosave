@@ -60,8 +60,8 @@ FluObject{
         }
     }
 
-    function getRecentlyAddedData(){
-        // Change to Random Data
+    function getRandomCharacterData(){
+        // Change to Get Random Character Data From DB
         var arr = []
         var items = navigationView.getItems();
         for(var i=0;i<items.length;i++){
@@ -74,7 +74,8 @@ FluObject{
         return arr
     }
 
-    function getRecentlyUpdatedData(){
+    function getRandomSeriesData(){
+        // Change to Get Random Series Data From DB
         var arr = []
         var items = navigationView.getItems();
         for(var i=0;i<items.length;i++){

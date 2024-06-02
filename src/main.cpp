@@ -9,7 +9,7 @@
 #include <QtQml/qqmlextensionplugin.h>
 #include <QLoggingCategory>
 
-#include <QSqlDataBase>
+// #include <QSqlDataBase>
 
 // #include "Version.h"
 // #include "AppInfo.h"

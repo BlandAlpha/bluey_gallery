@@ -237,12 +237,12 @@
         <translation>剧集</translation>
     </message>
     <message>
-        <location filename="global/ItemsOriginal.qml" line="43"/>
+        <location filename="global/ItemsOriginal.qml" line="42"/>
         <source>Characters</source>
         <translation>角色</translation>
     </message>
     <message>
-        <location filename="global/ItemsOriginal.qml" line="55"/>
+        <location filename="global/ItemsOriginal.qml" line="54"/>
         <source>Add</source>
         <translation type="unfinished">添加</translation>
     </message>

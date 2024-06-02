@@ -24,18 +24,18 @@ FluScrollablePage{
             icon: "qrc:/res/img/cinema.png"
             title: qsTr("Series")
             desc: qsTr("Check out different Bluey episodes and explore interesting stories of the Heelers.")
-            url: "qrc:/page/Home.qml"
+            url: "qrc:/page/Series.qml"
             clicked: function(model){
-                navigationView.push(url)
+                ItemsOriginal.push(model.url)
             }
         }
         ListElement{
             icon: "qrc:/res/img/characters.png"
             title: qsTr("Characters")
             desc: qsTr("Check out the different Bluey characters and get to know these fun and lively characters.")
-            // url: "https://github.com/zhuzichu520/FluentUI"
+            url: "qrc:/page/Characters.qml"
             clicked: function(model){
-                // fluent_Initializr.showDialog()
+                ItemsOriginal.push(model.url)
             }
         }
         ListElement{
@@ -44,16 +44,16 @@ FluScrollablePage{
             desc: qsTr("Learn about Bluey's worldview and what its creators have to say about the animation.")
             url: "qrc:/page/About.qml"
             clicked: function(model){
-                navigationView.push(url)
+                ItemsOriginal.push(model.url)
             }
         }
         ListElement{
             icon: "qrc:/res/img/add.png"
             title: qsTr("Add")
             desc: qsTr("Didn't find the page you wanted? Manually add episode or character pages.")
-            // url: "https://github.com/zhuzichu520/FluentUI"
+            url: "qrc:/page/Add.qml"
             clicked: function(model){
-                // fluent_Initializr.showDialog()
+                ItemsOriginal.push(model.url)
             }
         }
     }
@@ -207,6 +207,7 @@ FluScrollablePage{
         }
     }
 
+    // Explore Card Component
     Component{
         id:com_item
         Item{
@@ -292,7 +293,7 @@ FluScrollablePage{
     }
 
     FluText{
-        text: "Recently added samples"
+        text: "Explore Characters"
         font: FluTextStyle.Title
         Layout.topMargin: 24
         Layout.leftMargin: 24
@@ -303,13 +304,13 @@ FluScrollablePage{
         Layout.preferredHeight: contentHeight
         cellHeight: 120
         cellWidth: 320
-        model:ItemsOriginal.getRecentlyAddedData()
+        model:ItemsOriginal.getRandomCharacterData()
         interactive: false
         delegate: com_item
     }
 
     FluText{
-        text: "Recently updated samples"
+        text: "Explore Episodes"
         font: FluTextStyle.Title
         Layout.topMargin: 24
         Layout.leftMargin: 24
@@ -321,7 +322,7 @@ FluScrollablePage{
         cellHeight: 120
         cellWidth: 320
         interactive: false
-        model: ItemsOriginal.getRecentlyUpdatedData()
+        model: ItemsOriginal.getRandomSeriesData()
         delegate: com_item
     }
 
