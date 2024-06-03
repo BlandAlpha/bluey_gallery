@@ -20,10 +20,11 @@
         <file>res/img/poster.jpg</file>
         <file>res/img/favicon.png</file>
         <file>res/img/favicon.ico</file>
-        <file>page/Add.qml</file>
+        <file>page/Edit.qml</file>
         <file>page/Characters.qml</file>
-        <file>page/Series.qml</file>
+        <file>page/Episodes.qml</file>
         <file>res/img/seriesBanner.jpg</file>
         <file>res/img/charactersBanner.jpg</file>
+        <file>page/Show.qml</file>
     </qresource>
 </RCC>

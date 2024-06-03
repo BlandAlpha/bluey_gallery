@@ -9,7 +9,6 @@ import "../global"
 FluScrollablePage{
 
     launchMode: FluPageType.SingleTask
-    // animationEnabled: false
     header: Item{}
 
     property int cardWidth: 180
@@ -22,38 +21,38 @@ FluScrollablePage{
         id: model_header
         ListElement{
             icon: "qrc:/res/img/cinema.png"
-            title: qsTr("Series")
+            title: qsTr("Episodes")
             desc: qsTr("Check out different Bluey episodes and explore interesting stories of the Heelers.")
-            url: "qrc:/page/Series.qml"
+            index: 1
             clicked: function(model){
-                ItemsOriginal.push(model.url)
+                ItemsOriginal.setCurrentIndex(model.index)
             }
         }
         ListElement{
             icon: "qrc:/res/img/characters.png"
             title: qsTr("Characters")
             desc: qsTr("Check out the different Bluey characters and get to know these fun and lively characters.")
-            url: "qrc:/page/Characters.qml"
+            index: 2
             clicked: function(model){
-                ItemsOriginal.push(model.url)
+                ItemsOriginal.setCurrentIndex(model.index)
             }
         }
         ListElement{
             icon: "qrc:/res/img/info.png"
-            title: qsTr("About")
+            title: qsTr("Show")
             desc: qsTr("Learn about Bluey's worldview and what its creators have to say about the animation.")
-            url: "qrc:/page/About.qml"
+            index: 3
             clicked: function(model){
-                ItemsOriginal.push(model.url)
+                ItemsOriginal.setCurrentIndex(model.index)
             }
         }
         ListElement{
             icon: "qrc:/res/img/add.png"
             title: qsTr("Add")
             desc: qsTr("Didn't find the page you wanted? Manually add episode or character pages.")
-            url: "qrc:/page/Add.qml"
+            index: 4
             clicked: function(model){
-                ItemsOriginal.push(model.url)
+                ItemsOriginal.setCurrentIndex(model.index)
             }
         }
     }

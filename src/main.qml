@@ -9,7 +9,7 @@ import "global"
 
 FluWindow {
 
-    id:window
+    id: window
     width: 1440
     height: 680
     minimumWidth: 680
@@ -74,22 +74,6 @@ FluWindow {
             FluRouter.exit(0)
         }
     }
-
-    /*
-    Component{
-        id: nav_item_right_menu
-        FluMenu{
-            width: 186
-            FluMenuItem{
-                text: qsTr("Open in Separate Window")
-                font: FluTextStyle.Caption
-                onClicked: {
-                    FluRouter.navigate("/pageWindow",{title:modelData.title,url:modelData.url})
-                }
-            }
-        }
-    }
-    */
 
     Flipable{
         id:flipable

@@ -28,10 +28,10 @@ FluObject{
 
     FluPaneItem{
         id:item_movies
-        title: qsTr("Series")
+        title: qsTr("Episodes")
         menuDelegate: paneItemMenu
-        icon: FluentIcons.Movies
-        url: "qrc:/page/Series.qml"
+        icon: FluentIcons.TVMonitor
+        url: "qrc:/page/Episodes.qml"
         onTap: {
             navigationView.push(url)
         }
@@ -42,7 +42,6 @@ FluObject{
         title: qsTr("Characters")
         menuDelegate: paneItemMenu
         icon: FluentIcons.People
-        // Change to real url
         url: "qrc:/page/Characters.qml"
         onTap: {
             navigationView.push(url)
@@ -50,18 +49,29 @@ FluObject{
     }
 
     FluPaneItem{
-        id:item_add
-        title: qsTr("Add")
+        id:item_show
+        title: qsTr("Show")
         menuDelegate: paneItemMenu
-        icon: FluentIcons.Add
-        url: "qrc:/page/Add.qml"
+        icon: FluentIcons.Movies
+        url: "qrc:/page/Show.qml"
         onTap: {
             navigationView.push(url)
         }
     }
 
-    function getRecentlyAddedData(){
-        // Change to Random Data
+    FluPaneItem{
+        id:item_add
+        title: qsTr("Edit")
+        menuDelegate: paneItemMenu
+        icon: FluentIcons.Edit
+        url: "qrc:/page/Edit.qml"
+        onTap: {
+            navigationView.push(url)
+        }
+    }
+
+    function getRandomCharacterData(){
+        // Change to Get Random Character Data From DB
         var arr = []
         var items = navigationView.getItems();
         for(var i=0;i<items.length;i++){
@@ -74,7 +84,8 @@ FluObject{
         return arr
     }
 
-    function getRecentlyUpdatedData(){
+    function getRandomSeriesData(){
+        // Change to Get Random Series Data From DB
         var arr = []
         var items = navigationView.getItems();
         for(var i=0;i<items.length;i++){
@@ -107,8 +118,8 @@ FluObject{
         return arr
     }
 
-    function push(url){
-        navigationView.push(url)
+    function setCurrentIndex(index){
+        navigationView.setCurrentIndex(index)
     }
 
     function startPageByItem(data){
