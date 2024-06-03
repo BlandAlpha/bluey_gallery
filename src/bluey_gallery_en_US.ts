@@ -20,6 +20,11 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="page/About.qml" line="39"/>
+        <source>Author</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="page/About.qml" line="17"/>
         <source>You are about to be redirected to your browser.</source>
         <translation type="unfinished"></translation>
@@ -27,64 +32,6 @@
     <message>
         <location filename="page/About.qml" line="20"/>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>Add</name>
-    <message>
-        <location filename="page/Add.qml" line="25"/>
-        <source>Series</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page/Add.qml" line="26"/>
-        <source>Check out different Bluey episodes and explore interesting stories of the Heelers.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page/Add.qml" line="34"/>
-        <source>Characters</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page/Add.qml" line="35"/>
-        <source>Check out the different Bluey characters and get to know these fun and lively characters.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page/Add.qml" line="43"/>
-        <source>About</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page/Add.qml" line="44"/>
-        <source>Learn about Bluey&apos;s worldview and what its creators have to say about the animation.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page/Add.qml" line="52"/>
-        <source>Add</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page/Add.qml" line="53"/>
-        <source>Didn&apos;t find the page you wanted? Manually add episode or character pages.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page/Add.qml" line="91"/>
-        <source>Welcome to</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page/Add.qml" line="97"/>
-        <source>Bluey Gallery</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page/Add.qml" line="101"/>
-        <source>Have fun exploring the animated characters, plot descriptions, and more of Bluey.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -115,61 +62,188 @@
     </message>
 </context>
 <context>
-    <name>Home</name>
+    <name>Edit</name>
     <message>
-        <location filename="page/Home.qml" line="25"/>
-        <source>Series</source>
+        <location filename="page/Edit.qml" line="11"/>
+        <location filename="page/Edit.qml" line="218"/>
+        <source>Edit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page/Home.qml" line="26"/>
+        <location filename="page/Edit.qml" line="73"/>
+        <source>Modify the column name</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page/Edit.qml" line="74"/>
+        <source>Cancel</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page/Edit.qml" line="92"/>
+        <source>OK</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page/Edit.qml" line="134"/>
+        <source>Search</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page/Edit.qml" line="177"/>
+        <source>Name</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page/Edit.qml" line="211"/>
+        <source>Delete</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page/Edit.qml" line="237"/>
+        <source>Select All</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page/Edit.qml" line="358"/>
+        <source>Age</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page/Edit.qml" line="435"/>
+        <source>Choose a table</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page/Edit.qml" line="437"/>
+        <source>Characters</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page/Edit.qml" line="444"/>
+        <source>Episodes</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page/Edit.qml" line="451"/>
+        <source>Relations</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page/Edit.qml" line="460"/>
+        <source>Delete Selection</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page/Edit.qml" line="484"/>
+        <source>Add a row of Data</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page/Edit.qml" line="513"/>
+        <source>Original Name</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page/Edit.qml" line="518"/>
+        <source>Chinese Name</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page/Edit.qml" line="523"/>
+        <source>Breed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page/Edit.qml" line="531"/>
+        <source>Description</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page/Edit.qml" line="539"/>
+        <source>Options</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page/Edit.qml" line="558"/>
+        <source>&lt;Previous</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page/Edit.qml" line="559"/>
+        <source>Next&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>Episodes</name>
+    <message>
+        <location filename="page/Episodes.qml" line="44"/>
+        <source>Episodes</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page/Episodes.qml" line="48"/>
+        <source>Which episode was your favourite?</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>Home</name>
+    <message>
+        <location filename="page/Home.qml" line="25"/>
         <source>Check out different Bluey episodes and explore interesting stories of the Heelers.</source>
         <oldsource>Check out different Bluey episodes and explore interesting stories.</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page/Home.qml" line="34"/>
+        <location filename="page/Home.qml" line="33"/>
         <source>Characters</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page/Home.qml" line="35"/>
+        <location filename="page/Home.qml" line="34"/>
         <source>Check out the different Bluey characters and get to know these fun and lively characters.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page/Home.qml" line="43"/>
-        <source>About</source>
+        <location filename="page/Home.qml" line="24"/>
+        <source>Episodes</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page/Home.qml" line="44"/>
+        <location filename="page/Home.qml" line="42"/>
+        <source>Show</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page/Home.qml" line="43"/>
         <source>Learn about Bluey&apos;s worldview and what its creators have to say about the animation.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page/Home.qml" line="52"/>
+        <location filename="page/Home.qml" line="51"/>
         <source>Add</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page/Home.qml" line="53"/>
+        <location filename="page/Home.qml" line="52"/>
         <source>Didn&apos;t find the page you wanted? Manually add episode or character pages.</source>
         <oldsource>Didn&apos;t find the page you wanted? Manually add anime episodes and character pages.</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page/Home.qml" line="91"/>
+        <location filename="page/Home.qml" line="90"/>
         <source>Welcome to</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page/Home.qml" line="97"/>
+        <location filename="page/Home.qml" line="96"/>
         <source>Bluey Gallery</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page/Home.qml" line="101"/>
+        <location filename="page/Home.qml" line="100"/>
         <source>Have fun exploring the animated characters, plot descriptions, and more of Bluey.</source>
         <oldsource>Have fun exploring the animated characters, plot descriptions, and more for Bluey.</oldsource>
         <translation type="unfinished"></translation>
@@ -197,7 +271,7 @@
     </message>
     <message>
         <location filename="global/ItemsOriginal.qml" line="31"/>
-        <source>Series</source>
+        <source>Episodes</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -206,21 +280,13 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="global/ItemsOriginal.qml" line="54"/>
-        <source>Add</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>Series</name>
-    <message>
-        <location filename="page/Series.qml" line="44"/>
-        <source>Series</source>
+        <location filename="global/ItemsOriginal.qml" line="53"/>
+        <source>Show</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page/Series.qml" line="48"/>
-        <source>Which episode was your favourite?</source>
+        <location filename="global/ItemsOriginal.qml" line="64"/>
+        <source>Edit</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -301,10 +367,32 @@
         <source>Language</source>
         <translation type="unfinished"></translation>
     </message>
+</context>
+<context>
+    <name>Show</name>
     <message>
-        <location filename="page/Settings.qml" line="148"/>
-        <source>Author</source>
-        <oldsource>About</oldsource>
+        <location filename="page/Show.qml" line="11"/>
+        <source>About</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page/Show.qml" line="16"/>
+        <source>Redirecting</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page/Show.qml" line="17"/>
+        <source>You are about to be redirected to your browser.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page/Show.qml" line="19"/>
+        <source>OK</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page/Show.qml" line="20"/>
+        <source>Cancel</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -333,7 +421,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="main.qml" line="196"/>
+        <location filename="main.qml" line="180"/>
         <source>Search</source>
         <translation type="unfinished"></translation>
     </message>
