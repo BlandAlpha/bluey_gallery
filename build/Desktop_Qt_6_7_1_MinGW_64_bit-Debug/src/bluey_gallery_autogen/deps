@@ -676,6 +676,31 @@ bluey_gallery_autogen/timestamp: \
 	D:/Qt/6.7.1/mingw_64/lib/cmake/Qt6QuickTools/Qt6QuickToolsDependencies.cmake \
 	D:/Qt/6.7.1/mingw_64/lib/cmake/Qt6QuickTools/Qt6QuickToolsTargets.cmake \
 	D:/Qt/6.7.1/mingw_64/lib/cmake/Qt6QuickTools/Qt6QuickToolsVersionlessTargets.cmake \
+	D:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Sql/Qt6QMimerSQLDriverPluginAdditionalTargetInfo.cmake \
+	D:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Sql/Qt6QMimerSQLDriverPluginConfig.cmake \
+	D:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Sql/Qt6QMimerSQLDriverPluginTargets-relwithdebinfo.cmake \
+	D:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Sql/Qt6QMimerSQLDriverPluginTargets.cmake \
+	D:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Sql/Qt6QODBCDriverPluginAdditionalTargetInfo.cmake \
+	D:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Sql/Qt6QODBCDriverPluginConfig.cmake \
+	D:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Sql/Qt6QODBCDriverPluginTargets-relwithdebinfo.cmake \
+	D:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Sql/Qt6QODBCDriverPluginTargets.cmake \
+	D:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Sql/Qt6QPSQLDriverPluginAdditionalTargetInfo.cmake \
+	D:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Sql/Qt6QPSQLDriverPluginConfig.cmake \
+	D:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Sql/Qt6QPSQLDriverPluginTargets-relwithdebinfo.cmake \
+	D:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Sql/Qt6QPSQLDriverPluginTargets.cmake \
+	D:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Sql/Qt6QSQLiteDriverPluginAdditionalTargetInfo.cmake \
+	D:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Sql/Qt6QSQLiteDriverPluginConfig.cmake \
+	D:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Sql/Qt6QSQLiteDriverPluginTargets-relwithdebinfo.cmake \
+	D:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Sql/Qt6QSQLiteDriverPluginTargets.cmake \
+	D:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Sql/Qt6SqlAdditionalTargetInfo.cmake \
+	D:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Sql/Qt6SqlConfig.cmake \
+	D:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Sql/Qt6SqlConfigVersion.cmake \
+	D:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Sql/Qt6SqlConfigVersionImpl.cmake \
+	D:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Sql/Qt6SqlDependencies.cmake \
+	D:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Sql/Qt6SqlPlugins.cmake \
+	D:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Sql/Qt6SqlTargets-relwithdebinfo.cmake \
+	D:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Sql/Qt6SqlTargets.cmake \
+	D:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Sql/Qt6SqlVersionlessTargets.cmake \
 	D:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed/limits.h \
 	D:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed/syslimits.h \
 	D:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/algorithm \
