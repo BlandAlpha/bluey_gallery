@@ -12,8 +12,8 @@ FluScrollablePage{
 
     FluContentDialog{
         id: dialog_restart
-        title: qsTr("Friendly Reminder")
-        message: qsTr("This action requires a restart of the program to take effect, is it restarted?")
+        title: qsTr("Restart now?")
+        message: qsTr("This action requires a restart of the program to take effect.")
         buttonFlags: FluContentDialogType.NegativeButton | FluContentDialogType.PositiveButton
         negativeText: qsTr("Cancel")
         positiveText: qsTr("OK")

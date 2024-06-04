@@ -54,32 +54,6 @@ FluScrollablePage{
 
     }
 
-    FluText{
-        text: "Bluey's Closest Friends"
-        font: FluTextStyle.Title
-        Layout.topMargin: 24
-        Layout.leftMargin: 24
-    }
-
-    GridView{
-        Layout.fillWidth: true
-        Layout.preferredHeight: contentHeight
-        cellHeight: 120
-        cellWidth: 320
-        /*
-        model:ItemsOriginal.getRecentlyAddedData()
-        interactive: false
-        delegate: com_item
-        */
-    }
-
-    FluText{
-        text: "Supportive Characters"
-        font: FluTextStyle.Title
-        Layout.topMargin: 24
-        Layout.leftMargin: 24
-    }
-
     GridView{
         Layout.fillWidth: true
         Layout.preferredHeight: contentHeight

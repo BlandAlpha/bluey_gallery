@@ -55,7 +55,7 @@ FluScrollablePage{
     }
 
     FluText{
-        text: "Season 1"
+        text: qsTr("Season 1")
         font: FluTextStyle.Title
         Layout.topMargin: 24
         Layout.leftMargin: 24
@@ -74,7 +74,26 @@ FluScrollablePage{
     }
 
     FluText{
-        text: "Season 2"
+        text: qsTr("Season 2")
+        font: FluTextStyle.Title
+        Layout.topMargin: 24
+        Layout.leftMargin: 24
+    }
+
+    GridView{
+        Layout.fillWidth: true
+        Layout.preferredHeight: contentHeight
+        cellHeight: 120
+        cellWidth: 320
+        /*
+        interactive: false
+        model: ItemsOriginal.getRecentlyUpdatedData()
+        delegate: com_item
+        */
+    }
+
+    FluText{
+        text: qsTr("Season 3")
         font: FluTextStyle.Title
         Layout.topMargin: 24
         Layout.leftMargin: 24

@@ -8,7 +8,7 @@ import "../global"
 
 FluScrollablePage{
 
-    title: qsTr("About")
+    title: qsTr("About The Show")
 
     FluContentDialog{
         property string url: ""
@@ -29,13 +29,12 @@ FluScrollablePage{
         Layout.topMargin: 16
         // Layout.preferredHeight: 480
         padding: 24
-        RowLayout{
-            Layout.fillWidth: true
-            Layout.alignment: Qt.AlignTop
+        Row{
+            width: parent.width
+            anchors.top: parent.top
             spacing: 24
 
             Item{
-                Layout.alignment: top
                 // anchors.top: parent.top
                 id: posterCard
                 width: 240+8
@@ -61,20 +60,21 @@ FluScrollablePage{
 
             ColumnLayout{
                 id: descriptionSection
-                height: 360
+                // height: 360
                 spacing: 32
                 Layout.fillWidth: true
+                // anchors.top: parent.top
 
                 ColumnLayout{
                     spacing: 16
                     RowLayout{
                         spacing: 24
                         FluText{
-                            text: "布鲁伊 (Bluey)"
+                            text: qsTr("Bluey (2018)")
                             font: FluTextStyle.Title
                         }
                         FluFilledButton{
-                            text:"在线观看"
+                            text: qsTr("Watch Online")
                             onClicked: {
                                 redirect("https://www.bilibili.com/bangumi/media/md20222115")
                             }
@@ -82,7 +82,7 @@ FluScrollablePage{
                     }
 
                     FluText{
-                        text: "标签：动画，儿童，喜剧"
+                        text: qsTr("Label: Animation, Kids, Comedy")
                         font: FluTextStyle.Body
                     }
                 }
@@ -94,22 +94,22 @@ FluScrollablePage{
                 ColumnLayout{
                     spacing: 8
                     FluText{
-                        text: "剧情简介"
+                        text: qsTr("Overview")
                         font: FluTextStyle.Subtitle
                     }
                     FluText{
-
                         Layout.preferredWidth: frameView.width - 320 - 32
-                        text: "这部以趣味真挚的方式描绘现代家庭生活的动画片，赞扬了富有想象力的游戏是如何帮助孩子健康成长的。6岁的蓝色澳大利亚牧牛犬布鲁伊有着无穷无尽的想象力，热衷于将日常生活转变为调皮冒险。她和妹妹宾果致力于探索自己的世界，用游戏来克服她们的恐惧，并且尝试扮演成年人的角色。她们喜欢把父母（尤其是爸爸）拉进她们的游戏中。妈妈奇莉回归工作了，而爸爸班底特一边照顾孩子一边在家工作。虽然他可能以为自己能做主，但是女儿们绝对掌控了游戏时间——以及几乎所有其他的事情！"
+                        text: qsTr("Bluey is an inexhaustible six year-old Blue Heeler dog, who loves to play and turns everyday family life into extraordinary adventures, developing her imagination as well as her mental, physical and emotional resilience.")
                         font: FluTextStyle.Body
                         wrapMode: Text.WordWrap
+                        lineHeight: 1.25
                     }
                 }
 
                 ColumnLayout{
                     spacing: 8
                     FluText{
-                        text: "制作公司"
+                        text: qsTr("Production")
                         font: FluTextStyle.Subtitle
                     }
                     FluIconButton{

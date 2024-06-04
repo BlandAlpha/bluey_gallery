@@ -292,7 +292,7 @@ FluScrollablePage{
     }
 
     FluText{
-        text: "Explore Characters"
+        text: qsTr("Explore Characters")
         font: FluTextStyle.Title
         Layout.topMargin: 24
         Layout.leftMargin: 24
@@ -309,7 +309,7 @@ FluScrollablePage{
     }
 
     FluText{
-        text: "Explore Episodes"
+        text: qsTr("Explore Episodes")
         font: FluTextStyle.Title
         Layout.topMargin: 24
         Layout.leftMargin: 24

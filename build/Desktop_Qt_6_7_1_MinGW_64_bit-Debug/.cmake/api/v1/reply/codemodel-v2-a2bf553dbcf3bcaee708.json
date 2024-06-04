@@ -166,14 +166,14 @@
 				{
 					"directoryIndex" : 2,
 					"id" : "bluey_gallery::@145eef247bfb46b6828c",
-					"jsonFile" : "target-bluey_gallery-Debug-dc17112e760ac586cd18.json",
+					"jsonFile" : "target-bluey_gallery-Debug-8fd75caa8ae607937470.json",
 					"name" : "bluey_gallery",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 2,
 					"id" : "bluey_gallery_autogen::@145eef247bfb46b6828c",
-					"jsonFile" : "target-bluey_gallery_autogen-Debug-ad08b85314b7325a0437.json",
+					"jsonFile" : "target-bluey_gallery_autogen-Debug-09c94b49d7d7af9e9c6c.json",
 					"name" : "bluey_gallery_autogen",
 					"projectIndex" : 0
 				},
@@ -194,7 +194,7 @@
 				{
 					"directoryIndex" : 1,
 					"id" : "fluentuiplugin::@7366c80dbef1255836ce",
-					"jsonFile" : "target-fluentuiplugin-Debug-051f43a16fc9668ee9d6.json",
+					"jsonFile" : "target-fluentuiplugin-Debug-90e182be9efd2d244314.json",
 					"name" : "fluentuiplugin",
 					"projectIndex" : 1
 				},

@@ -111,7 +111,8 @@
     </message>
     <message>
         <location filename="page/Edit.qml" line="435"/>
-        <source>Choose a table</source>
+        <source>Choose table</source>
+        <oldsource>Choose a table</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -187,6 +188,21 @@
         <source>Which episode was your favourite?</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <location filename="page/Episodes.qml" line="58"/>
+        <source>Season 1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page/Episodes.qml" line="77"/>
+        <source>Season 2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page/Episodes.qml" line="96"/>
+        <source>Season 3</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>Home</name>
@@ -248,6 +264,16 @@
         <oldsource>Have fun exploring the animated characters, plot descriptions, and more for Bluey.</oldsource>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <location filename="page/Home.qml" line="295"/>
+        <source>Explore Characters</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page/Home.qml" line="312"/>
+        <source>Explore Episodes</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>ItemsFooter</name>
@@ -299,12 +325,13 @@
     </message>
     <message>
         <location filename="page/Settings.qml" line="15"/>
-        <source>Friendly Reminder</source>
+        <source>Restart now?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="page/Settings.qml" line="16"/>
-        <source>This action requires a restart of the program to take effect, is it restarted?</source>
+        <source>This action requires a restart of the program to take effect.</source>
+        <oldsource>This action requires a restart of the program to take effect, is it restarted?</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -372,7 +399,7 @@
     <name>Show</name>
     <message>
         <location filename="page/Show.qml" line="11"/>
-        <source>About</source>
+        <source>About The Show</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -393,6 +420,36 @@
     <message>
         <location filename="page/Show.qml" line="20"/>
         <source>Cancel</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page/Show.qml" line="73"/>
+        <source>Bluey (2018)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page/Show.qml" line="77"/>
+        <source>Watch Online</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page/Show.qml" line="85"/>
+        <source>Label: Animation, Kids, Comedy</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page/Show.qml" line="97"/>
+        <source>Overview</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page/Show.qml" line="102"/>
+        <source>Bluey is an inexhaustible six year-old Blue Heeler dog, who loves to play and turns everyday family life into extraordinary adventures, developing her imagination as well as her mental, physical and emotional resilience.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page/Show.qml" line="112"/>
+        <source>Production</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

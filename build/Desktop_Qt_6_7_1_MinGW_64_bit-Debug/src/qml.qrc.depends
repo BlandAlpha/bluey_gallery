@@ -19,7 +19,6 @@
         <file>res/img/mainBanner.jpg</file>
         <file>res/img/poster.jpg</file>
         <file>res/img/favicon.png</file>
-        <file>res/img/favicon.ico</file>
         <file>page/Edit.qml</file>
         <file>page/Characters.qml</file>
         <file>page/Episodes.qml</file>
