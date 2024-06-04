@@ -372,6 +372,7 @@
 #define __fastcall __attribute__((__fastcall__))
 #define __cpp_namespace_attributes 201411L
 #define __FLT64X_MIN__ 3.36210314311209350626267781732175260e-4932F64x
+#define QT_SQL_LIB 1
 #define __STDCPP_THREADS__ 1
 #define __GNUC_STDC_INLINE__ 1
 #define __FLT64_HAS_DENORM__ 1

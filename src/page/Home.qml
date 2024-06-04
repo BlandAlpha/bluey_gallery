@@ -64,7 +64,7 @@ FluScrollablePage{
             fillMode:Image.PreserveAspectCrop
             anchors.fill: parent
             verticalAlignment: Qt.AlignVCenter
-            sourceSize: Qt.size(1140,810)
+            sourceSize: Qt.size(1440,810)
             source: "qrc:/res/img/mainBanner.jpg"
         }
 
@@ -127,9 +127,9 @@ FluScrollablePage{
                         anchors.fill: parent
                         tintColor: FluTheme.dark ? Qt.rgba(0,0,0,1) : Qt.rgba(1,1,1,1)
                         target: bg
-                        tintOpacity: FluTheme.dark ? 0.7 : 0.75
-                        blurRadius : 48
-                        targetRect: Qt.rect(list.x-list.contentX+10+(control.width)*index,list.y+10,width,height)
+                        tintOpacity: FluTheme.dark ? 0.7 : 0.8
+                        blurRadius: 64
+                        targetRect: Qt.rect(list.x-list.contentX-200+(control.width)*index, list.y, width, height)
                     }
 
                     Rectangle{
