@@ -22,6 +22,9 @@ find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core Quick)
 find_program(QT_LUPDATE NAMES lupdate)
 find_program(QT_LRELEASE NAMES lrelease)
 file(GLOB TS_FILE_PATHS ${CMAKE_CURRENT_LIST_DIR}/ *.ts)
+
+find_package(Qt6 REQUIRED COMPONENTS Sql)
+
 add_custom_target(Script-UpdateTranslations
     COMMAND ${QT_LUPDATE} ${CMAKE_CURRENT_LIST_DIR} -ts ${PROJECT_NAME}_en_US.ts WORKING_DIRECTORY ${CMAKE_CURRENT_LIST_DIR}
     COMMAND ${QT_LUPDATE} ${CMAKE_CURRENT_LIST_DIR} -ts ${PROJECT_NAME}_zh_CN.ts WORKING_DIRECTORY ${CMAKE_CURRENT_LIST_DIR}
@@ -49,6 +52,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         src/app_dmp.h
         src/component/OpenGLItem.cpp src/component/OpenGLItem.h
         res/img/add.png res/img/characters.png res/img/cinema.png res/img/info.png res/img/mainBanner.jpg
+        src/helper/SettingsHelper.cpp src/helper/SettingsHelper.h src/helper/TranslateHelper.cpp src/helper/TranslateHelper.h
 
 
     )
@@ -63,6 +67,7 @@ add_dependencies(${PROJECT_NAME} Script-UpdateTranslations)
 target_link_libraries(${PROJECT_NAME} PRIVATE
     Qt${QT_VERSION_MAJOR}::Core
     Qt${QT_VERSION_MAJOR}::Quick
+    Qt${QT_VERSION_MAJOR}::Sql
     fluentuiplugin
 )
 
