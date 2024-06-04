@@ -432,7 +432,7 @@ FluContentPage{
 
             FluDropDownButton{
                 id: selectMenu
-                text: qsTr("Choose a table")
+                text: qsTr("Choose table")
                 FluMenuItem{
                     text: qsTr("Characters")
                     onClicked:{
