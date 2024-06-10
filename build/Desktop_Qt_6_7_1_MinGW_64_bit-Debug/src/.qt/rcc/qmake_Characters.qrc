@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/Characters">
+    <file alias="qmldir">D:/PROJECTS/QT_Projects/bluey_gallery/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/src/qmldir</file>
+  </qresource>
+</RCC>
+

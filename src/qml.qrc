@@ -22,7 +22,7 @@
         <file>page/Edit.qml</file>
         <file>page/Characters.qml</file>
         <file>page/Episodes.qml</file>
-        <file>res/img/seriesBanner.jpg</file>
+        <file>res/img/episodesBanner.jpg</file>
         <file>res/img/charactersBanner.jpg</file>
         <file>page/Show.qml</file>
     </qresource>

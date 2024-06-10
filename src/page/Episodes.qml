@@ -20,14 +20,14 @@ FluScrollablePage{
             anchors.fill: parent
             verticalAlignment: Qt.AlignVCenter
             sourceSize: Qt.size(1920,1080)
-            source: "qrc:/res/img/seriesBanner.jpg"
+            source: "qrc:/res/img/episodesBanner.jpg"
         }
 
         // Banner Overlay
         Rectangle{
             anchors.fill: parent
             gradient: Gradient{
-                GradientStop { position: 0.5; color: FluTheme.dark ? "#a6323232" : "#80f3f3f3" }
+                GradientStop { position: 0.5; color: FluTheme.dark ? "#a6323232" : "#33f3f3f3" }
                 GradientStop { position: 1.0; color: FluTheme.dark ? "#323232" : "#f3f3f3" }
             }
         }

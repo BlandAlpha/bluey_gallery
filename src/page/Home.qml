@@ -64,7 +64,7 @@ FluScrollablePage{
             fillMode:Image.PreserveAspectCrop
             anchors.fill: parent
             verticalAlignment: Qt.AlignVCenter
-            sourceSize: Qt.size(1440,810)
+            sourceSize: Qt.size(1440, 810)
             source: "qrc:/res/img/mainBanner.jpg"
         }
 
@@ -85,7 +85,6 @@ FluScrollablePage{
                 topMargin: 64
                 leftMargin: 48
             }
-
             FluText{
                     text:qsTr("Welcome to")
                     font: FluTextStyle.Subtitle
@@ -101,8 +100,6 @@ FluScrollablePage{
                     font: FluTextStyle.Body
                 }
             }
-
-
         }
 
         // 首页Banner大卡片组件
@@ -154,7 +151,7 @@ FluScrollablePage{
                         }
                         FluText{
                             text: model.title
-                            font.pixelSize: 20
+                            font.pixelSize: 24
                             Layout.topMargin: 24
                             Layout.leftMargin: 16
                         }
@@ -163,10 +160,12 @@ FluScrollablePage{
                             Layout.topMargin: 6
                             Layout.preferredWidth: cardWidth - 2 * cardPadding
                             Layout.leftMargin: 16
-                            color: FluColors.Grey120
+                            color: FluColors.Grey140
                             font.pixelSize: 12
                             font.family: FluTextStyle.family
+                            font.weight: 200
                             wrapMode: Text.WordWrap
+                            lineHeight: 1.125
                         }
                     }
                     MouseArea{
@@ -196,8 +195,8 @@ FluScrollablePage{
             orientation: ListView.Horizontal
             height: 240
             model: model_header
-            header: Item{height: 10;width: 10}
-            footer: Item{height: 10;width: 10}
+            header: Item{height: 8;width: 8}
+            footer: Item{height: 8;width: 8}
             ScrollBar.horizontal: FluScrollBar{
                 id: scrollbar_header
             }

@@ -85,12 +85,12 @@
         <translation type="obsolete">查看不同的布鲁伊剧集，探索Heeler家一个个有趣的故事。</translation>
     </message>
     <message>
-        <location filename="page/Characters.qml" line="44"/>
+        <location filename="page/Characters.qml" line="54"/>
         <source>Characters</source>
         <translation type="unfinished">角色</translation>
     </message>
     <message>
-        <location filename="page/Characters.qml" line="48"/>
+        <location filename="page/Characters.qml" line="58"/>
         <source>Meet with your best buddies.</source>
         <translation type="unfinished">见一见你的好兄弟。</translation>
     </message>
@@ -299,12 +299,12 @@
         <translation type="unfinished">节目</translation>
     </message>
     <message>
-        <location filename="page/Home.qml" line="295"/>
+        <location filename="page/Home.qml" line="294"/>
         <source>Explore Characters</source>
         <translation type="unfinished">探索角色</translation>
     </message>
     <message>
-        <location filename="page/Home.qml" line="312"/>
+        <location filename="page/Home.qml" line="311"/>
         <source>Explore Episodes</source>
         <translation type="unfinished">探索剧集</translation>
     </message>
@@ -333,17 +333,17 @@
         <translation type="vanished">角色介绍</translation>
     </message>
     <message>
-        <location filename="page/Home.qml" line="90"/>
+        <location filename="page/Home.qml" line="89"/>
         <source>Welcome to</source>
         <translation>欢迎来到</translation>
     </message>
     <message>
-        <location filename="page/Home.qml" line="96"/>
+        <location filename="page/Home.qml" line="95"/>
         <source>Bluey Gallery</source>
         <translation>布鲁伊动画指南</translation>
     </message>
     <message>
-        <location filename="page/Home.qml" line="100"/>
+        <location filename="page/Home.qml" line="99"/>
         <source>Have fun exploring the animated characters, plot descriptions, and more of Bluey.</source>
         <oldsource>Have fun exploring the animated characters, plot descriptions, and more for Bluey.</oldsource>
         <translation type="unfinished">尽情探索《布鲁伊》的动画角色，剧情介绍等内容。</translation>

@@ -11,17 +11,13 @@
 
 // #include <QSqlDataBase>
 
-// #include "Version.h"
-// #include "AppInfo.h"
-// #include "helper/Log.h"
-// #include "src/component/CircularReveal.h"
 #include "src/component/FileWatcher.h"
-// #include "src/component/FpsItem.h"
 #include "src/component/OpenGLItem.h"
 #include "src/helper/SettingsHelper.h"
-// #include "src/helper/InitializrHelper.h"
 #include "src/helper/TranslateHelper.h"
-// #include "src/helper/Network.h"
+#include "src/charactermodel.h"
+#include "src/episodemodel.h"
+#include "src/databasemanager.h"
 
 #ifdef FLUENTUI_BUILD_STATIC_LIB
 #if (QT_VERSION > QT_VERSION_CHECK(6, 2, 0))
@@ -54,11 +50,10 @@ int main(int argc, char *argv[])
     //fix bug UOSv20 v-sync does not work
     qputenv("QSG_RENDER_LOOP","basic");
 #endif
-    // QGuiApplication::setOrganizationName("ZhuZiChu");
+    // QGuiApplication::setOrganizationName("Guoao Liu");
     // QGuiApplication::setOrganizationDomain("https://zhuzichu520.github.io");
-    // QGuiApplication::setApplicationName("FluentUI");
-    // QGuiApplication::setApplicationDisplayName("FluentUI Example");
-    // QGuiApplication::setApplicationVersion(APPLICATION_VERSION);
+    // QGuiApplication::setApplicationName("BlueyGallery");
+    // QGuiApplication::setApplicationDisplayName("Bluey Gallery");
     QGuiApplication::setQuitOnLastWindowClosed(false);
     SettingsHelper::getInstance()->init(argv);
     // Log::setup(argv,uri);
@@ -73,19 +68,14 @@ int main(int argc, char *argv[])
 #endif
 #endif
     QGuiApplication app(argc, argv);
-    //@uri example
-    // qmlRegisterType<CircularReveal>(uri, major, minor, "CircularReveal");
-    qmlRegisterType<FileWatcher>(uri, major, minor, "FileWatcher");
-    // qmlRegisterType<FpsItem>(uri, major, minor, "FpsItem");
-    // qmlRegisterType<NetworkCallable>(uri,major,minor,"NetworkCallable");
-    // qmlRegisterType<NetworkParams>(uri,major,minor,"NetworkParams");
-    // qmlRegisterType<OpenGLItem>(uri,major,minor,"OpenGLItem");
-    // qmlRegisterUncreatableMetaObject(NetworkType::staticMetaObject, uri, major, minor, "NetworkType", "Access to enums & flags only");
-
+    // qmlRegisterType<FileWatcher>(uri, major, minor, "FileWatcher");
+    qmlRegisterType<CharacterModel>("Characters", 1, 0, "CharacterModel");
+    qmlRegisterType<DatabaseManager>("DBManager", 1, 0, "DatabaseManager");
     QQmlApplicationEngine engine;
     TranslateHelper::getInstance()->init(&engine);
     engine.rootContext()->setContextProperty("SettingsHelper",SettingsHelper::getInstance());
     engine.rootContext()->setContextProperty("TranslateHelper",TranslateHelper::getInstance());
+    // engine.rootContext()->setContextProperty("DatabaseManager",CharacterData::getInstance());
 #ifdef FLUENTUI_BUILD_STATIC_LIB
     FluentUI::getInstance()->registerTypes(&engine);
 #endif

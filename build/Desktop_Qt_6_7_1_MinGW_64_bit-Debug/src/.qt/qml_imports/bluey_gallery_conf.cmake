@@ -1,4 +1,4 @@
-set(qml_import_scanner_imports_count 38)
+set(qml_import_scanner_imports_count 40)
 set(qml_import_scanner_import_0 "CLASSNAME;QtQuick2Plugin;LINKTARGET;Qt6::qtquick2plugin;NAME;QtQuick;PATH;D:/Qt/6.7.1/mingw_64/qml/QtQuick;PLUGIN;qtquick2plugin;PLUGINISOPTIONAL;;PREFER;:/qt-project.org/imports/QtQuick/;RELATIVEPATH;QtQuick;TYPE;module;")
 set(qml_import_scanner_import_1 "CLASSNAME;QtQmlMetaPlugin;LINKTARGET;Qt6::QmlMeta;NAME;QtQml;PATH;D:/Qt/6.7.1/mingw_64/qml/QtQml;PLUGIN;qmlmetaplugin;PLUGINISOPTIONAL;;PREFER;:/qt-project.org/imports/QtQml/;RELATIVEPATH;QtQml;TYPE;module;")
 set(qml_import_scanner_import_2 "CLASSNAME;QtQmlPlugin;LINKTARGET;Qt6::qmlplugin;NAME;QtQml.Base;PATH;D:/Qt/6.7.1/mingw_64/qml/QtQml/Base;PLUGIN;qmlplugin;PLUGINISOPTIONAL;;PREFER;:/qt-project.org/imports/QtQml/Base/;RELATIVEPATH;QtQml/Base;TYPE;module;")
@@ -35,6 +35,8 @@ set(qml_import_scanner_import_32 "NAME;global;PATH;D:/PROJECTS/QT_Projects/bluey
 set(qml_import_scanner_import_33 "NAME;../component;PATH;D:/PROJECTS/QT_Projects/bluey_gallery/src/page/component;TYPE;directory;")
 set(qml_import_scanner_import_34 "NAME;../global;PATH;D:/PROJECTS/QT_Projects/bluey_gallery/src/page/global;TYPE;directory;")
 set(qml_import_scanner_import_35 "NAME;../window;PATH;D:/PROJECTS/QT_Projects/bluey_gallery/src/page/window;TYPE;directory;")
-set(qml_import_scanner_import_36 "NAME;example;TYPE;module;")
-set(qml_import_scanner_import_37 "NAME;../component;PATH;D:/PROJECTS/QT_Projects/bluey_gallery/src/window/component;TYPE;directory;")
+set(qml_import_scanner_import_36 "NAME;DBManager;TYPE;module;")
+set(qml_import_scanner_import_37 "NAME;Characters;TYPE;module;")
+set(qml_import_scanner_import_38 "NAME;example;TYPE;module;")
+set(qml_import_scanner_import_39 "NAME;../component;PATH;D:/PROJECTS/QT_Projects/bluey_gallery/src/window/component;TYPE;directory;")
 

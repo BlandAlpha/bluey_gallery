@@ -38,12 +38,12 @@
 <context>
     <name>Characters</name>
     <message>
-        <location filename="page/Characters.qml" line="44"/>
+        <location filename="page/Characters.qml" line="54"/>
         <source>Characters</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page/Characters.qml" line="48"/>
+        <location filename="page/Characters.qml" line="58"/>
         <source>Meet with your best buddies.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -249,28 +249,28 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page/Home.qml" line="90"/>
+        <location filename="page/Home.qml" line="89"/>
         <source>Welcome to</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page/Home.qml" line="96"/>
+        <location filename="page/Home.qml" line="95"/>
         <source>Bluey Gallery</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page/Home.qml" line="100"/>
+        <location filename="page/Home.qml" line="99"/>
         <source>Have fun exploring the animated characters, plot descriptions, and more of Bluey.</source>
         <oldsource>Have fun exploring the animated characters, plot descriptions, and more for Bluey.</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page/Home.qml" line="295"/>
+        <location filename="page/Home.qml" line="294"/>
         <source>Explore Characters</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page/Home.qml" line="312"/>
+        <location filename="page/Home.qml" line="311"/>
         <source>Explore Episodes</source>
         <translation type="unfinished"></translation>
     </message>

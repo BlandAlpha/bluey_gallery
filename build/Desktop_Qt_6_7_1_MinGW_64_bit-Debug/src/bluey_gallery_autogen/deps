@@ -12,16 +12,23 @@ bluey_gallery_autogen/timestamp: \
 	D:/PROJECTS/QT_Projects/bluey_gallery/src/main.cpp \
 	D:/PROJECTS/QT_Projects/bluey_gallery/src/qml.qrc \
 	D:/PROJECTS/QT_Projects/bluey_gallery/src/src/app_dmp.h \
+	D:/PROJECTS/QT_Projects/bluey_gallery/src/src/charactermodel.cpp \
+	D:/PROJECTS/QT_Projects/bluey_gallery/src/src/charactermodel.h \
 	D:/PROJECTS/QT_Projects/bluey_gallery/src/src/component/FileWatcher.cpp \
 	D:/PROJECTS/QT_Projects/bluey_gallery/src/src/component/FileWatcher.h \
 	D:/PROJECTS/QT_Projects/bluey_gallery/src/src/component/OpenGLItem.cpp \
 	D:/PROJECTS/QT_Projects/bluey_gallery/src/src/component/OpenGLItem.h \
+	D:/PROJECTS/QT_Projects/bluey_gallery/src/src/databasemanager.cpp \
+	D:/PROJECTS/QT_Projects/bluey_gallery/src/src/databasemanager.h \
+	D:/PROJECTS/QT_Projects/bluey_gallery/src/src/episodemodel.cpp \
+	D:/PROJECTS/QT_Projects/bluey_gallery/src/src/episodemodel.h \
 	D:/PROJECTS/QT_Projects/bluey_gallery/src/src/helper/SettingsHelper.cpp \
 	D:/PROJECTS/QT_Projects/bluey_gallery/src/src/helper/SettingsHelper.h \
 	D:/PROJECTS/QT_Projects/bluey_gallery/src/src/helper/TranslateHelper.cpp \
 	D:/PROJECTS/QT_Projects/bluey_gallery/src/src/helper/TranslateHelper.h \
 	D:/PROJECTS/QT_Projects/bluey_gallery/src/src/singleton.h \
 	D:/PROJECTS/QT_Projects/bluey_gallery/src/src/stdafx.h \
+	D:/Qt/6.7.1/mingw_64/include/QtCore/QAbstractListModel \
 	D:/Qt/6.7.1/mingw_64/include/QtCore/QCoreApplication \
 	D:/Qt/6.7.1/mingw_64/include/QtCore/QDir \
 	D:/Qt/6.7.1/mingw_64/include/QtCore/QFileInfo \
@@ -34,10 +41,13 @@ bluey_gallery_autogen/timestamp: \
 	D:/Qt/6.7.1/mingw_64/include/QtCore/QSize \
 	D:/Qt/6.7.1/mingw_64/include/QtCore/QSizeF \
 	D:/Qt/6.7.1/mingw_64/include/QtCore/QTranslator \
+	D:/Qt/6.7.1/mingw_64/include/QtCore/QVariant \
+	D:/Qt/6.7.1/mingw_64/include/QtCore/QVariantList \
 	D:/Qt/6.7.1/mingw_64/include/QtCore/q20functional.h \
 	D:/Qt/6.7.1/mingw_64/include/QtCore/q20memory.h \
 	D:/Qt/6.7.1/mingw_64/include/QtCore/q20type_traits.h \
 	D:/Qt/6.7.1/mingw_64/include/QtCore/q23utility.h \
+	D:/Qt/6.7.1/mingw_64/include/QtCore/qabstractitemmodel.h \
 	D:/Qt/6.7.1/mingw_64/include/QtCore/qalgorithms.h \
 	D:/Qt/6.7.1/mingw_64/include/QtCore/qanystringview.h \
 	D:/Qt/6.7.1/mingw_64/include/QtCore/qarraydata.h \
@@ -172,6 +182,7 @@ bluey_gallery_autogen/timestamp: \
 	D:/Qt/6.7.1/mingw_64/include/QtCore/qurl.h \
 	D:/Qt/6.7.1/mingw_64/include/QtCore/qutf8stringview.h \
 	D:/Qt/6.7.1/mingw_64/include/QtCore/qvariant.h \
+	D:/Qt/6.7.1/mingw_64/include/QtCore/qvariantlist.h \
 	D:/Qt/6.7.1/mingw_64/include/QtCore/qvarlengtharray.h \
 	D:/Qt/6.7.1/mingw_64/include/QtCore/qversionnumber.h \
 	D:/Qt/6.7.1/mingw_64/include/QtCore/qversiontagging.h \
@@ -237,6 +248,13 @@ bluey_gallery_autogen/timestamp: \
 	D:/Qt/6.7.1/mingw_64/include/QtQuick/qtquick-config.h \
 	D:/Qt/6.7.1/mingw_64/include/QtQuick/qtquickexports.h \
 	D:/Qt/6.7.1/mingw_64/include/QtQuick/qtquickglobal.h \
+	D:/Qt/6.7.1/mingw_64/include/QtSql/QSqlDatabase \
+	D:/Qt/6.7.1/mingw_64/include/QtSql/QSqlError \
+	D:/Qt/6.7.1/mingw_64/include/QtSql/qsqldatabase.h \
+	D:/Qt/6.7.1/mingw_64/include/QtSql/qsqlerror.h \
+	D:/Qt/6.7.1/mingw_64/include/QtSql/qtsql-config.h \
+	D:/Qt/6.7.1/mingw_64/include/QtSql/qtsqlexports.h \
+	D:/Qt/6.7.1/mingw_64/include/QtSql/qtsqlglobal.h \
 	D:/Qt/6.7.1/mingw_64/lib/cmake/Qt6/FindWrapVulkanHeaders.cmake \
 	D:/Qt/6.7.1/mingw_64/lib/cmake/Qt6/Qt6Config.cmake \
 	D:/Qt/6.7.1/mingw_64/lib/cmake/Qt6/Qt6ConfigExtras.cmake \

@@ -713,6 +713,12 @@
 			null
 		],
 		[
+			"D:/PROJECTS/QT_Projects/bluey_gallery/src/src/charactermodel.h",
+			"Mu",
+			"UVLADIE3JM/moc_charactermodel.cpp",
+			null
+		],
+		[
 			"D:/PROJECTS/QT_Projects/bluey_gallery/src/src/component/FileWatcher.h",
 			"Mu",
 			"FHOFCCN7FJ/moc_FileWatcher.cpp",
@@ -722,6 +728,18 @@
 			"D:/PROJECTS/QT_Projects/bluey_gallery/src/src/component/OpenGLItem.h",
 			"Mu",
 			"FHOFCCN7FJ/moc_OpenGLItem.cpp",
+			null
+		],
+		[
+			"D:/PROJECTS/QT_Projects/bluey_gallery/src/src/databasemanager.h",
+			"Mu",
+			"UVLADIE3JM/moc_databasemanager.cpp",
+			null
+		],
+		[
+			"D:/PROJECTS/QT_Projects/bluey_gallery/src/src/episodemodel.h",
+			"Mu",
+			"UVLADIE3JM/moc_episodemodel.cpp",
 			null
 		],
 		[
@@ -836,12 +854,27 @@
 	[
 		[ "D:/PROJECTS/QT_Projects/bluey_gallery/src/main.cpp", "Mu", null ],
 		[
+			"D:/PROJECTS/QT_Projects/bluey_gallery/src/src/charactermodel.cpp",
+			"Mu",
+			null
+		],
+		[
 			"D:/PROJECTS/QT_Projects/bluey_gallery/src/src/component/FileWatcher.cpp",
 			"Mu",
 			null
 		],
 		[
 			"D:/PROJECTS/QT_Projects/bluey_gallery/src/src/component/OpenGLItem.cpp",
+			"Mu",
+			null
+		],
+		[
+			"D:/PROJECTS/QT_Projects/bluey_gallery/src/src/databasemanager.cpp",
+			"Mu",
+			null
+		],
+		[
+			"D:/PROJECTS/QT_Projects/bluey_gallery/src/src/episodemodel.cpp",
 			"Mu",
 			null
 		],

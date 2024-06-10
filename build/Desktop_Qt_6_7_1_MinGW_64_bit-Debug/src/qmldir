@@ -1,0 +1,7 @@
+module Characters
+linktarget myappplugin
+optional plugin myappplugin
+classname CharactersPlugin
+typeinfo myapp.qmltypes
+prefer :/Characters/
+

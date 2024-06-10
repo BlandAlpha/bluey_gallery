@@ -5,11 +5,21 @@ import QtQuick.Controls 2.15
 import FluentUI 1.0
 import "../window"
 import "../global"
+import DBManager 1.0
+import Characters 1.0
 
 FluScrollablePage{
 
     launchMode: FluPageType.SingleTask
     header: Item{}
+
+    DatabaseManager {
+        id: dbManager
+    }
+
+    CharacterModel {
+        id: charactersModel
+    }
 
     Item{
         Layout.fillWidth: true
@@ -19,7 +29,7 @@ FluScrollablePage{
             fillMode:Image.PreserveAspectCrop
             anchors.fill: parent
             verticalAlignment: Qt.AlignVCenter
-            sourceSize: Qt.size(1920,1080)
+            sourceSize: Qt.size(2560, 1440)
             source: "qrc:/res/img/charactersBanner.jpg"
         }
 
@@ -27,7 +37,7 @@ FluScrollablePage{
         Rectangle{
             anchors.fill: parent
             gradient: Gradient{
-                GradientStop { position: 0.5; color: FluTheme.dark ? "#a6323232" : "#80f3f3f3" }
+                GradientStop { position: 0.5; color: FluTheme.dark ? "#a6323232" : "#33f3f3f3" }
                 GradientStop { position: 1.0; color: FluTheme.dark ? "#323232" : "#f3f3f3" }
             }
         }
@@ -54,16 +64,113 @@ FluScrollablePage{
 
     }
 
+    Component {
+        // TODO：无法正常显示
+        id: com_character
+        Item {
+            property string desc: model.description
+            property string name: model.name_zh
+            width: 240
+            height: 380
+            FluFrame {
+                radius: 8
+                width: 240
+                height: 380
+                anchors.centerIn: parent
+                Rectangle {
+                    anchors.fill: parent
+                    radius: 8
+                    color: {
+                        if(item_mouse.containsMouse){
+                            return FluTheme.itemHoverColor
+                        }
+                        return FluTheme.itemNormalColor
+                    }
+                }
+                ColumnLayout {
+                    anchors {
+                        top: parent.top
+                        topMargin: 24
+                        left: parent.left
+                        right: parent.right
+                        leftMargin: 24
+                        rightMargin: 24
+                    }
+                    spacing: 24
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    // Image {
+                    //     id:item_avatar
+                    //     height: 124
+                    //     width: 80
+                    //     source: model.image
+                    //     anchors{
+                    //         left: parent.left
+                    //         leftMargin: 20
+                    //         verticalCenter: parent.verticalCenter
+                    //     }
+                    // }
+                    Rectangle {
+                        height: 232
+                        width: 150
+                        color: "red"
+                        anchors.horizontalCenter: parent.horizontalCenter
+                    }
+                    ColumnLayout{
+                        anchors {
+                            left: parent.left
+                            right: parent.right
+                            horizontalCenter: parent.horizontalCenter
+                        }
+                        spacing: 8
+                        FluText {
+                            id: item_name
+                            text: name
+                            font: FluTextStyle.Subtitle
+                            horizontalAlignment: FluText.AlignHCenter
+                            anchors.horizontalCenter: parent.horizontalCenter
+                        }
+                        FluText{
+                            id:item_desc
+                            text: desc
+                            Layout.preferredWidth: parent.width
+                            Layout.alignment: Qt.AlignHCenter
+                            color:FluColors.Grey120
+                            wrapMode: Text.WordWrap
+                            font: FluTextStyle.Caption
+                            maximumLineCount: 2
+                            elide: Text.ElideRight
+                            lineHeight: 1.2
+                            anchors.horizontalCenter: parent.horizontalCenter
+                        }
+                    }
+                }
+                MouseArea{
+                    id:item_mouse
+                    anchors.fill: parent
+                    hoverEnabled: true
+                    onClicked: {
+                        ItemsOriginal.startPageByItem(modelData)
+                    }
+                }
+
+            }
+        }
+    }
+
     GridView{
+        id: charactersCards
         Layout.fillWidth: true
         Layout.preferredHeight: contentHeight
-        cellHeight: 120
-        cellWidth: 320
-        /*
+        cellHeight: 380 + 24
+        cellWidth: 240 + 24
         interactive: false
-        model: ItemsOriginal.getRecentlyUpdatedData()
-        delegate: com_item
-        */
+        model: charactersModel
+        delegate: com_character
+        Layout.leftMargin: 24
+    }
+
+    Component.onCompleted: {
+        charactersModel.setCharacters(dbManager.getCharacters());
     }
 
 }
