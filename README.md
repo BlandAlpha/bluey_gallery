@@ -1,6 +1,6 @@
 ## Bluey Gallery
 
-[切换到到中文](README_Assets/README_zh-CN.md)
+[切换到中文](README_Assets/README_zh-CN.md)
 
 > [!warning]
 > The project is still in development, please be patient.
