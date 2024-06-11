@@ -1,3 +1,5 @@
+#include <QCoreApplication>
+#include <QUrl>
 #include "charactermodel.h"
 
 CharacterModel::CharacterModel(QObject *parent) : QAbstractListModel(parent) {}
@@ -18,6 +20,9 @@ QVariant CharacterModel::data(const QModelIndex &index, int role) const {
         return QVariant();
 
     const QVariantMap character = m_characters.at(index.row()).toMap();
+    QString relativePath;
+    QString absolutePath;
+
     switch (role) {
     case IdRole:
         return character["id"];
@@ -30,7 +35,11 @@ QVariant CharacterModel::data(const QModelIndex &index, int role) const {
     case DescriptionRole:
         return character["description"];
     case ImageRole:
-        return character["image"];
+        relativePath = character["image_path"].toString();
+        absolutePath = QUrl::fromLocalFile(QCoreApplication::applicationDirPath() + relativePath).toString();
+        // qDebug()<< "Relative Path:" << relativePath;
+        // qDebug()<< "Absolute Path:" << absolutePath;
+        return absolutePath;
     default:
         return QVariant();
     }
@@ -43,6 +52,6 @@ QHash<int, QByteArray> CharacterModel::roleNames() const {
     roles[NameZhRole] = "name_zh";
     roles[BreedRole] = "breed";
     roles[DescriptionRole] = "description";
-    roles[ImageRole] = "image";
+    roles[ImageRole] = "image_path";
     return roles;
 }

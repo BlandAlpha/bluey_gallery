@@ -65,11 +65,11 @@ FluScrollablePage{
     }
 
     Component {
-        // TODO：无法正常显示
         id: com_character
         Item {
             property string desc: model.description
             property string name: model.name_zh
+            property string img: model.image_path
             width: 240
             height: 380
             FluFrame {
@@ -98,21 +98,14 @@ FluScrollablePage{
                     }
                     spacing: 24
                     anchors.horizontalCenter: parent.horizontalCenter
-                    // Image {
-                    //     id:item_avatar
-                    //     height: 124
-                    //     width: 80
-                    //     source: model.image
-                    //     anchors{
-                    //         left: parent.left
-                    //         leftMargin: 20
-                    //         verticalCenter: parent.verticalCenter
-                    //     }
-                    // }
-                    Rectangle {
+                    Image {
+                        id:item_avatar
                         height: 232
                         width: 150
-                        color: "red"
+                        sourceSize.width: 150
+                        sourceSize.height: 232
+                        fillMode: Image.PreserveAspectFit
+                        source: Qt.resolvedUrl(img)
                         anchors.horizontalCenter: parent.horizontalCenter
                     }
                     ColumnLayout{

@@ -68,7 +68,7 @@ QVariantList DatabaseManager::getCharacters() {
         character["name_zh"] = query.value("Name_zh");
         character["breed"] = query.value("Breed");
         character["description"] = query.value("Description");
-        character["imagepath"] = query.value("ImagePath");
+        character["image_path"] = query.value("ImagePath");
         characters.append(character);
         qDebug() << "Now getting:" << character["name_en"];
     }
