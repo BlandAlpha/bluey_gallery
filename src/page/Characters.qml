@@ -141,7 +141,7 @@ FluScrollablePage{
                     anchors.fill: parent
                     hoverEnabled: true
                     onClicked: {
-                        ItemsOriginal.startPageByItem(modelData)
+                        FluRouter.navigate("/characterPage")
                     }
                 }
 

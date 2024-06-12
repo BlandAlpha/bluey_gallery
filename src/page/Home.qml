@@ -302,7 +302,7 @@ FluScrollablePage{
         Layout.preferredHeight: contentHeight
         cellHeight: 120
         cellWidth: 320
-        model:ItemsOriginal.getRandomCharacterData()
+        // model: getRandomCharacterData()
         interactive: false
         delegate: com_item
     }
@@ -320,7 +320,7 @@ FluScrollablePage{
         cellHeight: 120
         cellWidth: 320
         interactive: false
-        model: ItemsOriginal.getRandomSeriesData()
+        // model: getRandomSeriesData()
         delegate: com_item
     }
 

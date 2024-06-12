@@ -84,10 +84,10 @@ FluScrollablePage{
         }
     }
 
-    property int frameHeight: 120
+    property int frameHeight: 142
     property int frameWidth: 520
     property real aspectRatio: 16 / 9
-    property int imageHeight: frameHeight - 2
+    property int imageHeight: frameHeight
     property int imageWidth: Math.round(imageHeight * aspectRatio)
 
     // Card Component id: com_episode
@@ -101,7 +101,26 @@ FluScrollablePage{
             property string img: model.image_path
             width: frameWidth
             height: frameHeight
+            // clip: true
+            FluShadow{
+                property int shadow: 4
+                id: cardShadow
+                radius: 8
+                elevation: {
+                    if(item_mouse.containsMouse){
+                        return shadow+2
+                    }
+                    return shadow
+                }
+                // NumberAnimation {
+                //     target: cardShadow
+                //     properties: ""
+                // }
+
+                anchors.fill: item_card
+            }
             FluFrame {
+                id: item_card
                 radius: 8
                 width: frameWidth
                 height: frameHeight
@@ -125,7 +144,6 @@ FluScrollablePage{
                         width: imageWidth
                         height: imageHeight
                         anchors.left: parent.left
-                        anchors.leftMargin: 1
                         anchors.verticalCenter: parent.verticalCenter
                         Image {
                             sourceSize: Qt.size(imageWidth, imageHeight)
@@ -234,7 +252,7 @@ FluScrollablePage{
                 font: FluTextStyle.Title
             }
             FluFilledButton {
-                text: qsTr("Add Series")
+                text: qsTr("Add Episode")
             }
         }
         GridView{
@@ -257,7 +275,7 @@ FluScrollablePage{
                 font: FluTextStyle.Title
             }
             FluFilledButton {
-                text: qsTr("Add Series")
+                text: qsTr("Add Episode")
             }
         }
         GridView{
@@ -280,7 +298,7 @@ FluScrollablePage{
                 font: FluTextStyle.Title
             }
             FluFilledButton {
-                text: qsTr("Add Series")
+                text: qsTr("Add Episode")
             }
         }
         GridView{
