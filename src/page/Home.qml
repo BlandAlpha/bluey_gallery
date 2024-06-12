@@ -72,8 +72,8 @@ FluScrollablePage{
         Rectangle{
             anchors.fill: parent
             gradient: Gradient{
-                GradientStop { position: 0.5; color: FluTheme.dark ? "#a6323232" : "#80f3f3f3" }
-                GradientStop { position: 1.0; color: FluTheme.dark ? "#323232" : "#f3f3f3" }
+                GradientStop { position: 0.5; color: FluTheme.dark ? "#a6191919" : "#80f3f3f3" }
+                GradientStop { position: 1.0; color: FluTheme.dark ? "#191919" : "#f3f3f3" }
             }
         }
 

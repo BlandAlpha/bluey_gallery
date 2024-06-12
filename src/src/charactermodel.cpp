@@ -6,20 +6,20 @@ CharacterModel::CharacterModel(QObject *parent) : QAbstractListModel(parent) {}
 
 void CharacterModel::setCharacters(const QVariantList &characters) {
     beginResetModel();
-    m_characters = characters;
+    m_character = characters;
     endResetModel();
 }
 
 int CharacterModel::rowCount(const QModelIndex &parent) const {
     Q_UNUSED(parent);
-    return m_characters.size();
+    return m_character.size();
 }
 
 QVariant CharacterModel::data(const QModelIndex &index, int role) const {
-    if (index.row() < 0 || index.row() >= m_characters.size())
+    if (index.row() < 0 || index.row() >= m_character.size())
         return QVariant();
 
-    const QVariantMap character = m_characters.at(index.row()).toMap();
+    const QVariantMap character = m_character.at(index.row()).toMap();
     QString relativePath;
     QString absolutePath;
 
@@ -37,8 +37,6 @@ QVariant CharacterModel::data(const QModelIndex &index, int role) const {
     case ImageRole:
         relativePath = character["image_path"].toString();
         absolutePath = QUrl::fromLocalFile(QCoreApplication::applicationDirPath() + relativePath).toString();
-        // qDebug()<< "Relative Path:" << relativePath;
-        // qDebug()<< "Absolute Path:" << absolutePath;
         return absolutePath;
     default:
         return QVariant();

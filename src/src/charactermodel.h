@@ -26,7 +26,7 @@ public:
     QHash<int, QByteArray> roleNames() const override;
 
 private:
-    QVariantList m_characters;
+    QVariantList m_character;
 };
 
 #endif // CHARACTERMODEL_H

@@ -245,27 +245,34 @@
 <context>
     <name>Episodes</name>
     <message>
-        <location filename="page/Episodes.qml" line="44"/>
+        <location filename="page/Episodes.qml" line="77"/>
         <source>Episodes</source>
         <translation type="unfinished">剧集</translation>
     </message>
     <message>
-        <location filename="page/Episodes.qml" line="48"/>
+        <location filename="page/Episodes.qml" line="81"/>
         <source>Which episode was your favourite?</source>
         <translation type="unfinished">哪一集是你的心头好？</translation>
     </message>
     <message>
-        <location filename="page/Episodes.qml" line="58"/>
+        <location filename="page/Episodes.qml" line="233"/>
         <source>Season 1</source>
         <translation type="unfinished">第1季</translation>
     </message>
     <message>
-        <location filename="page/Episodes.qml" line="77"/>
+        <location filename="page/Episodes.qml" line="237"/>
+        <location filename="page/Episodes.qml" line="260"/>
+        <location filename="page/Episodes.qml" line="283"/>
+        <source>Add Series</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page/Episodes.qml" line="256"/>
         <source>Season 2</source>
         <translation type="unfinished">第2季</translation>
     </message>
     <message>
-        <location filename="page/Episodes.qml" line="96"/>
+        <location filename="page/Episodes.qml" line="279"/>
         <source>Season 3</source>
         <translation type="unfinished">第3季</translation>
     </message>
