@@ -37,8 +37,8 @@ FluScrollablePage{
         Rectangle{
             anchors.fill: parent
             gradient: Gradient{
-                GradientStop { position: 0.5; color: FluTheme.dark ? "#a6323232" : "#33f3f3f3" }
-                GradientStop { position: 1.0; color: FluTheme.dark ? "#323232" : "#f3f3f3" }
+                GradientStop { position: 0.5; color: FluTheme.dark ? "#a6191919" : "#33f3f3f3" }
+                GradientStop { position: 1.0; color: FluTheme.dark ? "#191919" : "#f3f3f3" }
             }
         }
 
@@ -102,8 +102,7 @@ FluScrollablePage{
                         id:item_avatar
                         height: 232
                         width: 150
-                        sourceSize.width: 150
-                        sourceSize.height: 232
+                        sourceSize: Qt.size(150, 232)
                         fillMode: Image.PreserveAspectFit
                         source: Qt.resolvedUrl(img)
                         anchors.horizontalCenter: parent.horizontalCenter
@@ -142,7 +141,7 @@ FluScrollablePage{
                     anchors.fill: parent
                     hoverEnabled: true
                     onClicked: {
-                        ItemsOriginal.startPageByItem(modelData)
+                        FluRouter.navigate("/characterPage")
                     }
                 }
 
@@ -150,10 +149,17 @@ FluScrollablePage{
         }
     }
 
-    GridView{
+    FluFilledButton {
+        anchors.left: parent.left
+        anchors.leftMargin: 24
+        text: "添加角色"
+    }
+
+    GridView {
         id: charactersCards
         Layout.fillWidth: true
         Layout.preferredHeight: contentHeight
+        Layout.topMargin: 16
         cellHeight: 380 + 24
         cellWidth: 240 + 24
         interactive: false

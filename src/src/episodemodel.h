@@ -4,7 +4,8 @@
 #include <QAbstractListModel>
 #include <QVariantList>
 
-class EpisodeModel : public QAbstractListModel {
+class EpisodeModel : public QAbstractListModel
+{
     Q_OBJECT
 public:
     enum EpisodeRoles {
@@ -18,7 +19,8 @@ public:
 
     explicit EpisodeModel(QObject *parent = nullptr);
 
-    void setEpisodes(const QVariantList &episode);
+    Q_INVOKABLE void setEpisodes(const QVariantList &episode);
+    Q_INVOKABLE QVariantList getEpisodesBySeason(int season);
 
     int rowCount(const QModelIndex &parent = QModelIndex()) const override;
     QVariant data(const QModelIndex &index, int role = Qt::DisplayRole) const override;

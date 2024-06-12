@@ -16,7 +16,6 @@ DatabaseManager::DatabaseManager(QObject *parent)
         qWarning() << "Error: Unable to connect to database!" << m_db.lastError().text();;
     } else {
         qDebug() << "Success: Database Opened:" << m_db.databaseName();
-        qDebug() << "Tables: " << m_db.tables();
     }
 }
 
@@ -56,7 +55,6 @@ QVariantList DatabaseManager::getCharacters() {
     QSqlQuery query(m_db);
     if (!query.exec("SELECT * FROM Characters;")) {
         qDebug() << "Query execution failed:" << query.lastError().text();
-        // Query execution failed: "no such table: Characters Unable to execute statement"
         return characters;
     }
 
@@ -76,21 +74,66 @@ QVariantList DatabaseManager::getCharacters() {
     return characters;
 }
 
-/*
 QVariantList DatabaseManager::getEpisodes() {
     QVariantList episodes;
-    QSqlQuery query("SELECT * FROM episodes");
 
+    if (!m_db.isOpen()) {
+        qDebug() << "Database is not open!";
+        return episodes;
+    }
+
+    QSqlQuery query(m_db);
+    if (!query.exec("SELECT * FROM Episodes;")) {
+        qDebug() << "Query execution failed:" << query.lastError().text();
+        return episodes;
+    }
+
+    qDebug() << "Getting Episodes...";
     while (query.next()) {
         QVariantMap episode;
-        episode["id"] = query.value("id");
-        episode["title"] = query.value("title");
-        episode["season"] = query.value("season");
-        episode["episode_number"] = query.value("episode_number");
-        episode["air_date"] = query.value("air_date");
+        episode["id"] = query.value("ID");
+        episode["season"] = query.value("Season");
+        episode["episode"] = query.value("Episode");
+        episode["title"] = query.value("Title");
+        episode["description"] = query.value("Description");
+        episode["image_path"] = query.value("ImagePath");
         episodes.append(episode);
+        qDebug() << "Now getting:" << episode["title"];
     }
+    qDebug() << "---Episodes Done---";
     return episodes;
 }
-*/
+
+QVariantList DatabaseManager::getEpisodesBySeason(int season) {
+    QVariantList episodes;
+
+    if (!m_db.isOpen()) {
+        qDebug() << "Database is not open!";
+        return episodes;
+    }
+
+    QSqlQuery query;
+    query.prepare("SELECT * FROM Episodes WHERE season = :season");
+    query.bindValue(":season", season);
+
+    if (!query.exec()) {
+        qDebug() << "Query execution failed:" << query.lastError().text();
+        return episodes;
+    }
+
+    qDebug() << "Getting Season" << season;
+    while (query.next()) {
+        QVariantMap episode;
+        episode["id"] = query.value("ID");
+        episode["season"] = query.value("Season");
+        episode["episode"] = query.value("Episode");
+        episode["title"] = query.value("Title");
+        episode["description"] = query.value("Description");
+        episode["image_path"] = query.value("ImagePath");
+        episodes.append(episode);
+        qDebug() << "Now getting:" << episode["title"];
+    }
+    qDebug() << "---Episodes Done---";
+    return episodes;
+}
 

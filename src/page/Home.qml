@@ -72,8 +72,8 @@ FluScrollablePage{
         Rectangle{
             anchors.fill: parent
             gradient: Gradient{
-                GradientStop { position: 0.5; color: FluTheme.dark ? "#a6323232" : "#80f3f3f3" }
-                GradientStop { position: 1.0; color: FluTheme.dark ? "#323232" : "#f3f3f3" }
+                GradientStop { position: 0.5; color: FluTheme.dark ? "#a6191919" : "#80f3f3f3" }
+                GradientStop { position: 1.0; color: FluTheme.dark ? "#191919" : "#f3f3f3" }
             }
         }
 
@@ -302,7 +302,7 @@ FluScrollablePage{
         Layout.preferredHeight: contentHeight
         cellHeight: 120
         cellWidth: 320
-        model:ItemsOriginal.getRandomCharacterData()
+        // model: getRandomCharacterData()
         interactive: false
         delegate: com_item
     }
@@ -320,7 +320,7 @@ FluScrollablePage{
         cellHeight: 120
         cellWidth: 320
         interactive: false
-        model: ItemsOriginal.getRandomSeriesData()
+        // model: getRandomSeriesData()
         delegate: com_item
     }
 

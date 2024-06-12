@@ -75,6 +75,19 @@
     </message>
 </context>
 <context>
+    <name>CharacterPage</name>
+    <message>
+        <location filename="window/CharacterPage.qml" line="80"/>
+        <source>Seen in these Episodes</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="window/CharacterPage.qml" line="97"/>
+        <source>Edit</source>
+        <translation type="unfinished">编辑</translation>
+    </message>
+</context>
+<context>
     <name>Characters</name>
     <message>
         <source>Series</source>
@@ -245,27 +258,42 @@
 <context>
     <name>Episodes</name>
     <message>
-        <location filename="page/Episodes.qml" line="44"/>
+        <location filename="page/Episodes.qml" line="77"/>
         <source>Episodes</source>
         <translation type="unfinished">剧集</translation>
     </message>
     <message>
-        <location filename="page/Episodes.qml" line="48"/>
+        <location filename="page/Episodes.qml" line="81"/>
         <source>Which episode was your favourite?</source>
         <translation type="unfinished">哪一集是你的心头好？</translation>
     </message>
     <message>
-        <location filename="page/Episodes.qml" line="58"/>
+        <location filename="page/Episodes.qml" line="251"/>
         <source>Season 1</source>
         <translation type="unfinished">第1季</translation>
     </message>
     <message>
-        <location filename="page/Episodes.qml" line="77"/>
+        <location filename="page/Episodes.qml" line="255"/>
+        <location filename="page/Episodes.qml" line="278"/>
+        <location filename="page/Episodes.qml" line="301"/>
+        <source>Add Episode</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page/Episodes.qml" line="255"/>
+        <location filename="page/Episodes.qml" line="278"/>
+        <location filename="page/Episodes.qml" line="301"/>
+        <source>Add Episode</source>
+        <oldsource>Add Series</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page/Episodes.qml" line="274"/>
         <source>Season 2</source>
         <translation type="unfinished">第2季</translation>
     </message>
     <message>
-        <location filename="page/Episodes.qml" line="96"/>
+        <location filename="page/Episodes.qml" line="297"/>
         <source>Season 3</source>
         <translation type="unfinished">第3季</translation>
     </message>

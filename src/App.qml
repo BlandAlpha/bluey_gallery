@@ -33,7 +33,7 @@ FluLauncher {
         FluTheme.animationEnabled = true
         FluRouter.routes = {
             "/":"qrc:/main.qml",
-            "/pageWindow":"qrc:/window/PageWindow.qml"
+            "/characterPage":"qrc:/window/CharacterPage.qml"
         }
         FluRouter.navigate("/")
     }

@@ -70,12 +70,12 @@ int main(int argc, char *argv[])
     QGuiApplication app(argc, argv);
     // qmlRegisterType<FileWatcher>(uri, major, minor, "FileWatcher");
     qmlRegisterType<CharacterModel>("Characters", 1, 0, "CharacterModel");
+    qmlRegisterType<EpisodeModel>("Episodes", 1, 0, "EpisodeModel");
     qmlRegisterType<DatabaseManager>("DBManager", 1, 0, "DatabaseManager");
     QQmlApplicationEngine engine;
     TranslateHelper::getInstance()->init(&engine);
     engine.rootContext()->setContextProperty("SettingsHelper",SettingsHelper::getInstance());
     engine.rootContext()->setContextProperty("TranslateHelper",TranslateHelper::getInstance());
-    // engine.rootContext()->setContextProperty("DatabaseManager",CharacterData::getInstance());
 #ifdef FLUENTUI_BUILD_STATIC_LIB
     FluentUI::getInstance()->registerTypes(&engine);
 #endif
