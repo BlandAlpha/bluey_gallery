@@ -10,7 +10,7 @@
         <file>component/CodeExpander.qml</file>
         <file>page/About.qml</file>
         <file>page/Home.qml</file>
-        <file>window/CharacterPage.qml</file>
+        <file>window/CharacterWindow.qml</file>
         <file>global/qmldir</file>
         <file>res/img/add.png</file>
         <file>res/img/characters.png</file>
@@ -25,6 +25,6 @@
         <file>res/img/episodesBanner.jpg</file>
         <file>res/img/charactersBanner.jpg</file>
         <file>page/Show.qml</file>
-        <file>window/EpisodePage.qml</file>
+        <file>window/EpisodeWindow.qml</file>
     </qresource>
 </RCC>

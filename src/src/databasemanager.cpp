@@ -68,9 +68,9 @@ QVariantList DatabaseManager::getCharacters() {
         character["description"] = query.value("Description");
         character["image_path"] = query.value("ImagePath");
         characters.append(character);
-        qDebug() << "Now getting:" << character["name_en"];
+        // qDebug() << "Now getting:" << character["name_en"];
     }
-    qDebug() << "---Characters Done---";
+    // qDebug() << "---Characters Done---";
     return characters;
 }
 
@@ -131,9 +131,95 @@ QVariantList DatabaseManager::getEpisodesBySeason(int season) {
         episode["description"] = query.value("Description");
         episode["image_path"] = query.value("ImagePath");
         episodes.append(episode);
-        qDebug() << "Now getting:" << episode["title"];
+        // qDebug() << "Now getting:" << episode["title"];
     }
-    qDebug() << "---Episodes Done---";
+    // qDebug() << "---Episodes Done---";
     return episodes;
+}
+
+QVariantList DatabaseManager::getRelatedEpisodes(int characterId) {
+    QVariantList episodes;
+
+    if (!m_db.isOpen()) {
+        qDebug() << "Database is not open!";
+        return episodes;
+    }
+
+    QSqlQuery query;
+    query.prepare("SELECT "
+                  "Episodes.ID AS EpisodeID, "
+                  "Episodes.Season AS Season, "
+                  "Episodes.Episode AS Episode, "
+                  "Episodes.Title AS Title, "
+                  "Episodes.Description AS Description, "
+                  "Episodes.ImagePath AS ImagePath "
+                  "FROM Episodes "
+                  "JOIN EpisodesCharacters ON Episodes.ID = EpisodesCharacters.EpisodesID "
+                  "WHERE EpisodesCharacters.CharactersID = :characterId "
+                  "ORDER BY Episodes.ID ASC");
+    query.bindValue(":characterId", characterId);
+
+    if (!query.exec()) {
+        qDebug() << "Query execution failed:" << query.lastError().text();
+        return episodes;
+    }
+
+    qDebug() << "Getting episodes for Character ID:" << characterId;
+    while (query.next()) {
+        QVariantMap episode;
+        episode["id"] = query.value("EpisodeID");
+        episode["season"] = query.value("Season");
+        episode["episode"] = query.value("Episode");
+        episode["title"] = query.value("Title");
+        episode["description"] = query.value("Description");
+        episode["image_path"] = query.value("ImagePath");
+        episodes.append(episode);
+        // qDebug() << "Now getting:" << episode["title"];
+    }
+    // qDebug() << "---Related Episodes Done---";
+    return episodes;
+}
+
+QVariantList DatabaseManager::getRelatedCharacters(int episodeId) {
+    QVariantList characters;
+
+    if (!m_db.isOpen()) {
+        qDebug() << "Database is not open!";
+        return characters;
+    }
+
+    QSqlQuery query;
+    query.prepare("SELECT "
+                  "Characters.ID AS CharacterID, "
+                  "Characters.Name_en AS Name_en, "
+                  "Characters.Name_zh AS Name_zh, "
+                  "Characters.Breed AS Breed, "
+                  "Characters.Description AS Description, "
+                  "Characters.ImagePath AS ImagePath "
+                  "FROM Characters "
+                  "JOIN EpisodesCharacters ON Characters.ID = EpisodesCharacters.CharactersID "
+                  "WHERE EpisodesCharacters.EpisodesID = :episodeId "
+                  "ORDER BY Characters.ID ASC");
+    query.bindValue(":episodeId", episodeId);
+
+    if (!query.exec()) {
+        qDebug() << "Query execution failed:" << query.lastError().text();
+        return characters;
+    }
+
+    qDebug() << "Getting Characters...";
+    while (query.next()) {
+        QVariantMap character;
+        character["id"] = query.value("CharacterID");
+        character["name_en"] = query.value("Name_en");
+        character["name_zh"] = query.value("Name_zh");
+        character["breed"] = query.value("Breed");
+        character["description"] = query.value("Description");
+        character["image_path"] = query.value("ImagePath");
+        characters.append(character);
+        // qDebug() << "Now getting:" << character["name_en"];
+    }
+    // qDebug() << "---Characters Done---";
+    return characters;
 }
 

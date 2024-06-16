@@ -36,14 +36,14 @@
     </message>
 </context>
 <context>
-    <name>CharacterPage</name>
+    <name>CharacterWindow</name>
     <message>
-        <location filename="window/CharacterPage.qml" line="80"/>
+        <location filename="window/CharacterWindow.qml" line="85"/>
         <source>Seen in these Episodes</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="window/CharacterPage.qml" line="97"/>
+        <location filename="window/CharacterWindow.qml" line="118"/>
         <source>Edit</source>
         <translation type="unfinished"></translation>
     </message>
@@ -190,6 +190,19 @@
     </message>
 </context>
 <context>
+    <name>EpisodeWindow</name>
+    <message>
+        <location filename="window/EpisodeWindow.qml" line="98"/>
+        <source>Starring</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="window/EpisodeWindow.qml" line="232"/>
+        <source>Edit</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>Episodes</name>
     <message>
         <location filename="page/Episodes.qml" line="77"/>
@@ -202,32 +215,24 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page/Episodes.qml" line="251"/>
+        <location filename="page/Episodes.qml" line="258"/>
         <source>Season 1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page/Episodes.qml" line="255"/>
-        <location filename="page/Episodes.qml" line="278"/>
-        <location filename="page/Episodes.qml" line="301"/>
+        <location filename="page/Episodes.qml" line="262"/>
+        <location filename="page/Episodes.qml" line="285"/>
+        <location filename="page/Episodes.qml" line="308"/>
         <source>Add Episode</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page/Episodes.qml" line="255"/>
-        <location filename="page/Episodes.qml" line="278"/>
-        <location filename="page/Episodes.qml" line="301"/>
-        <source>Add Episode</source>
-        <oldsource>Add Series</oldsource>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page/Episodes.qml" line="274"/>
+        <location filename="page/Episodes.qml" line="281"/>
         <source>Season 2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page/Episodes.qml" line="297"/>
+        <location filename="page/Episodes.qml" line="304"/>
         <source>Season 3</source>
         <translation type="unfinished"></translation>
     </message>

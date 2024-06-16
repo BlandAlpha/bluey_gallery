@@ -41,6 +41,10 @@ constexpr auto qt_meta_stringdata_CLASSDatabaseManagerENDCLASS = QtMocHelpers::s
     "getEpisodes",
     "getEpisodesBySeason",
     "season",
+    "getRelatedEpisodes",
+    "characterId",
+    "getRelatedCharacters",
+    "episodeId",
     "resetDatabase"
 );
 #else  // !QT_MOC_HAS_STRINGDATA
@@ -54,7 +58,7 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSDatabaseManagerENDCLASS[] = {
       12,       // revision
        0,       // classname
        0,    0, // classinfo
-       4,   14, // methods
+       6,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -62,15 +66,19 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSDatabaseManagerENDCLASS[] = {
        0,       // signalCount
 
  // methods: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    0,   38,    2, 0x02,    1 /* Public */,
-       3,    0,   39,    2, 0x02,    2 /* Public */,
-       4,    1,   40,    2, 0x02,    3 /* Public */,
-       6,    0,   43,    2, 0x02,    5 /* Public */,
+       1,    0,   50,    2, 0x02,    1 /* Public */,
+       3,    0,   51,    2, 0x02,    2 /* Public */,
+       4,    1,   52,    2, 0x02,    3 /* Public */,
+       6,    1,   55,    2, 0x02,    5 /* Public */,
+       8,    1,   58,    2, 0x02,    7 /* Public */,
+      10,    0,   61,    2, 0x02,    9 /* Public */,
 
  // methods: parameters
     QMetaType::QVariantList,
     QMetaType::QVariantList,
     QMetaType::QVariantList, QMetaType::Int,    5,
+    QMetaType::QVariantList, QMetaType::Int,    7,
+    QMetaType::QVariantList, QMetaType::Int,    9,
     QMetaType::Void,
 
        0        // eod
@@ -92,6 +100,12 @@ Q_CONSTINIT const QMetaObject DatabaseManager::staticMetaObject = { {
         // method 'getEpisodesBySeason'
         QtPrivate::TypeAndForceComplete<QVariantList, std::false_type>,
         QtPrivate::TypeAndForceComplete<int, std::false_type>,
+        // method 'getRelatedEpisodes'
+        QtPrivate::TypeAndForceComplete<QVariantList, std::false_type>,
+        QtPrivate::TypeAndForceComplete<int, std::false_type>,
+        // method 'getRelatedCharacters'
+        QtPrivate::TypeAndForceComplete<QVariantList, std::false_type>,
+        QtPrivate::TypeAndForceComplete<int, std::false_type>,
         // method 'resetDatabase'
         QtPrivate::TypeAndForceComplete<void, std::false_type>
     >,
@@ -110,7 +124,11 @@ void DatabaseManager::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int 
             if (_a[0]) *reinterpret_cast< QVariantList*>(_a[0]) = std::move(_r); }  break;
         case 2: { QVariantList _r = _t->getEpisodesBySeason((*reinterpret_cast< std::add_pointer_t<int>>(_a[1])));
             if (_a[0]) *reinterpret_cast< QVariantList*>(_a[0]) = std::move(_r); }  break;
-        case 3: _t->resetDatabase(); break;
+        case 3: { QVariantList _r = _t->getRelatedEpisodes((*reinterpret_cast< std::add_pointer_t<int>>(_a[1])));
+            if (_a[0]) *reinterpret_cast< QVariantList*>(_a[0]) = std::move(_r); }  break;
+        case 4: { QVariantList _r = _t->getRelatedCharacters((*reinterpret_cast< std::add_pointer_t<int>>(_a[1])));
+            if (_a[0]) *reinterpret_cast< QVariantList*>(_a[0]) = std::move(_r); }  break;
+        case 5: _t->resetDatabase(); break;
         default: ;
         }
     }
@@ -135,13 +153,13 @@ int DatabaseManager::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 4)
+        if (_id < 6)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 4;
+        _id -= 6;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 4)
+        if (_id < 6)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 4;
+        _id -= 6;
     }
     return _id;
 }
