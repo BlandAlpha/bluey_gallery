@@ -27,8 +27,9 @@ This project is a **School Project**, therefore long-term maintenance is NOT pla
 
 ### To Be Updated:
 
-- [ ] Independent page display for Role and Episode items;
-- [ ] Relational database display;
+- [x] Independent page display for Character and Episode items;
+- [x] Relational database display;
+- [ ] Centered GridView
 - [ ] Adding and editing database entries;
 - [ ] Randomized display of entries on the home page;
 - [ ] Database search;

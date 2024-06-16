@@ -77,12 +77,19 @@
 <context>
     <name>CharacterPage</name>
     <message>
-        <location filename="window/CharacterPage.qml" line="80"/>
+        <source>Edit</source>
+        <translation type="obsolete">编辑</translation>
+    </message>
+</context>
+<context>
+    <name>CharacterWindow</name>
+    <message>
+        <location filename="window/CharacterWindow.qml" line="85"/>
         <source>Seen in these Episodes</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">参演剧集</translation>
     </message>
     <message>
-        <location filename="window/CharacterPage.qml" line="97"/>
+        <location filename="window/CharacterWindow.qml" line="118"/>
         <source>Edit</source>
         <translation type="unfinished">编辑</translation>
     </message>
@@ -105,7 +112,7 @@
     <message>
         <location filename="page/Characters.qml" line="58"/>
         <source>Meet with your best buddies.</source>
-        <translation type="unfinished">见一见你的好兄弟。</translation>
+        <translation type="unfinished">来见一见你的好朋友们。</translation>
     </message>
     <message>
         <source>About</source>
@@ -256,6 +263,19 @@
     </message>
 </context>
 <context>
+    <name>EpisodeWindow</name>
+    <message>
+        <location filename="window/EpisodeWindow.qml" line="98"/>
+        <source>Starring</source>
+        <translation type="unfinished">领衔主演</translation>
+    </message>
+    <message>
+        <location filename="window/EpisodeWindow.qml" line="232"/>
+        <source>Edit</source>
+        <translation type="unfinished">编辑</translation>
+    </message>
+</context>
+<context>
     <name>Episodes</name>
     <message>
         <location filename="page/Episodes.qml" line="77"/>
@@ -268,32 +288,24 @@
         <translation type="unfinished">哪一集是你的心头好？</translation>
     </message>
     <message>
-        <location filename="page/Episodes.qml" line="251"/>
+        <location filename="page/Episodes.qml" line="258"/>
         <source>Season 1</source>
         <translation type="unfinished">第1季</translation>
     </message>
     <message>
-        <location filename="page/Episodes.qml" line="255"/>
-        <location filename="page/Episodes.qml" line="278"/>
-        <location filename="page/Episodes.qml" line="301"/>
+        <location filename="page/Episodes.qml" line="262"/>
+        <location filename="page/Episodes.qml" line="285"/>
+        <location filename="page/Episodes.qml" line="308"/>
         <source>Add Episode</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page/Episodes.qml" line="255"/>
-        <location filename="page/Episodes.qml" line="278"/>
-        <location filename="page/Episodes.qml" line="301"/>
-        <source>Add Episode</source>
-        <oldsource>Add Series</oldsource>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page/Episodes.qml" line="274"/>
+        <location filename="page/Episodes.qml" line="281"/>
         <source>Season 2</source>
         <translation type="unfinished">第2季</translation>
     </message>
     <message>
-        <location filename="page/Episodes.qml" line="297"/>
+        <location filename="page/Episodes.qml" line="304"/>
         <source>Season 3</source>
         <translation type="unfinished">第3季</translation>
     </message>
@@ -373,7 +385,6 @@
     <message>
         <location filename="page/Home.qml" line="99"/>
         <source>Have fun exploring the animated characters, plot descriptions, and more of Bluey.</source>
-        <oldsource>Have fun exploring the animated characters, plot descriptions, and more for Bluey.</oldsource>
         <translation type="unfinished">尽情探索《布鲁伊》的动画角色，剧情介绍等内容。</translation>
     </message>
 </context>
@@ -602,7 +613,6 @@
     <message>
         <location filename="main.qml" line="17"/>
         <source>Bluey Gallery</source>
-        <oldsource>bluey_gallery</oldsource>
         <translation type="unfinished">布鲁伊动画指南</translation>
     </message>
     <message>

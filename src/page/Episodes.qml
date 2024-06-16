@@ -190,7 +190,14 @@ FluScrollablePage{
                     anchors.fill: parent
                     hoverEnabled: true
                     onClicked: {
-                        ItemsOriginal.startPageByItem(modelData)
+                        FluRouter.navigate("/episodeWindow", {
+                                           "id": model.id,
+                                           "title": model.title,
+                                           "desc": model.description,
+                                           "season": model.season,
+                                           "episode": model.episode,
+                                           "image": model.image_path
+                        })
                     }
                 }
             }

@@ -32,8 +32,9 @@ FluLauncher {
         FluTheme.darkMode = SettingsHelper.getDarkMode()
         FluTheme.animationEnabled = true
         FluRouter.routes = {
-            "/":"qrc:/main.qml",
-            "/characterPage":"qrc:/window/CharacterPage.qml"
+            "/": "qrc:/main.qml",
+            "/characterWindow": "qrc:/window/CharacterWindow.qml",
+            "/episodeWindow": "qrc:/window/EpisodeWindow.qml"
         }
         FluRouter.navigate("/")
     }

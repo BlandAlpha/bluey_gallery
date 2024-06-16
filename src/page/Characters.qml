@@ -67,9 +67,13 @@ FluScrollablePage{
     Component {
         id: com_character
         Item {
+            property int id: model.id
+            property string name_zh: model.name_zh
+            property string name_en: model.name_en
+            property string breed: model.breed
             property string desc: model.description
-            property string name: model.name_zh
             property string img: model.image_path
+
             width: 240
             height: 380
             FluFrame {
@@ -116,7 +120,7 @@ FluScrollablePage{
                         spacing: 8
                         FluText {
                             id: item_name
-                            text: name
+                            text: name_zh
                             font: FluTextStyle.Subtitle
                             horizontalAlignment: FluText.AlignHCenter
                             anchors.horizontalCenter: parent.horizontalCenter
@@ -141,7 +145,14 @@ FluScrollablePage{
                     anchors.fill: parent
                     hoverEnabled: true
                     onClicked: {
-                        FluRouter.navigate("/characterPage")
+                        FluRouter.navigate("/characterWindow", {
+                                            "id": model.id,
+                                            "name_zh": model.name_zh,
+                                            "name_en": model.name_en,
+                                            "breed": model.breed,
+                                            "desc": model.description,
+                                            "image": model.image_path
+                        })
                     }
                 }
 
@@ -171,6 +182,5 @@ FluScrollablePage{
     Component.onCompleted: {
         charactersModel.setCharacters(dbManager.getCharacters());
     }
-
 }
 

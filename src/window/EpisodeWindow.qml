@@ -1,0 +1,244 @@
+import QtQuick 2.15
+import QtQuick.Controls 2.15
+import QtQuick.Layouts 1.15
+import FluentUI 1.0
+import DBManager 1.0
+import Characters 1.0
+
+FluWindow {
+    id: window
+    width: 840
+    height: 760
+    minimumWidth: 700
+    minimumHeight: 400
+    title: "剧集详情"
+    launchMode: FluWindowType.Standard
+
+    property var argument: ({})
+
+    DatabaseManager {
+        id: dbManager
+    }
+
+    CharacterModel {
+        id: charactersModel
+    }
+
+
+    ColumnLayout{
+        id: c_layout
+
+        spacing: 24
+
+        anchors{
+            top: parent.top
+            left: parent.left
+            right: parent.right
+            topMargin: 16
+            leftMargin: 16
+            rightMargin: 16
+        }
+
+        FluFrame {
+            id: frame
+            Layout.preferredWidth: parent.width
+            anchors {
+                leftMargin: 12
+                rightMargin: 12
+            }
+            padding: 16
+
+            RowLayout {
+                anchors.left: parent.left
+                spacing: 16
+                Item {
+                    id: backdropContainer
+                    width: 426+16
+                    height: 240+16
+                    FluShadow{
+                        elevation: 6
+                        radius: 8
+                        anchors.fill: cover_image
+                    }
+                    FluClip {
+                        id: cover_image
+                        radius: [8,8,8,8]
+                        width: 426
+                        height: 240
+                        anchors.centerIn: parent
+                        Image {
+                            fillMode: Image.PreserveAspectCrop
+                            source: Qt.resolvedUrl(argument.image)
+                            sourceSize: Qt.size(426, 240)
+                        }
+                    }
+                }
+                ColumnLayout {
+                    Layout.fillWidth: true
+                    spacing: 12
+                    FluText {
+                        text: argument.title
+                        font: FluTextStyle.Title
+                    }
+                    FluText {
+                        text: "第" + argument.season + "季 第" + argument.episode + "集"
+                        font: FluTextStyle.BodyStrong
+                    }
+                    FluText {
+                        Layout.preferredWidth: frame.width - 510
+                        text: "简介：" + argument.desc
+                        font: FluTextStyle.Caption
+                        wrapMode: Text.WordWrap
+                        lineHeight: 1.25
+                    }
+                }
+            }
+        }
+        FluText {
+            text: qsTr("Starring")
+            font: FluTextStyle.Title
+            Layout.leftMargin: 16
+        }
+
+        ListView {
+            id: relateCharactersList
+            model: charactersModel
+            anchors{
+                left: parent.left
+                right: parent.right
+                bottom: parent.bottom
+            }
+            height: 360
+            orientation: ListView.Horizontal
+            header: Item{height: 16;width: 16}
+            footer: Item{height: 16;width: 16}
+            spacing: 24
+            ScrollBar.horizontal: FluScrollBar{
+                id: scrollbar_header
+            }
+            clip: false
+            delegate: com_character
+        }
+
+        Component.onCompleted: {
+            charactersModel.setCharacters(dbManager.getRelatedCharacters(argument.id));
+        }
+
+    }
+
+    // Character Card Component
+    Component {
+        id: com_character
+        Item {
+            property string name_zh: model.name_zh
+            property string name_en: model.name_en
+            property string breed: model.breed
+            property string desc: model.description
+            property string img: model.image_path
+
+            width: 200
+            height: 330
+            FluFrame {
+                radius: 8
+                width: 200
+                height: 330
+                anchors.centerIn: parent
+                Rectangle {
+                    anchors.fill: parent
+                    radius: 8
+                    color: {
+                        if(item_mouse.containsMouse){
+                            return FluTheme.itemHoverColor
+                        }
+                        return FluTheme.itemNormalColor
+                    }
+                }
+                ColumnLayout {
+                    anchors {
+                        top: parent.top
+                        topMargin: 16
+                        left: parent.left
+                        right: parent.right
+                        leftMargin: 16
+                        rightMargin: 16
+                    }
+                    spacing: 24
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    Image {
+                        id:item_avatar
+                        height: 296
+                        width: 128
+                        sourceSize: Qt.size(128, 196)
+                        fillMode: Image.PreserveAspectFit
+                        source: Qt.resolvedUrl(img)
+                        anchors.horizontalCenter: parent.horizontalCenter
+                    }
+                    ColumnLayout{
+                        anchors {
+                            left: parent.left
+                            right: parent.right
+                            horizontalCenter: parent.horizontalCenter
+                        }
+                        spacing: 8
+                        FluText {
+                            id: item_name
+                            text: name_zh
+                            font: FluTextStyle.Subtitle
+                            horizontalAlignment: FluText.AlignHCenter
+                            anchors.horizontalCenter: parent.horizontalCenter
+                        }
+                        FluText{
+                            id:item_desc
+                            text: desc
+                            Layout.preferredWidth: parent.width
+                            Layout.alignment: Qt.AlignHCenter
+                            color:FluColors.Grey120
+                            wrapMode: Text.WordWrap
+                            font: FluTextStyle.Caption
+                            maximumLineCount: 2
+                            elide: Text.ElideRight
+                            lineHeight: 1.2
+                            anchors.horizontalCenter: parent.horizontalCenter
+                        }
+                    }
+                }
+                MouseArea{
+                    id:item_mouse
+                    anchors.fill: parent
+                    hoverEnabled: true
+                    onClicked: {
+                        console.debug("Now transmitting ID:", model.id)
+                        FluRouter.navigate("/characterWindow", {
+                                            "id": model.id,
+                                            "name_zh": model.name_zh,
+                                            "name_en": model.name_en,
+                                            "breed": model.breed,
+                                            "desc": model.description,
+                                            "image": model.image_path
+                        })
+                    }
+                    onWheel:
+                        (wheel)=>{
+                            if (wheel.angleDelta.y > 0) scrollbar_header.decrease()
+                            else scrollbar_header.increase()
+                        }
+                }
+
+            }
+        }
+    }
+
+    FluFilledButton {
+        text: qsTr("Edit")
+        onClicked: {
+            // open edit page，也不管
+        }
+        anchors {
+            top: c_layout.top
+            right: c_layout.right
+            topMargin: 12
+            rightMargin: 12
+        }
+    }
+
+}
