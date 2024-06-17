@@ -857,7 +857,11 @@
 	"dependencies" : 
 	[
 		{
-			"id" : "rcc_object_qml::@145eef247bfb46b6828c"
+			"backtrace" : 0,
+			"id" : "bluey_gallery_autogen::@145eef247bfb46b6828c"
+		},
+		{
+			"id" : "bluey_gallery_autogen_timestamp_deps::@145eef247bfb46b6828c"
 		},
 		{
 			"backtrace" : 6,
@@ -868,15 +872,11 @@
 			"id" : "Script-UpdateTranslations::@145eef247bfb46b6828c"
 		},
 		{
+			"id" : "rcc_object_qml::@145eef247bfb46b6828c"
+		},
+		{
 			"backtrace" : 114,
 			"id" : "bluey_gallery_qmlimportscan::@145eef247bfb46b6828c"
-		},
-		{
-			"backtrace" : 0,
-			"id" : "bluey_gallery_autogen::@145eef247bfb46b6828c"
-		},
-		{
-			"id" : "bluey_gallery_autogen_timestamp_deps::@145eef247bfb46b6828c"
 		}
 	],
 	"id" : "bluey_gallery::@145eef247bfb46b6828c",

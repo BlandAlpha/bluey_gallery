@@ -1,6 +1,7 @@
 import QtQuick 2.15
 import QtQuick.Controls 2.15
 import QtQuick.Layouts 1.15
+import QtQuick.Effects
 import FluentUI 1.0
 import DBManager 1.0
 import Characters 1.0
@@ -52,27 +53,98 @@ FluWindow {
                 anchors.left: parent.left
                 spacing: 16
                 Item {
-                    id: backdropContainer
+                    id: coverContainer
                     width: 426+16
                     height: 240+16
-                    FluShadow{
-                        elevation: 6
-                        radius: 8
-                        anchors.fill: cover_image
+                    y: 0
+
+                    Behavior on y {
+                        PropertyAnimation {
+                            duration: 200
+                            easing.type: Easing.OutQuad
+                        }
                     }
+
+                    Rectangle {
+                        id: shadowHolder
+                        width: 426
+                        height: 240
+                        anchors.centerIn: parent
+                        radius: 8
+                        color: "White"
+                    }
+
+                    MultiEffect {
+                        id: shadow
+                        property real verticalOffset: 2
+                        property real blurAmount: 0.5
+                        property real opacityAmount: 0.2
+
+                        source: shadowHolder
+                        anchors.fill: shadowHolder
+                        shadowEnabled: true
+                        shadowColor: "Black"
+                        shadowBlur: blurAmount
+                        shadowVerticalOffset: verticalOffset
+                        shadowOpacity: opacityAmount
+
+                        Behavior on verticalOffset {
+                            PropertyAnimation {
+                                duration: 200
+                                easing.type: Easing.OutQuad
+                            }
+                        }
+
+                        Behavior on blurAmount {
+                            PropertyAnimation {
+                                duration: 200
+                                easing.type: Easing.OutQuad
+                            }
+                        }
+
+                        Behavior on opacityAmount {
+                            PropertyAnimation {
+                                duration: 200
+                                easing.type: Easing.OutQuad
+                            }
+                        }
+                    }
+
                     FluClip {
                         id: cover_image
                         radius: [8,8,8,8]
                         width: 426
                         height: 240
                         anchors.centerIn: parent
+
                         Image {
                             fillMode: Image.PreserveAspectCrop
                             source: Qt.resolvedUrl(argument.image)
-                            sourceSize: Qt.size(426, 240)
+                            width: 426
+                            height: 240
+                            sourceSize: Qt.size(1280, 720)
+
+                            MouseArea {
+                                anchors.fill: parent
+                                hoverEnabled: true
+                                onEntered: {
+                                    shadow.verticalOffset = 6
+                                    shadow.blurAmount = 1
+                                    shadow.opacityAmount = 0.15
+                                    coverContainer.y = -2
+                                }
+                                onExited: {
+                                    shadow.verticalOffset = 2
+                                    shadow.blurAmount = 0.5
+                                    shadow.opacityAmount = 0.25
+                                    coverContainer.y = 0
+                                }
+                            }
+
                         }
                     }
                 }
+
                 ColumnLayout {
                     Layout.fillWidth: true
                     spacing: 12
@@ -163,12 +235,12 @@ FluWindow {
                         rightMargin: 16
                     }
                     spacing: 24
-                    anchors.horizontalCenter: parent.horizontalCenter
+                    // anchors.horizontalCenter: parent.horizontalCenter
                     Image {
                         id:item_avatar
-                        height: 296
-                        width: 128
-                        sourceSize: Qt.size(128, 196)
+                        Layout.preferredHeight: 200
+                        Layout.preferredWidth: 128
+                        sourceSize: Qt.size(300, 464)
                         fillMode: Image.PreserveAspectFit
                         source: Qt.resolvedUrl(img)
                         anchors.horizontalCenter: parent.horizontalCenter

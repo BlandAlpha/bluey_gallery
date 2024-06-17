@@ -84,12 +84,12 @@
 <context>
     <name>CharacterWindow</name>
     <message>
-        <location filename="window/CharacterWindow.qml" line="85"/>
+        <location filename="window/CharacterWindow.qml" line="88"/>
         <source>Seen in these Episodes</source>
         <translation type="unfinished">参演剧集</translation>
     </message>
     <message>
-        <location filename="window/CharacterWindow.qml" line="118"/>
+        <location filename="window/CharacterWindow.qml" line="121"/>
         <source>Edit</source>
         <translation type="unfinished">编辑</translation>
     </message>
@@ -265,12 +265,12 @@
 <context>
     <name>EpisodeWindow</name>
     <message>
-        <location filename="window/EpisodeWindow.qml" line="98"/>
+        <location filename="window/EpisodeWindow.qml" line="170"/>
         <source>Starring</source>
         <translation type="unfinished">领衔主演</translation>
     </message>
     <message>
-        <location filename="window/EpisodeWindow.qml" line="232"/>
+        <location filename="window/EpisodeWindow.qml" line="304"/>
         <source>Edit</source>
         <translation type="unfinished">编辑</translation>
     </message>
@@ -288,24 +288,24 @@
         <translation type="unfinished">哪一集是你的心头好？</translation>
     </message>
     <message>
-        <location filename="page/Episodes.qml" line="258"/>
+        <location filename="page/Episodes.qml" line="250"/>
         <source>Season 1</source>
         <translation type="unfinished">第1季</translation>
     </message>
     <message>
-        <location filename="page/Episodes.qml" line="262"/>
-        <location filename="page/Episodes.qml" line="285"/>
-        <location filename="page/Episodes.qml" line="308"/>
+        <location filename="page/Episodes.qml" line="254"/>
+        <location filename="page/Episodes.qml" line="277"/>
+        <location filename="page/Episodes.qml" line="300"/>
         <source>Add Episode</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page/Episodes.qml" line="281"/>
+        <location filename="page/Episodes.qml" line="273"/>
         <source>Season 2</source>
         <translation type="unfinished">第2季</translation>
     </message>
     <message>
-        <location filename="page/Episodes.qml" line="304"/>
+        <location filename="page/Episodes.qml" line="296"/>
         <source>Season 3</source>
         <translation type="unfinished">第3季</translation>
     </message>
@@ -553,57 +553,57 @@
         <translation type="obsolete">关于</translation>
     </message>
     <message>
-        <location filename="page/Show.qml" line="11"/>
+        <location filename="page/Show.qml" line="12"/>
         <source>About The Show</source>
         <translation type="unfinished">关于节目</translation>
     </message>
     <message>
-        <location filename="page/Show.qml" line="16"/>
+        <location filename="page/Show.qml" line="17"/>
         <source>Redirecting</source>
         <translation type="unfinished">重定向</translation>
     </message>
     <message>
-        <location filename="page/Show.qml" line="17"/>
+        <location filename="page/Show.qml" line="18"/>
         <source>You are about to be redirected to your browser.</source>
         <translation type="unfinished">您即将被重定向到浏览器</translation>
     </message>
     <message>
-        <location filename="page/Show.qml" line="19"/>
+        <location filename="page/Show.qml" line="20"/>
         <source>OK</source>
         <translation type="unfinished">好的</translation>
     </message>
     <message>
-        <location filename="page/Show.qml" line="20"/>
+        <location filename="page/Show.qml" line="21"/>
         <source>Cancel</source>
         <translation type="unfinished">取消</translation>
     </message>
     <message>
-        <location filename="page/Show.qml" line="73"/>
+        <location filename="page/Show.qml" line="140"/>
         <source>Bluey (2018)</source>
         <translation type="unfinished">布鲁伊 (2018)</translation>
     </message>
     <message>
-        <location filename="page/Show.qml" line="77"/>
+        <location filename="page/Show.qml" line="144"/>
         <source>Watch Online</source>
         <translation type="unfinished">在线观看</translation>
     </message>
     <message>
-        <location filename="page/Show.qml" line="85"/>
+        <location filename="page/Show.qml" line="152"/>
         <source>Label: Animation, Kids, Comedy</source>
         <translation type="unfinished">标签：动画、儿童、戏剧</translation>
     </message>
     <message>
-        <location filename="page/Show.qml" line="97"/>
+        <location filename="page/Show.qml" line="164"/>
         <source>Overview</source>
         <translation type="unfinished">简介</translation>
     </message>
     <message>
-        <location filename="page/Show.qml" line="102"/>
+        <location filename="page/Show.qml" line="169"/>
         <source>Bluey is an inexhaustible six year-old Blue Heeler dog, who loves to play and turns everyday family life into extraordinary adventures, developing her imagination as well as her mental, physical and emotional resilience.</source>
         <translation type="unfinished">这部以趣味真挚的方式描绘现代家庭生活的动画片，赞扬了富有想象力的游戏是如何帮助孩子健康成长的。6岁的蓝色澳大利亚牧牛犬布鲁伊有着无穷无尽的想象力，热衷于将日常生活转变为调皮冒险。她和妹妹宾果致力于探索自己的世界，用游戏来克服她们的恐惧，并且尝试扮演成年人的角色。她们喜欢把父母（尤其是爸爸）拉进她们的游戏中。妈妈奇莉回归工作了，而爸爸班底特一边照顾孩子一边在家工作。虽然他可能以为自己能做主，但是女儿们绝对掌控了游戏时间——以及几乎所有其他的事情！</translation>
     </message>
     <message>
-        <location filename="page/Show.qml" line="112"/>
+        <location filename="page/Show.qml" line="179"/>
         <source>Production</source>
         <translation type="unfinished">制作公司</translation>
     </message>

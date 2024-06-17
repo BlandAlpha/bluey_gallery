@@ -53,7 +53,10 @@ FluWindow {
                 Image {
                     id: avatar
                     source: Qt.resolvedUrl(argument.image)
-                    sourceSize: Qt.size(200, 310)
+                    sourceSize: Qt.size(300, 464)
+                    Layout.preferredHeight: 310
+                    Layout.preferredWidth: 200
+                    fillMode: Image.PreserveAspectFit
                 }
 
                 ColumnLayout {
@@ -146,19 +149,13 @@ FluWindow {
             width: frameWidth
             height: frameHeight
             // clip: true
-            FluShadow{
-                property int shadow: 4
-                id: cardShadow
-                radius: 8
-                elevation: {
-                    if(item_mouse.containsMouse){
-                        return shadow+2
-                    }
-                    return shadow
-                }
+            // FluShadow{
+            //     id: cardShadow1
+            //     radius: 8
+            //     elevation: 2
 
-                anchors.fill: item_card
-            }
+            //     anchors.fill: item_card
+            // }
             FluFrame {
                 id: item_card
                 radius: 8
@@ -180,15 +177,17 @@ FluWindow {
                     anchors.fill: parent
                     FluClip{
                         id:item_screenshot
-                        radius: [7,0,0,7]
+                        radius: [8,0,0,8]
                         width: imageWidth
                         height: imageHeight
                         anchors.left: parent.left
                         anchors.verticalCenter: parent.verticalCenter
                         Image {
-                            sourceSize: Qt.size(imageWidth, imageHeight)
+                            sourceSize: Qt.size(1280, 720)
                             fillMode: Image.PreserveAspectCrop
                             source: Qt.resolvedUrl(img)
+                            width: imageWidth
+                            height: imageHeight
                         }
                     }
 

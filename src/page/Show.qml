@@ -2,6 +2,7 @@ import QtQuick 2.15
 import QtQuick.Layouts 1.15
 import QtQuick.Window 2.15
 import QtQuick.Controls 2.15
+import QtQuick.Effects
 import FluentUI 1.0
 import "../component"
 import "../global"
@@ -34,26 +35,92 @@ FluScrollablePage{
             anchors.top: parent.top
             spacing: 24
 
-            Item{
-                // anchors.top: parent.top
-                id: posterCard
-                width: 240+8
-                height: 360+8
-                FluShadow{
-                    radius: 16
-                    elevation: 8
-                    anchors.fill: item_content
+            Item {
+                id: coverContainer
+                width: 240
+                height: 360
+                y: 0
+
+                Behavior on y {
+                    PropertyAnimation {
+                        duration: 200
+                        easing.type: Easing.OutQuad
+                    }
                 }
-                FluClip{
-                    id: item_content
-                    radius: [16,16,16,16]
+
+                Rectangle {
+                    id: shadowHolder
                     width: 240
                     height: 360
-                    Image{
-                        asynchronous: true
+                    anchors.centerIn: parent
+                    radius: 12
+                    color: "White"
+                }
+
+                MultiEffect {
+                    id: shadow
+                    property real verticalOffset: 2
+                    property real blurAmount: 0.75
+                    property real opacityAmount: 0.25
+
+                    source: shadowHolder
+                    anchors.fill: shadowHolder
+                    shadowEnabled: true
+                    shadowColor: "Black"
+                    shadowBlur: blurAmount
+                    shadowVerticalOffset: verticalOffset
+                    shadowOpacity: opacityAmount
+
+                    Behavior on verticalOffset {
+                        PropertyAnimation {
+                            duration: 200
+                            easing.type: Easing.OutQuad
+                        }
+                    }
+
+                    Behavior on blurAmount {
+                        PropertyAnimation {
+                            duration: 200
+                            easing.type: Easing.OutQuad
+                        }
+                    }
+
+                    Behavior on opacityAmount {
+                        PropertyAnimation {
+                            duration: 200
+                            easing.type: Easing.OutQuad
+                        }
+                    }
+                }
+
+                FluClip {
+                    id: item_content
+                    radius: [12,12,12,12]
+                    width: 240
+                    height: 360
+
+                    Image {
                         anchors.fill: parent
                         source: "qrc:/res/img/poster.jpg"
-                        sourceSize: Qt.size(width,height)
+                        sourceSize: Qt.size(width*2,height*2)
+
+                        MouseArea {
+                            anchors.fill: parent
+                            hoverEnabled: true
+                            onEntered: {
+                                shadow.verticalOffset = 6
+                                shadow.blurAmount = 1.2
+                                shadow.opacityAmount = 0.1
+                                coverContainer.y = -2
+                            }
+                            onExited: {
+                                shadow.verticalOffset = 2
+                                shadow.blurAmount = 0.75
+                                shadow.opacityAmount = 0.2
+                                coverContainer.y = 0
+                            }
+                        }
+
                     }
                 }
             }

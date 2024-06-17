@@ -3495,7 +3495,7 @@ build src/.qt/qml_imports/bluey_gallery_build.cmake | ${cmake_ninja_workdir}src/
 #############################################
 # Phony custom command for src\CMakeFiles\bluey_gallery_autogen_timestamp_deps
 
-build src/CMakeFiles/bluey_gallery_autogen_timestamp_deps | ${cmake_ninja_workdir}src/CMakeFiles/bluey_gallery_autogen_timestamp_deps: phony D$:/Qt/6.7.1/mingw_64/./bin/moc.exe D$:/Qt/6.7.1/mingw_64/lib/libQt6Quick.a D$:/Qt/6.7.1/mingw_64/lib/libQt6Sql.a D$:/Qt/6.7.1/mingw_64/qml/FluentUI/fluentuiplugin.dll || D$:/Qt/6.7.1/mingw_64/qml/FluentUI/fluentuiplugin.dll FluentUI/fluentuiplugin_autogen FluentUI/fluentuiplugin_autogen_timestamp_deps FluentUI/fluentuiplugin_tooling
+build src/CMakeFiles/bluey_gallery_autogen_timestamp_deps | ${cmake_ninja_workdir}src/CMakeFiles/bluey_gallery_autogen_timestamp_deps: phony D$:/Qt/6.7.1/mingw_64/./bin/moc.exe D$:/Qt/6.7.1/mingw_64/qml/FluentUI/fluentuiplugin.dll D$:/Qt/6.7.1/mingw_64/lib/libQt6Quick.a D$:/Qt/6.7.1/mingw_64/lib/libQt6Sql.a || D$:/Qt/6.7.1/mingw_64/qml/FluentUI/fluentuiplugin.dll FluentUI/fluentuiplugin_autogen FluentUI/fluentuiplugin_autogen_timestamp_deps FluentUI/fluentuiplugin_tooling
 
 
 #############################################

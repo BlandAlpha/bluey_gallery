@@ -38,12 +38,12 @@
 <context>
     <name>CharacterWindow</name>
     <message>
-        <location filename="window/CharacterWindow.qml" line="85"/>
+        <location filename="window/CharacterWindow.qml" line="88"/>
         <source>Seen in these Episodes</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="window/CharacterWindow.qml" line="118"/>
+        <location filename="window/CharacterWindow.qml" line="121"/>
         <source>Edit</source>
         <translation type="unfinished"></translation>
     </message>
@@ -192,12 +192,12 @@
 <context>
     <name>EpisodeWindow</name>
     <message>
-        <location filename="window/EpisodeWindow.qml" line="98"/>
+        <location filename="window/EpisodeWindow.qml" line="170"/>
         <source>Starring</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="window/EpisodeWindow.qml" line="232"/>
+        <location filename="window/EpisodeWindow.qml" line="304"/>
         <source>Edit</source>
         <translation type="unfinished"></translation>
     </message>
@@ -215,24 +215,24 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page/Episodes.qml" line="258"/>
+        <location filename="page/Episodes.qml" line="250"/>
         <source>Season 1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page/Episodes.qml" line="262"/>
-        <location filename="page/Episodes.qml" line="285"/>
-        <location filename="page/Episodes.qml" line="308"/>
+        <location filename="page/Episodes.qml" line="254"/>
+        <location filename="page/Episodes.qml" line="277"/>
+        <location filename="page/Episodes.qml" line="300"/>
         <source>Add Episode</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page/Episodes.qml" line="281"/>
+        <location filename="page/Episodes.qml" line="273"/>
         <source>Season 2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page/Episodes.qml" line="304"/>
+        <location filename="page/Episodes.qml" line="296"/>
         <source>Season 3</source>
         <translation type="unfinished"></translation>
     </message>
@@ -431,57 +431,57 @@
 <context>
     <name>Show</name>
     <message>
-        <location filename="page/Show.qml" line="11"/>
+        <location filename="page/Show.qml" line="12"/>
         <source>About The Show</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page/Show.qml" line="16"/>
+        <location filename="page/Show.qml" line="17"/>
         <source>Redirecting</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page/Show.qml" line="17"/>
+        <location filename="page/Show.qml" line="18"/>
         <source>You are about to be redirected to your browser.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page/Show.qml" line="19"/>
+        <location filename="page/Show.qml" line="20"/>
         <source>OK</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page/Show.qml" line="20"/>
+        <location filename="page/Show.qml" line="21"/>
         <source>Cancel</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page/Show.qml" line="73"/>
+        <location filename="page/Show.qml" line="140"/>
         <source>Bluey (2018)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page/Show.qml" line="77"/>
+        <location filename="page/Show.qml" line="144"/>
         <source>Watch Online</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page/Show.qml" line="85"/>
+        <location filename="page/Show.qml" line="152"/>
         <source>Label: Animation, Kids, Comedy</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page/Show.qml" line="97"/>
+        <location filename="page/Show.qml" line="164"/>
         <source>Overview</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page/Show.qml" line="102"/>
+        <location filename="page/Show.qml" line="169"/>
         <source>Bluey is an inexhaustible six year-old Blue Heeler dog, who loves to play and turns everyday family life into extraordinary adventures, developing her imagination as well as her mental, physical and emotional resilience.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page/Show.qml" line="112"/>
+        <location filename="page/Show.qml" line="179"/>
         <source>Production</source>
         <translation type="unfinished"></translation>
     </message>

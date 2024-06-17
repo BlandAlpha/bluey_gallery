@@ -101,12 +101,14 @@ FluScrollablePage{
                         rightMargin: 24
                     }
                     spacing: 24
-                    anchors.horizontalCenter: parent.horizontalCenter
+                    // anchors.horizontalCenter: parent.horizontalCenter
                     Image {
                         id:item_avatar
-                        height: 232
-                        width: 150
-                        sourceSize: Qt.size(150, 232)
+                        // height: 232
+                        // width: 150
+                        Layout.preferredHeight: 232
+                        Layout.preferredWidth: 150
+                        sourceSize: Qt.size(300, 464)
                         fillMode: Image.PreserveAspectFit
                         source: Qt.resolvedUrl(img)
                         anchors.horizontalCenter: parent.horizontalCenter

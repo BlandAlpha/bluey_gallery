@@ -166,14 +166,14 @@
 				{
 					"directoryIndex" : 2,
 					"id" : "bluey_gallery::@145eef247bfb46b6828c",
-					"jsonFile" : "target-bluey_gallery-Debug-5bf6f63ea50f8521c58b.json",
+					"jsonFile" : "target-bluey_gallery-Debug-b625a5e5fab3cfff9adb.json",
 					"name" : "bluey_gallery",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 2,
 					"id" : "bluey_gallery_autogen::@145eef247bfb46b6828c",
-					"jsonFile" : "target-bluey_gallery_autogen-Debug-381ef48dcf54e6fefc30.json",
+					"jsonFile" : "target-bluey_gallery_autogen-Debug-6c16fdf733ac8233f119.json",
 					"name" : "bluey_gallery_autogen",
 					"projectIndex" : 0
 				},
@@ -194,14 +194,14 @@
 				{
 					"directoryIndex" : 1,
 					"id" : "fluentuiplugin::@7366c80dbef1255836ce",
-					"jsonFile" : "target-fluentuiplugin-Debug-90e182be9efd2d244314.json",
+					"jsonFile" : "target-fluentuiplugin-Debug-6928ab0194915dcc9927.json",
 					"name" : "fluentuiplugin",
 					"projectIndex" : 1
 				},
 				{
 					"directoryIndex" : 1,
 					"id" : "fluentuiplugin_autogen::@7366c80dbef1255836ce",
-					"jsonFile" : "target-fluentuiplugin_autogen-Debug-0ac184757ef5476e085b.json",
+					"jsonFile" : "target-fluentuiplugin_autogen-Debug-af797e7661d09d11135a.json",
 					"name" : "fluentuiplugin_autogen",
 					"projectIndex" : 1
 				},

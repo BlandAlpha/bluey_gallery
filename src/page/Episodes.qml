@@ -102,23 +102,13 @@ FluScrollablePage{
             width: frameWidth
             height: frameHeight
             // clip: true
-            FluShadow{
-                property int shadow: 4
-                id: cardShadow
-                radius: 8
-                elevation: {
-                    if(item_mouse.containsMouse){
-                        return shadow+2
-                    }
-                    return shadow
-                }
-                // NumberAnimation {
-                //     target: cardShadow
-                //     properties: ""
-                // }
-
-                anchors.fill: item_card
-            }
+            // FluShadow{
+            //     property int shadow: 4
+            //     id: cardShadow
+            //     radius: 8
+            //     elevation: 2
+            //     anchors.fill: item_card
+            // }
             FluFrame {
                 id: item_card
                 radius: 8
@@ -140,15 +130,17 @@ FluScrollablePage{
                     anchors.fill: parent
                     FluClip{
                         id:item_screenshot
-                        radius: [7,0,0,7]
+                        radius: [8,0,0,8]
                         width: imageWidth
                         height: imageHeight
                         anchors.left: parent.left
                         anchors.verticalCenter: parent.verticalCenter
                         Image {
-                            sourceSize: Qt.size(imageWidth, imageHeight)
-                            fillMode: Image.PreserveAspectCrop
+                            sourceSize: Qt.size(1280, 720)
+                            fillMode: Image.PreserveAspectFit
                             source: Qt.resolvedUrl(img)
+                            width: imageWidth
+                            height: imageHeight
                         }
                     }
 
