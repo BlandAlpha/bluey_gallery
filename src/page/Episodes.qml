@@ -84,7 +84,7 @@ FluScrollablePage{
         }
     }
 
-    property int frameHeight: 142
+    property int frameHeight: 128
     property int frameWidth: 520
     property real aspectRatio: 16 / 9
     property int imageHeight: frameHeight
@@ -101,14 +101,6 @@ FluScrollablePage{
             property string img: model.image_path
             width: frameWidth
             height: frameHeight
-            // clip: true
-            // FluShadow{
-            //     property int shadow: 4
-            //     id: cardShadow
-            //     radius: 8
-            //     elevation: 2
-            //     anchors.fill: item_card
-            // }
             FluFrame {
                 id: item_card
                 radius: 8
@@ -258,8 +250,8 @@ FluScrollablePage{
             Layout.fillWidth: true
             Layout.preferredHeight: contentHeight
             Layout.topMargin: 16
-            cellHeight: frameHeight + 24
-            cellWidth: frameWidth + 24
+            cellHeight: frameHeight + 12
+            cellWidth: frameWidth + 12
             model: season1Model
             interactive: false
             delegate: com_episode
@@ -281,8 +273,8 @@ FluScrollablePage{
             Layout.fillWidth: true
             Layout.preferredHeight: contentHeight
             Layout.topMargin: 16
-            cellHeight: frameHeight + 24
-            cellWidth: frameWidth + 24
+            cellHeight: frameHeight + 12
+            cellWidth: frameWidth + 12
             model: season2Model
             interactive: false
             delegate: com_episode
@@ -304,8 +296,8 @@ FluScrollablePage{
             Layout.fillWidth: true
             Layout.preferredHeight: contentHeight
             Layout.topMargin: 16
-            cellHeight: frameHeight + 24
-            cellWidth: frameWidth + 24
+            cellHeight: frameHeight + 16
+            cellWidth: frameWidth + 16
             model: season3Model
             interactive: false
             delegate: com_episode

@@ -25,11 +25,13 @@ This project is a **School Project**, therefore long-term maintenance is NOT pla
 2. **Card Component** display of the database content, in line with the reading habits, catch the eye;
 3. Software support **Chinese and English switching** (the database itself contains only Chinese);
 
-### To Be Updated:
+### Roadmap:
 
+- [ ] **[PRIORITY]** Adding and editing database entries;
+- [ ] Restore original database;
+- [ ] Creator's commentary (Show page)
+- [ ] *[optiopnal]* Database search;
+- [x] Randomized display of entries on the home page;
 - [x] Independent page display for Character and Episode items;
 - [x] Relational database display;
-- [ ] Centered GridView
-- [ ] Adding and editing database entries;
-- [ ] Randomized display of entries on the home page;
-- [ ] Database search;
+

@@ -3,6 +3,9 @@ import QtQuick.Layouts 1.15
 import QtQuick.Window 2.15
 import QtQuick.Controls 2.15
 import FluentUI 1.0
+import DBManager 1.0
+import Characters 1.0
+import Episodes 1.0
 import "../window"
 import "../global"
 
@@ -11,11 +14,25 @@ FluScrollablePage{
     launchMode: FluPageType.SingleTask
     header: Item{}
 
+    DatabaseManager {
+        id: dbManager
+    }
+
+    EpisodeModel {
+        id: episodesModel
+    }
+
+    CharacterModel {
+        id: charactersModel
+    }
+
     property int cardWidth: 180
-    property int cardMargin: 40
-    property int cardPadding: 16
     property int cardHeight: 240
     property int cardBorderRadius: 8
+
+    // Random Recommendation Numbers
+    property int randomCharacters: 5
+    property int randomEpisodes: 6
 
     ListModel{
         id: model_header
@@ -56,6 +73,7 @@ FluScrollablePage{
             }
         }
     }
+
     Item{
         Layout.fillWidth: true
         Layout.preferredHeight: 480
@@ -77,6 +95,7 @@ FluScrollablePage{
             }
         }
 
+        // Main Text
         ColumnLayout{
             spacing: 4
             anchors{
@@ -107,7 +126,7 @@ FluScrollablePage{
             id:com_grallery
             Item{
                 id: control
-                width: cardWidth + cardMargin
+                width: cardWidth
                 height: cardHeight
                 FluShadow{
                     radius: 8
@@ -142,9 +161,11 @@ FluScrollablePage{
                         visible: !item_mouse.containsMouse
                     }
                     ColumnLayout{
+                        width: parent.width - 32
+                        anchors.horizontalCenter: parent.horizontalCenter
                         Image {
                             Layout.topMargin: 24
-                            Layout.leftMargin: 16
+                            // Layout.leftMargin: 16
                             Layout.preferredWidth: 56
                             Layout.preferredHeight: 56
                             source: model.icon
@@ -153,13 +174,13 @@ FluScrollablePage{
                             text: model.title
                             font.pixelSize: 24
                             Layout.topMargin: 24
-                            Layout.leftMargin: 16
+                            // Layout.leftMargin: 16
                         }
                         FluText{
                             text: model.desc
                             Layout.topMargin: 6
-                            Layout.preferredWidth: cardWidth - 2 * cardPadding
-                            Layout.leftMargin: 16
+                            Layout.fillWidth: true
+                            // Layout.leftMargin: 16
                             color: FluColors.Grey140
                             font.pixelSize: 12
                             font.family: FluTextStyle.family
@@ -191,9 +212,11 @@ FluScrollablePage{
                 left: parent.left
                 right: parent.right
                 bottom: parent.bottom
+                leftMargin: 24
             }
             orientation: ListView.Horizontal
-            height: 240
+            height: cardHeight
+            spacing: 32
             model: model_header
             header: Item{height: 8;width: 8}
             footer: Item{height: 8;width: 8}
@@ -290,21 +313,24 @@ FluScrollablePage{
         }
     }
 
-    FluText{
+    FluText {
         text: qsTr("Explore Characters")
         font: FluTextStyle.Title
-        Layout.topMargin: 24
+        Layout.topMargin: 48
         Layout.leftMargin: 24
     }
 
-    GridView{
+    GridView {
+        id: charactersCards
         Layout.fillWidth: true
         Layout.preferredHeight: contentHeight
-        cellHeight: 120
-        cellWidth: 320
-        // model: getRandomCharacterData()
+        Layout.topMargin: 16
+        Layout.leftMargin: 24
+        cellHeight: characterCardHeight+12
+        cellWidth: characterCardWidth+12
+        model: charactersModel
         interactive: false
-        delegate: com_item
+        delegate: com_character
     }
 
     FluText{
@@ -317,12 +343,223 @@ FluScrollablePage{
     GridView{
         Layout.fillWidth: true
         Layout.preferredHeight: contentHeight
-        cellHeight: 120
-        cellWidth: 320
+        Layout.topMargin: 16
+        Layout.leftMargin: 24
+        cellHeight: frameHeight + 16
+        cellWidth: frameWidth + 16
         interactive: false
-        // model: getRandomSeriesData()
-        delegate: com_item
+        model: episodesModel
+        delegate: com_episode
     }
+
+    property int characterCardHeight: 330
+    property int characterCardWidth: 200
+    // Character Card Component
+    Component {
+        id: com_character
+        Item {
+            property string name_zh: model.name_zh
+            property string name_en: model.name_en
+            property string breed: model.breed
+            property string desc: model.description
+            property string img: model.image_path
+
+            width: characterCardWidth
+            height: characterCardHeight
+            FluFrame {
+                radius: 8
+                width: characterCardWidth
+                height: characterCardHeight
+                anchors.centerIn: parent
+                Rectangle {
+                    anchors.fill: parent
+                    radius: 8
+                    color: {
+                        if(item_mouse.containsMouse){
+                            return FluTheme.itemHoverColor
+                        }
+                        return FluTheme.itemNormalColor
+                    }
+                }
+                ColumnLayout {
+                    anchors {
+                        top: parent.top
+                        topMargin: 16
+                        left: parent.left
+                        right: parent.right
+                        leftMargin: 16
+                        rightMargin: 16
+                    }
+                    spacing: 24
+                    // anchors.horizontalCenter: parent.horizontalCenter
+                    Image {
+                        id:item_avatar
+                        Layout.preferredHeight: 200
+                        Layout.preferredWidth: 128
+                        sourceSize: Qt.size(300, 464)
+                        fillMode: Image.PreserveAspectFit
+                        source: Qt.resolvedUrl(img)
+                        anchors.horizontalCenter: parent.horizontalCenter
+                    }
+                    ColumnLayout{
+                        anchors {
+                            left: parent.left
+                            right: parent.right
+                            horizontalCenter: parent.horizontalCenter
+                        }
+                        spacing: 8
+                        FluText {
+                            id: item_name
+                            text: name_zh
+                            font: FluTextStyle.Subtitle
+                            horizontalAlignment: FluText.AlignHCenter
+                            anchors.horizontalCenter: parent.horizontalCenter
+                        }
+                        FluText{
+                            id:item_desc
+                            text: desc
+                            Layout.preferredWidth: parent.width
+                            Layout.alignment: Qt.AlignHCenter
+                            color:FluColors.Grey120
+                            wrapMode: Text.WordWrap
+                            font: FluTextStyle.Caption
+                            maximumLineCount: 2
+                            elide: Text.ElideRight
+                            lineHeight: 1.2
+                            anchors.horizontalCenter: parent.horizontalCenter
+                        }
+                    }
+                }
+                MouseArea{
+                    id:item_mouse
+                    anchors.fill: parent
+                    hoverEnabled: true
+                    onClicked: {
+                        console.debug("Now transmitting ID:", model.id)
+                        FluRouter.navigate("/characterWindow", {
+                                            "id": model.id,
+                                            "name_zh": model.name_zh,
+                                            "name_en": model.name_en,
+                                            "breed": model.breed,
+                                            "desc": model.description,
+                                            "image": model.image_path
+                        })
+                    }
+                }
+
+            }
+        }
+    }
+
+    property int frameHeight: 120
+    property int frameWidth: 500
+    property real aspectRatio: 16 / 9
+    property int imageHeight: frameHeight
+    property int imageWidth: Math.round(imageHeight * aspectRatio)
+    // Episode Card Component
+    Component {
+        id: com_episode
+        Item {
+            property string title: model.title
+            property string desc: model.description
+            property int season: model.season
+            property int episode: model.episode
+            property string img: model.image_path
+            width: frameWidth
+            height: frameHeight
+            FluFrame {
+                id: item_card
+                radius: 8
+                width: frameWidth
+                height: frameHeight
+                anchors.centerIn: parent
+                clip: true
+                Rectangle {
+                    anchors.fill: parent
+                    radius: 8
+                    color: {
+                        if(item_mouse.containsMouse){
+                            return FluTheme.itemHoverColor
+                        }
+                        return FluTheme.itemNormalColor
+                    }
+                }
+                RowLayout {
+                    anchors.fill: parent
+                    FluClip{
+                        id:item_screenshot
+                        radius: [8,0,0,8]
+                        width: imageWidth
+                        height: imageHeight
+                        anchors.left: parent.left
+                        anchors.verticalCenter: parent.verticalCenter
+                        Image {
+                            sourceSize: Qt.size(1280, 720)
+                            fillMode: Image.PreserveAspectFit
+                            source: Qt.resolvedUrl(img)
+                            width: imageWidth
+                            height: imageHeight
+                        }
+                    }
+
+                    Column {
+                        anchors {
+                            left: item_screenshot.right
+                            leftMargin: 12
+                            horizontalCenter: parent.horizontalCenter
+                        }
+                        spacing: 6
+                        FluText {
+                            id: item_title
+                            text: title
+                            font: FluTextStyle.Subtitle
+                        }
+                        FluText {
+                            id:item_se
+                            text: "第" + season + "季，第" + episode + "集"
+                            // text: season + episode
+                            font: FluTextStyle.Body
+                            color: FluColors.Grey120
+                        }
+
+                        FluText{
+                            id:item_desc
+                            text: desc
+                            width: frameWidth - imageWidth - 24
+                            color:FluColors.Grey120
+                            wrapMode: Text.WordWrap
+                            font: FluTextStyle.Caption
+                            maximumLineCount: 2
+                            elide: Text.ElideRight
+                            lineHeight: 1.125
+                        }
+                    }
+                }
+                MouseArea{
+                    id:item_mouse
+                    anchors.fill: parent
+                    hoverEnabled: true
+                    onClicked: {
+                        FluRouter.navigate("/episodeWindow", {
+                                           "id": model.id,
+                                           "title": model.title,
+                                           "desc": model.description,
+                                           "season": model.season,
+                                           "episode": model.episode,
+                                           "image": model.image_path
+                        })
+                    }
+                }
+            }
+        }
+    }
+
+    Component.onCompleted: {
+        charactersModel.setCharacters(dbManager.getRandomCharacters(randomCharacters));
+        episodesModel.setEpisodes(dbManager.getRandomEpisodes(randomEpisodes));
+    }
+
+
 
 }
 

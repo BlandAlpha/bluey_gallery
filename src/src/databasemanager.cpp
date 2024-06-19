@@ -131,7 +131,6 @@ QVariantList DatabaseManager::getEpisodesBySeason(int season) {
         episode["description"] = query.value("Description");
         episode["image_path"] = query.value("ImagePath");
         episodes.append(episode);
-        // qDebug() << "Now getting:" << episode["title"];
     }
     // qDebug() << "---Episodes Done---";
     return episodes;
@@ -217,9 +216,74 @@ QVariantList DatabaseManager::getRelatedCharacters(int episodeId) {
         character["description"] = query.value("Description");
         character["image_path"] = query.value("ImagePath");
         characters.append(character);
-        // qDebug() << "Now getting:" << character["name_en"];
     }
-    // qDebug() << "---Characters Done---";
     return characters;
 }
+
+// Random Function
+
+QVariantList DatabaseManager::getRandomCharacters(int limit) {
+    QVariantList characters;
+
+    if (!m_db.isOpen()) {
+        qDebug() << "Database is not open!";
+        return characters;
+    }
+
+    QSqlQuery query;
+    query.prepare("SELECT * FROM Characters ORDER BY RANDOM() LIMIT :limit");
+    query.bindValue(":limit", limit);
+
+    if (!query.exec()) {
+        qDebug() << "Query execution failed:" << query.lastError().text();
+        return characters;
+    }
+
+    while (query.next()) {
+        QVariantMap character;
+        character["id"] = query.value("ID");
+        character["name_en"] = query.value("Name_en");
+        character["name_zh"] = query.value("Name_zh");
+        character["breed"] = query.value("Breed");
+        character["description"] = query.value("Description");
+        character["image_path"] = query.value("ImagePath");
+        characters.append(character);
+        qDebug() << "Now getting:" << character["name_en"];
+    }
+
+    return characters;
+}
+
+QVariantList DatabaseManager::getRandomEpisodes(int limit) {
+    QVariantList episodes;
+
+    if (!m_db.isOpen()) {
+        qDebug() << "Database is not open!";
+        return episodes;
+    }
+
+    QSqlQuery query;
+    query.prepare("SELECT * FROM Episodes ORDER BY RANDOM() LIMIT :limit");
+    query.bindValue(":limit", limit);
+
+    if (!query.exec()) {
+        qDebug() << "Query execution failed:" << query.lastError().text();
+        return episodes;
+    }
+
+    while (query.next()) {
+        QVariantMap episode;
+        episode["id"] = query.value("ID");
+        episode["season"] = query.value("Season");
+        episode["episode"] = query.value("Episode");
+        episode["title"] = query.value("Title");
+        episode["description"] = query.value("Description");
+        episode["image_path"] = query.value("ImagePath");
+        episodes.append(episode);
+        qDebug() << "Now getting:" << episode["title"];
+    }
+
+    return episodes;
+}
+
 

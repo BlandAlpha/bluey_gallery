@@ -184,7 +184,7 @@ FluWindow {
             orientation: ListView.Horizontal
             header: Item{height: 16;width: 16}
             footer: Item{height: 16;width: 16}
-            spacing: 24
+            spacing: 12
             ScrollBar.horizontal: FluScrollBar{
                 id: scrollbar_header
             }
@@ -198,6 +198,8 @@ FluWindow {
 
     }
 
+    property int cardHeight: 330
+    property int cardWidth: 200
     // Character Card Component
     Component {
         id: com_character
@@ -208,12 +210,12 @@ FluWindow {
             property string desc: model.description
             property string img: model.image_path
 
-            width: 200
-            height: 330
+            width: cardWidth
+            height: cardHeight
             FluFrame {
                 radius: 8
-                width: 200
-                height: 330
+                width: cardWidth
+                height: cardHeight
                 anchors.centerIn: parent
                 Rectangle {
                     anchors.fill: parent

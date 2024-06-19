@@ -197,7 +197,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="window/EpisodeWindow.qml" line="304"/>
+        <location filename="window/EpisodeWindow.qml" line="306"/>
         <source>Edit</source>
         <translation type="unfinished"></translation>
     </message>
@@ -215,24 +215,24 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page/Episodes.qml" line="250"/>
+        <location filename="page/Episodes.qml" line="242"/>
         <source>Season 1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page/Episodes.qml" line="254"/>
-        <location filename="page/Episodes.qml" line="277"/>
-        <location filename="page/Episodes.qml" line="300"/>
+        <location filename="page/Episodes.qml" line="246"/>
+        <location filename="page/Episodes.qml" line="269"/>
+        <location filename="page/Episodes.qml" line="292"/>
         <source>Add Episode</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page/Episodes.qml" line="273"/>
+        <location filename="page/Episodes.qml" line="265"/>
         <source>Season 2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page/Episodes.qml" line="296"/>
+        <location filename="page/Episodes.qml" line="288"/>
         <source>Season 3</source>
         <translation type="unfinished"></translation>
     </message>
@@ -240,70 +240,67 @@
 <context>
     <name>Home</name>
     <message>
-        <location filename="page/Home.qml" line="25"/>
-        <source>Check out different Bluey episodes and explore interesting stories of the Heelers.</source>
-        <oldsource>Check out different Bluey episodes and explore interesting stories.</oldsource>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page/Home.qml" line="33"/>
-        <source>Characters</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page/Home.qml" line="34"/>
-        <source>Check out the different Bluey characters and get to know these fun and lively characters.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="page/Home.qml" line="24"/>
+        <location filename="page/Home.qml" line="40"/>
         <source>Episodes</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page/Home.qml" line="42"/>
+        <location filename="page/Home.qml" line="41"/>
+        <source>Check out different Bluey episodes and explore interesting stories of the Heelers.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page/Home.qml" line="49"/>
+        <source>Characters</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page/Home.qml" line="50"/>
+        <source>Check out the different Bluey characters and get to know these fun and lively characters.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page/Home.qml" line="58"/>
         <source>Show</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page/Home.qml" line="43"/>
+        <location filename="page/Home.qml" line="59"/>
         <source>Learn about Bluey&apos;s worldview and what its creators have to say about the animation.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page/Home.qml" line="51"/>
+        <location filename="page/Home.qml" line="67"/>
         <source>Add</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page/Home.qml" line="52"/>
+        <location filename="page/Home.qml" line="68"/>
         <source>Didn&apos;t find the page you wanted? Manually add episode or character pages.</source>
-        <oldsource>Didn&apos;t find the page you wanted? Manually add anime episodes and character pages.</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page/Home.qml" line="89"/>
+        <location filename="page/Home.qml" line="107"/>
         <source>Welcome to</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page/Home.qml" line="95"/>
+        <location filename="page/Home.qml" line="113"/>
         <source>Bluey Gallery</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page/Home.qml" line="99"/>
+        <location filename="page/Home.qml" line="117"/>
         <source>Have fun exploring the animated characters, plot descriptions, and more of Bluey.</source>
-        <oldsource>Have fun exploring the animated characters, plot descriptions, and more for Bluey.</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page/Home.qml" line="294"/>
+        <location filename="page/Home.qml" line="316"/>
         <source>Explore Characters</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page/Home.qml" line="311"/>
+        <location filename="page/Home.qml" line="336"/>
         <source>Explore Episodes</source>
         <translation type="unfinished"></translation>
     </message>

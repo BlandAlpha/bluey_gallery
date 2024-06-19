@@ -270,7 +270,7 @@
         <translation type="unfinished">领衔主演</translation>
     </message>
     <message>
-        <location filename="window/EpisodeWindow.qml" line="304"/>
+        <location filename="window/EpisodeWindow.qml" line="306"/>
         <source>Edit</source>
         <translation type="unfinished">编辑</translation>
     </message>
@@ -288,24 +288,24 @@
         <translation type="unfinished">哪一集是你的心头好？</translation>
     </message>
     <message>
-        <location filename="page/Episodes.qml" line="250"/>
+        <location filename="page/Episodes.qml" line="242"/>
         <source>Season 1</source>
         <translation type="unfinished">第1季</translation>
     </message>
     <message>
-        <location filename="page/Episodes.qml" line="254"/>
-        <location filename="page/Episodes.qml" line="277"/>
-        <location filename="page/Episodes.qml" line="300"/>
+        <location filename="page/Episodes.qml" line="246"/>
+        <location filename="page/Episodes.qml" line="269"/>
+        <location filename="page/Episodes.qml" line="292"/>
         <source>Add Episode</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page/Episodes.qml" line="273"/>
+        <location filename="page/Episodes.qml" line="265"/>
         <source>Season 2</source>
         <translation type="unfinished">第2季</translation>
     </message>
     <message>
-        <location filename="page/Episodes.qml" line="296"/>
+        <location filename="page/Episodes.qml" line="288"/>
         <source>Season 3</source>
         <translation type="unfinished">第3季</translation>
     </message>
@@ -313,38 +313,38 @@
 <context>
     <name>Home</name>
     <message>
-        <location filename="page/Home.qml" line="24"/>
+        <location filename="page/Home.qml" line="40"/>
         <source>Episodes</source>
         <translation type="unfinished">剧集</translation>
     </message>
     <message>
-        <location filename="page/Home.qml" line="25"/>
+        <location filename="page/Home.qml" line="41"/>
         <source>Check out different Bluey episodes and explore interesting stories of the Heelers.</source>
         <oldsource>Check out different Bluey episodes and explore interesting stories.</oldsource>
         <translation>查看不同的布鲁伊剧集，探索Heeler家一个个有趣的故事。</translation>
     </message>
     <message>
-        <location filename="page/Home.qml" line="33"/>
+        <location filename="page/Home.qml" line="49"/>
         <source>Characters</source>
         <translation>角色</translation>
     </message>
     <message>
-        <location filename="page/Home.qml" line="34"/>
+        <location filename="page/Home.qml" line="50"/>
         <source>Check out the different Bluey characters and get to know these fun and lively characters.</source>
         <translation type="unfinished">查看不同的布鲁伊角色，认识一下这些有趣而生动的角色。</translation>
     </message>
     <message>
-        <location filename="page/Home.qml" line="42"/>
+        <location filename="page/Home.qml" line="58"/>
         <source>Show</source>
         <translation type="unfinished">节目</translation>
     </message>
     <message>
-        <location filename="page/Home.qml" line="294"/>
+        <location filename="page/Home.qml" line="316"/>
         <source>Explore Characters</source>
         <translation type="unfinished">探索角色</translation>
     </message>
     <message>
-        <location filename="page/Home.qml" line="311"/>
+        <location filename="page/Home.qml" line="336"/>
         <source>Explore Episodes</source>
         <translation type="unfinished">探索剧集</translation>
     </message>
@@ -353,17 +353,17 @@
         <translation type="obsolete">关于</translation>
     </message>
     <message>
-        <location filename="page/Home.qml" line="43"/>
+        <location filename="page/Home.qml" line="59"/>
         <source>Learn about Bluey&apos;s worldview and what its creators have to say about the animation.</source>
         <translation type="unfinished">了解布鲁伊的世界观，以及其创作者对这部动画的评价。</translation>
     </message>
     <message>
-        <location filename="page/Home.qml" line="51"/>
+        <location filename="page/Home.qml" line="67"/>
         <source>Add</source>
         <translation type="unfinished">添加</translation>
     </message>
     <message>
-        <location filename="page/Home.qml" line="52"/>
+        <location filename="page/Home.qml" line="68"/>
         <source>Didn&apos;t find the page you wanted? Manually add episode or character pages.</source>
         <oldsource>Didn&apos;t find the page you wanted? Manually add anime episodes and character pages.</oldsource>
         <translation type="unfinished">没有找到你想看的页面？手动添加动画剧集、人物页面。</translation>
@@ -373,17 +373,17 @@
         <translation type="vanished">角色介绍</translation>
     </message>
     <message>
-        <location filename="page/Home.qml" line="89"/>
+        <location filename="page/Home.qml" line="107"/>
         <source>Welcome to</source>
         <translation>欢迎来到</translation>
     </message>
     <message>
-        <location filename="page/Home.qml" line="95"/>
+        <location filename="page/Home.qml" line="113"/>
         <source>Bluey Gallery</source>
         <translation>布鲁伊动画指南</translation>
     </message>
     <message>
-        <location filename="page/Home.qml" line="99"/>
+        <location filename="page/Home.qml" line="117"/>
         <source>Have fun exploring the animated characters, plot descriptions, and more of Bluey.</source>
         <translation type="unfinished">尽情探索《布鲁伊》的动画角色，剧情介绍等内容。</translation>
     </message>

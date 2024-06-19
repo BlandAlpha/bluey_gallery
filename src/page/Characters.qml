@@ -64,22 +64,25 @@ FluScrollablePage{
 
     }
 
+    property int cardHeight: 330
+    property int cardWidth: 200
+
+    // Character Card Component
     Component {
         id: com_character
         Item {
-            property int id: model.id
             property string name_zh: model.name_zh
             property string name_en: model.name_en
             property string breed: model.breed
             property string desc: model.description
             property string img: model.image_path
 
-            width: 240
-            height: 380
+            width: cardWidth
+            height: cardHeight
             FluFrame {
                 radius: 8
-                width: 240
-                height: 380
+                width: cardWidth
+                height: cardHeight
                 anchors.centerIn: parent
                 Rectangle {
                     anchors.fill: parent
@@ -94,20 +97,18 @@ FluScrollablePage{
                 ColumnLayout {
                     anchors {
                         top: parent.top
-                        topMargin: 24
+                        topMargin: 16
                         left: parent.left
                         right: parent.right
-                        leftMargin: 24
-                        rightMargin: 24
+                        leftMargin: 16
+                        rightMargin: 16
                     }
                     spacing: 24
                     // anchors.horizontalCenter: parent.horizontalCenter
                     Image {
                         id:item_avatar
-                        // height: 232
-                        // width: 150
-                        Layout.preferredHeight: 232
-                        Layout.preferredWidth: 150
+                        Layout.preferredHeight: 200
+                        Layout.preferredWidth: 128
                         sourceSize: Qt.size(300, 464)
                         fillMode: Image.PreserveAspectFit
                         source: Qt.resolvedUrl(img)
@@ -147,6 +148,7 @@ FluScrollablePage{
                     anchors.fill: parent
                     hoverEnabled: true
                     onClicked: {
+                        console.debug("Now transmitting ID:", model.id)
                         FluRouter.navigate("/characterWindow", {
                                             "id": model.id,
                                             "name_zh": model.name_zh,
@@ -173,12 +175,12 @@ FluScrollablePage{
         Layout.fillWidth: true
         Layout.preferredHeight: contentHeight
         Layout.topMargin: 16
-        cellHeight: 380 + 24
-        cellWidth: 240 + 24
+        Layout.leftMargin: 24
+        cellHeight: cardHeight + 12
+        cellWidth: cardWidth + 12
         interactive: false
         model: charactersModel
         delegate: com_character
-        Layout.leftMargin: 24
     }
 
     Component.onCompleted: {

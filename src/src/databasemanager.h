@@ -18,6 +18,8 @@ public:
     Q_INVOKABLE QVariantList getEpisodesBySeason(int season);
     Q_INVOKABLE QVariantList getRelatedEpisodes(int characterId);
     Q_INVOKABLE QVariantList getRelatedCharacters(int episodeId);
+    Q_INVOKABLE QVariantList getRandomCharacters(int limit);
+    Q_INVOKABLE QVariantList getRandomEpisodes(int limit);
     Q_INVOKABLE void resetDatabase(); // 提供给QML调用的重置函数
 private:
     QSqlDatabase m_db;

@@ -45,6 +45,9 @@ constexpr auto qt_meta_stringdata_CLASSDatabaseManagerENDCLASS = QtMocHelpers::s
     "characterId",
     "getRelatedCharacters",
     "episodeId",
+    "getRandomCharacters",
+    "limit",
+    "getRandomEpisodes",
     "resetDatabase"
 );
 #else  // !QT_MOC_HAS_STRINGDATA
@@ -58,7 +61,7 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSDatabaseManagerENDCLASS[] = {
       12,       // revision
        0,       // classname
        0,    0, // classinfo
-       6,   14, // methods
+       8,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -66,12 +69,14 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSDatabaseManagerENDCLASS[] = {
        0,       // signalCount
 
  // methods: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    0,   50,    2, 0x02,    1 /* Public */,
-       3,    0,   51,    2, 0x02,    2 /* Public */,
-       4,    1,   52,    2, 0x02,    3 /* Public */,
-       6,    1,   55,    2, 0x02,    5 /* Public */,
-       8,    1,   58,    2, 0x02,    7 /* Public */,
-      10,    0,   61,    2, 0x02,    9 /* Public */,
+       1,    0,   62,    2, 0x02,    1 /* Public */,
+       3,    0,   63,    2, 0x02,    2 /* Public */,
+       4,    1,   64,    2, 0x02,    3 /* Public */,
+       6,    1,   67,    2, 0x02,    5 /* Public */,
+       8,    1,   70,    2, 0x02,    7 /* Public */,
+      10,    1,   73,    2, 0x02,    9 /* Public */,
+      12,    1,   76,    2, 0x02,   11 /* Public */,
+      13,    0,   79,    2, 0x02,   13 /* Public */,
 
  // methods: parameters
     QMetaType::QVariantList,
@@ -79,6 +84,8 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSDatabaseManagerENDCLASS[] = {
     QMetaType::QVariantList, QMetaType::Int,    5,
     QMetaType::QVariantList, QMetaType::Int,    7,
     QMetaType::QVariantList, QMetaType::Int,    9,
+    QMetaType::QVariantList, QMetaType::Int,   11,
+    QMetaType::QVariantList, QMetaType::Int,   11,
     QMetaType::Void,
 
        0        // eod
@@ -106,6 +113,12 @@ Q_CONSTINIT const QMetaObject DatabaseManager::staticMetaObject = { {
         // method 'getRelatedCharacters'
         QtPrivate::TypeAndForceComplete<QVariantList, std::false_type>,
         QtPrivate::TypeAndForceComplete<int, std::false_type>,
+        // method 'getRandomCharacters'
+        QtPrivate::TypeAndForceComplete<QVariantList, std::false_type>,
+        QtPrivate::TypeAndForceComplete<int, std::false_type>,
+        // method 'getRandomEpisodes'
+        QtPrivate::TypeAndForceComplete<QVariantList, std::false_type>,
+        QtPrivate::TypeAndForceComplete<int, std::false_type>,
         // method 'resetDatabase'
         QtPrivate::TypeAndForceComplete<void, std::false_type>
     >,
@@ -128,7 +141,11 @@ void DatabaseManager::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int 
             if (_a[0]) *reinterpret_cast< QVariantList*>(_a[0]) = std::move(_r); }  break;
         case 4: { QVariantList _r = _t->getRelatedCharacters((*reinterpret_cast< std::add_pointer_t<int>>(_a[1])));
             if (_a[0]) *reinterpret_cast< QVariantList*>(_a[0]) = std::move(_r); }  break;
-        case 5: _t->resetDatabase(); break;
+        case 5: { QVariantList _r = _t->getRandomCharacters((*reinterpret_cast< std::add_pointer_t<int>>(_a[1])));
+            if (_a[0]) *reinterpret_cast< QVariantList*>(_a[0]) = std::move(_r); }  break;
+        case 6: { QVariantList _r = _t->getRandomEpisodes((*reinterpret_cast< std::add_pointer_t<int>>(_a[1])));
+            if (_a[0]) *reinterpret_cast< QVariantList*>(_a[0]) = std::move(_r); }  break;
+        case 7: _t->resetDatabase(); break;
         default: ;
         }
     }
@@ -153,13 +170,13 @@ int DatabaseManager::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 6)
+        if (_id < 8)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 6;
+        _id -= 8;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 6)
+        if (_id < 8)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 6;
+        _id -= 8;
     }
     return _id;
 }
