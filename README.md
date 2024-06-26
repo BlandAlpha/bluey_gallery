@@ -27,10 +27,11 @@ This project is a **School Project**, therefore long-term maintenance is NOT pla
 
 ### Roadmap:
 
+- [ ] [HALF DONE] Database search;
 - [ ] **[PRIORITY]** Adding and editing database entries;
+- [ ] Loading page;
 - [ ] Restore original database;
 - [ ] Creator's commentary (Show page)
-- [ ] *[optiopnal]* Database search;
 - [x] Randomized display of entries on the home page;
 - [x] Independent page display for Character and Episode items;
 - [x] Relational database display;

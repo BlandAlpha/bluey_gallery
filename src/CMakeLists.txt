@@ -56,7 +56,10 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         src/component/FileWatcher.cpp src/component/FileWatcher.h src/component/OpenGLItem.cpp src/component/OpenGLItem.h src/helper/SettingsHelper.cpp src/helper/SettingsHelper.h src/helper/TranslateHelper.cpp src/helper/TranslateHelper.h src/app_dmp.h src/databasemanager.cpp src/databasemanager.h src/singleton.h src/stdafx.h
         src/charactermodel.h src/charactermodel.cpp
         src/episodemodel.h src/episodemodel.cpp
-        img/character/Bandit.png img/character/Bingo.png img/character/Bluey.png img/character/Calypso.png img/character/Chilli.png img/character/Coco.png img/character/Frisky.png img/character/Jack.png img/character/Janelle.png img/character/Jean-Luc.png img/character/Lucky.png img/character/Mackenzie.png img/character/Muffin.png img/character/Pat.png img/character/Rad.png img/character/Rusty.png img/character/Snickers.png img/character/Socks.png img/character/Stripe.png img/character/Wendy.png img/episodes/s01e01.jpg img/episodes/s01e02.jpg img/episodes/s01e03.jpg img/episodes/s01e04.jpg img/episodes/s01e05.jpg img/episodes/s01e07.jpg img/episodes/s01e43.jpg img/episodes/s02e01.jpg img/episodes/s02e02.jpg img/episodes/s02e03.jpg img/episodes/s02e04.jpg img/episodes/s02e08.jpg img/episodes/s02e09.jpg img/episodes/s02e32.jpg img/episodes/s02e38.jpg img/episodes/s02e42.jpg img/episodes/s03e01.jpg img/episodes/s03e02.jpg img/episodes/s03e03.jpg img/episodes/s03e04.jpg img/episodes/s03e09.jpg img/episodes/s03e11.jpg img/episodes/s03e14.jpg img/episodes/s03e15.jpg img/episodes/s03e24.jpg img/episodes/s03e34.jpg img/episodes/s03e49.jpg
+        src/helper/pathhelper.h src/helper/pathhelper.cpp
+
+
+
 
     )
 else()

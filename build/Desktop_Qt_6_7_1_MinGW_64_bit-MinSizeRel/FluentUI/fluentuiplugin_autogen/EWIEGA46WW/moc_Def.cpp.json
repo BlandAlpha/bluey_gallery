@@ -1,0 +1,304 @@
+{
+    "classes": [
+        {
+            "classInfos": [
+                {
+                    "name": "QML.Element",
+                    "value": "FluSheetType"
+                }
+            ],
+            "className": "FluSheetType",
+            "enums": [
+                {
+                    "isClass": false,
+                    "isFlag": false,
+                    "name": "Position",
+                    "values": [
+                        "Left",
+                        "Top",
+                        "Right",
+                        "Bottom"
+                    ]
+                }
+            ],
+            "namespace": true,
+            "qualifiedClassName": "FluSheetType"
+        },
+        {
+            "classInfos": [
+                {
+                    "name": "QML.Element",
+                    "value": "FluThemeType"
+                }
+            ],
+            "className": "FluThemeType",
+            "enums": [
+                {
+                    "isClass": false,
+                    "isFlag": false,
+                    "name": "DarkMode",
+                    "values": [
+                        "System",
+                        "Light",
+                        "Dark"
+                    ]
+                }
+            ],
+            "namespace": true,
+            "qualifiedClassName": "FluThemeType"
+        },
+        {
+            "classInfos": [
+                {
+                    "name": "QML.Element",
+                    "value": "FluTimelineType"
+                }
+            ],
+            "className": "FluTimelineType",
+            "enums": [
+                {
+                    "isClass": false,
+                    "isFlag": false,
+                    "name": "Mode",
+                    "values": [
+                        "Left",
+                        "Right",
+                        "Alternate"
+                    ]
+                }
+            ],
+            "namespace": true,
+            "qualifiedClassName": "FluTimelineType"
+        },
+        {
+            "classInfos": [
+                {
+                    "name": "QML.Element",
+                    "value": "FluPageType"
+                }
+            ],
+            "className": "FluPageType",
+            "enums": [
+                {
+                    "isClass": false,
+                    "isFlag": false,
+                    "name": "LaunchMode",
+                    "values": [
+                        "Standard",
+                        "SingleTask",
+                        "SingleTop",
+                        "SingleInstance"
+                    ]
+                }
+            ],
+            "namespace": true,
+            "qualifiedClassName": "FluPageType"
+        },
+        {
+            "classInfos": [
+                {
+                    "name": "QML.Element",
+                    "value": "FluWindowType"
+                }
+            ],
+            "className": "FluWindowType",
+            "enums": [
+                {
+                    "isClass": false,
+                    "isFlag": false,
+                    "name": "LaunchMode",
+                    "values": [
+                        "Standard",
+                        "SingleTask",
+                        "SingleInstance"
+                    ]
+                }
+            ],
+            "namespace": true,
+            "qualifiedClassName": "FluWindowType"
+        },
+        {
+            "classInfos": [
+                {
+                    "name": "QML.Element",
+                    "value": "FluTreeViewType"
+                }
+            ],
+            "className": "FluTreeViewType",
+            "enums": [
+                {
+                    "isClass": false,
+                    "isFlag": false,
+                    "name": "SelectionMode",
+                    "values": [
+                        "None",
+                        "Single",
+                        "Multiple"
+                    ]
+                }
+            ],
+            "namespace": true,
+            "qualifiedClassName": "FluTreeViewType"
+        },
+        {
+            "classInfos": [
+                {
+                    "name": "QML.Element",
+                    "value": "FluStatusLayoutType"
+                }
+            ],
+            "className": "FluStatusLayoutType",
+            "enums": [
+                {
+                    "isClass": false,
+                    "isFlag": false,
+                    "name": "StatusMode",
+                    "values": [
+                        "Loading",
+                        "Empty",
+                        "Error",
+                        "Success"
+                    ]
+                }
+            ],
+            "namespace": true,
+            "qualifiedClassName": "FluStatusLayoutType"
+        },
+        {
+            "classInfos": [
+                {
+                    "name": "QML.Element",
+                    "value": "FluContentDialogType"
+                }
+            ],
+            "className": "FluContentDialogType",
+            "enums": [
+                {
+                    "isClass": false,
+                    "isFlag": false,
+                    "name": "ButtonFlag",
+                    "values": [
+                        "NeutralButton",
+                        "NegativeButton",
+                        "PositiveButton"
+                    ]
+                }
+            ],
+            "namespace": true,
+            "qualifiedClassName": "FluContentDialogType"
+        },
+        {
+            "classInfos": [
+                {
+                    "name": "QML.Element",
+                    "value": "FluTimePickerType"
+                }
+            ],
+            "className": "FluTimePickerType",
+            "enums": [
+                {
+                    "isClass": false,
+                    "isFlag": false,
+                    "name": "HourFormat",
+                    "values": [
+                        "H",
+                        "HH"
+                    ]
+                }
+            ],
+            "namespace": true,
+            "qualifiedClassName": "FluTimePickerType"
+        },
+        {
+            "classInfos": [
+                {
+                    "name": "QML.Element",
+                    "value": "FluCalendarViewType"
+                }
+            ],
+            "className": "FluCalendarViewType",
+            "enums": [
+                {
+                    "isClass": false,
+                    "isFlag": false,
+                    "name": "DisplayMode",
+                    "values": [
+                        "Month",
+                        "Year",
+                        "Decade"
+                    ]
+                }
+            ],
+            "namespace": true,
+            "qualifiedClassName": "FluCalendarViewType"
+        },
+        {
+            "classInfos": [
+                {
+                    "name": "QML.Element",
+                    "value": "FluTabViewType"
+                }
+            ],
+            "className": "FluTabViewType",
+            "enums": [
+                {
+                    "isClass": false,
+                    "isFlag": false,
+                    "name": "TabWidthBehavior",
+                    "values": [
+                        "Equal",
+                        "SizeToContent",
+                        "Compact"
+                    ]
+                },
+                {
+                    "isClass": false,
+                    "isFlag": false,
+                    "name": "CloseButtonVisibility",
+                    "values": [
+                        "Never",
+                        "Always",
+                        "OnHover"
+                    ]
+                }
+            ],
+            "namespace": true,
+            "qualifiedClassName": "FluTabViewType"
+        },
+        {
+            "classInfos": [
+                {
+                    "name": "QML.Element",
+                    "value": "FluNavigationViewType"
+                }
+            ],
+            "className": "FluNavigationViewType",
+            "enums": [
+                {
+                    "isClass": false,
+                    "isFlag": false,
+                    "name": "DisplayMode",
+                    "values": [
+                        "Open",
+                        "Compact",
+                        "Minimal",
+                        "Auto"
+                    ]
+                },
+                {
+                    "isClass": false,
+                    "isFlag": false,
+                    "name": "PageMode",
+                    "values": [
+                        "Stack",
+                        "NoStack"
+                    ]
+                }
+            ],
+            "namespace": true,
+            "qualifiedClassName": "FluNavigationViewType"
+        }
+    ],
+    "inputFile": "Def.h",
+    "outputRevision": 68
+}

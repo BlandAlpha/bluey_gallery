@@ -27,6 +27,8 @@ src/bluey_gallery_autogen/timestamp: \
   D:/PROJECTS/QT_Projects/bluey_gallery/src/src/helper/SettingsHelper.h \
   D:/PROJECTS/QT_Projects/bluey_gallery/src/src/helper/TranslateHelper.cpp \
   D:/PROJECTS/QT_Projects/bluey_gallery/src/src/helper/TranslateHelper.h \
+  D:/PROJECTS/QT_Projects/bluey_gallery/src/src/helper/pathhelper.cpp \
+  D:/PROJECTS/QT_Projects/bluey_gallery/src/src/helper/pathhelper.h \
   D:/PROJECTS/QT_Projects/bluey_gallery/src/src/singleton.h \
   D:/PROJECTS/QT_Projects/bluey_gallery/src/src/stdafx.h \
   D:/Qt/6.7.1/mingw_64/include/QtCore/QAbstractListModel \
@@ -42,6 +44,7 @@ src/bluey_gallery_autogen/timestamp: \
   D:/Qt/6.7.1/mingw_64/include/QtCore/QSize \
   D:/Qt/6.7.1/mingw_64/include/QtCore/QSizeF \
   D:/Qt/6.7.1/mingw_64/include/QtCore/QTranslator \
+  D:/Qt/6.7.1/mingw_64/include/QtCore/QUrl \
   D:/Qt/6.7.1/mingw_64/include/QtCore/QVariant \
   D:/Qt/6.7.1/mingw_64/include/QtCore/QVariantList \
   D:/Qt/6.7.1/mingw_64/include/QtCore/q20functional.h \

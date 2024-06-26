@@ -755,6 +755,12 @@
 			null
 		],
 		[
+			"D:/PROJECTS/QT_Projects/bluey_gallery/src/src/helper/pathhelper.h",
+			"Mu",
+			"WROLH5MKTC/moc_pathhelper.cpp",
+			null
+		],
+		[
 			"D:/PROJECTS/QT_Projects/bluey_gallery/src/src/singleton.h",
 			"Mu",
 			"UVLADIE3JM/moc_singleton.cpp",
@@ -885,6 +891,11 @@
 		],
 		[
 			"D:/PROJECTS/QT_Projects/bluey_gallery/src/src/helper/TranslateHelper.cpp",
+			"Mu",
+			null
+		],
+		[
+			"D:/PROJECTS/QT_Projects/bluey_gallery/src/src/helper/pathhelper.cpp",
 			"Mu",
 			null
 		]

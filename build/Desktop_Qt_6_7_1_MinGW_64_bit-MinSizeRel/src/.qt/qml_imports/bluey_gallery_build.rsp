@@ -1,0 +1,9 @@
+-rootPath
+D:/PROJECTS/QT_Projects/bluey_gallery/src
+-cmake-output
+-output-file
+D:/PROJECTS/QT_Projects/bluey_gallery/build/Desktop_Qt_6_7_1_MinGW_64_bit-MinSizeRel/src/.qt/qml_imports/bluey_gallery_build.cmake
+-importPath
+D:/PROJECTS/QT_Projects/bluey_gallery/build/Desktop_Qt_6_7_1_MinGW_64_bit-MinSizeRel/src
+-importPath
+D:/Qt/6.7.1/mingw_64/./qml

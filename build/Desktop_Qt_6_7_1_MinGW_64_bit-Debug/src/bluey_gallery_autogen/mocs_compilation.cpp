@@ -6,3 +6,4 @@
 #include "UVLADIE3JM/moc_episodemodel.cpp"
 #include "WROLH5MKTC/moc_SettingsHelper.cpp"
 #include "WROLH5MKTC/moc_TranslateHelper.cpp"
+#include "WROLH5MKTC/moc_pathhelper.cpp"

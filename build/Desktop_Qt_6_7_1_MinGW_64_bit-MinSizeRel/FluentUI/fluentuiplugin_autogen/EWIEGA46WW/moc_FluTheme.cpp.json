@@ -1,0 +1,430 @@
+{
+    "classes": [
+        {
+            "classInfos": [
+                {
+                    "name": "QML.Element",
+                    "value": "FluTheme"
+                },
+                {
+                    "name": "QML.Singleton",
+                    "value": "true"
+                }
+            ],
+            "className": "FluTheme",
+            "object": true,
+            "properties": [
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 0,
+                    "name": "dark",
+                    "notify": "darkChanged",
+                    "read": "dark",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "bool",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 1,
+                    "member": "_accentColor",
+                    "name": "accentColor",
+                    "notify": "accentColorChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "FluAccentColor*",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 2,
+                    "member": "_primaryColor",
+                    "name": "primaryColor",
+                    "notify": "primaryColorChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QColor",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 3,
+                    "member": "_backgroundColor",
+                    "name": "backgroundColor",
+                    "notify": "backgroundColorChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QColor",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 4,
+                    "member": "_dividerColor",
+                    "name": "dividerColor",
+                    "notify": "dividerColorChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QColor",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 5,
+                    "member": "_windowBackgroundColor",
+                    "name": "windowBackgroundColor",
+                    "notify": "windowBackgroundColorChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QColor",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 6,
+                    "member": "_windowActiveBackgroundColor",
+                    "name": "windowActiveBackgroundColor",
+                    "notify": "windowActiveBackgroundColorChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QColor",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 7,
+                    "member": "_fontPrimaryColor",
+                    "name": "fontPrimaryColor",
+                    "notify": "fontPrimaryColorChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QColor",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 8,
+                    "member": "_fontSecondaryColor",
+                    "name": "fontSecondaryColor",
+                    "notify": "fontSecondaryColorChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QColor",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 9,
+                    "member": "_fontTertiaryColor",
+                    "name": "fontTertiaryColor",
+                    "notify": "fontTertiaryColorChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QColor",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 10,
+                    "member": "_itemNormalColor",
+                    "name": "itemNormalColor",
+                    "notify": "itemNormalColorChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QColor",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 11,
+                    "member": "_frameColor",
+                    "name": "frameColor",
+                    "notify": "frameColorChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QColor",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 12,
+                    "member": "_frameActiveColor",
+                    "name": "frameActiveColor",
+                    "notify": "frameActiveColorChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QColor",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 13,
+                    "member": "_itemHoverColor",
+                    "name": "itemHoverColor",
+                    "notify": "itemHoverColorChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QColor",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 14,
+                    "member": "_itemPressColor",
+                    "name": "itemPressColor",
+                    "notify": "itemPressColorChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QColor",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 15,
+                    "member": "_itemCheckColor",
+                    "name": "itemCheckColor",
+                    "notify": "itemCheckColorChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QColor",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 16,
+                    "member": "_desktopImagePath",
+                    "name": "desktopImagePath",
+                    "notify": "desktopImagePathChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 17,
+                    "member": "_darkMode",
+                    "name": "darkMode",
+                    "notify": "darkModeChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "int",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 18,
+                    "member": "_nativeText",
+                    "name": "nativeText",
+                    "notify": "nativeTextChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "bool",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 19,
+                    "member": "_animationEnabled",
+                    "name": "animationEnabled",
+                    "notify": "animationEnabledChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "bool",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 20,
+                    "member": "_blurBehindWindowEnabled",
+                    "name": "blurBehindWindowEnabled",
+                    "notify": "blurBehindWindowEnabledChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "bool",
+                    "user": false
+                }
+            ],
+            "qualifiedClassName": "FluTheme",
+            "signals": [
+                {
+                    "access": "public",
+                    "name": "accentColorChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "primaryColorChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "backgroundColorChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "dividerColorChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "windowBackgroundColorChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "windowActiveBackgroundColorChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "fontPrimaryColorChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "fontSecondaryColorChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "fontTertiaryColorChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "itemNormalColorChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "frameColorChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "frameActiveColorChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "itemHoverColorChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "itemPressColorChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "itemCheckColorChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "desktopImagePathChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "darkModeChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "nativeTextChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "animationEnabledChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "blurBehindWindowEnabledChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "darkChanged",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "FluTheme.h",
+    "outputRevision": 68
+}

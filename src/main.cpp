@@ -18,6 +18,7 @@
 #include "src/charactermodel.h"
 #include "src/episodemodel.h"
 #include "src/databasemanager.h"
+#include "src/helper/pathhelper.h"
 
 #ifdef FLUENTUI_BUILD_STATIC_LIB
 #if (QT_VERSION > QT_VERSION_CHECK(6, 2, 0))
@@ -56,6 +57,7 @@ int main(int argc, char *argv[])
     // QGuiApplication::setApplicationDisplayName("Bluey Gallery");
     QGuiApplication::setQuitOnLastWindowClosed(false);
     SettingsHelper::getInstance()->init(argv);
+    PathHelper pathHelper;
     // Log::setup(argv,uri);
 #if (QT_VERSION >= QT_VERSION_CHECK(6, 0, 0))
     QQuickWindow::setGraphicsApi(QSGRendererInterface::OpenGL);
@@ -76,6 +78,7 @@ int main(int argc, char *argv[])
     TranslateHelper::getInstance()->init(&engine);
     engine.rootContext()->setContextProperty("SettingsHelper",SettingsHelper::getInstance());
     engine.rootContext()->setContextProperty("TranslateHelper",TranslateHelper::getInstance());
+    engine.rootContext()->setContextProperty("PathHelper", &pathHelper);
 #ifdef FLUENTUI_BUILD_STATIC_LIB
     FluentUI::getInstance()->registerTypes(&engine);
 #endif

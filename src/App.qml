@@ -34,7 +34,8 @@ FluLauncher {
         FluRouter.routes = {
             "/": "qrc:/main.qml",
             "/characterWindow": "qrc:/window/CharacterWindow.qml",
-            "/episodeWindow": "qrc:/window/EpisodeWindow.qml"
+            "/episodeWindow": "qrc:/window/EpisodeWindow.qml",
+            "/characterAddWindow": "qrc:/window/CharacterAddWindow.qml"
         }
         FluRouter.navigate("/")
     }

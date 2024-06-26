@@ -6,6 +6,7 @@ import QtQml 2.15
 import Qt.labs.platform 1.1
 import FluentUI 1.0
 import "global"
+import DBManager 1.0
 
 FluWindow {
 
@@ -31,11 +32,19 @@ FluWindow {
         FluRouter.exit()
     }
 
+    // Component.onCompleted: {
+    //     dbManager.newDatabaseConnection('mainSearch');
+    // }
+
+    DatabaseManager {
+        id: dbManager
+    }
+
     SystemTrayIcon {
         id:system_tray
         visible: true
         icon.source: "qrc:/res/img/favicon.png"
-        tooltip: "FluentUI"
+        tooltip: "Bluey Gallery"
         menu: Menu {
             MenuItem {
                 text: "退出"
@@ -54,13 +63,13 @@ FluWindow {
             }
     }
 
-    Timer{
-        id: timer_window_hide_delay
-        interval: 150
-        onTriggered: {
-            window.hide()
-        }
-    }
+    // Timer{
+    //     id: timer_window_hide_delay
+    //     interval: 150
+    //     onTriggered: {
+    //         window.hide()
+    //     }
+    // }
 
     FluContentDialog{
         id: dialog_close
@@ -80,21 +89,21 @@ FluWindow {
         anchors.fill: parent
         property bool flipped: false
         property real flipAngle: 0
-        transform: Rotation {
-            id: rotation
-            origin.x: flipable.width/2
-            origin.y: flipable.height/2
-            axis { x: 0; y: 1; z: 0 }
-            angle: flipable.flipAngle
+        // transform: Rotation {
+        //     id: rotation
+        //     origin.x: flipable.width/2
+        //     origin.y: flipable.height/2
+        //     axis { x: 0; y: 1; z: 0 }
+        //     angle: flipable.flipAngle
 
-        }
-        states: State {
-            PropertyChanges { target: flipable; flipAngle: 180 }
-            when: flipable.flipped
-        }
-        transitions: Transition {
-            NumberAnimation { target: flipable; property: "flipAngle"; duration: 1000 ; easing.type: Easing.OutCubic}
-        }
+        // }
+        // states: State {
+        //     PropertyChanges { target: flipable; flipAngle: 180 }
+        //     when: flipable.flipped
+        // }
+        // transitions: Transition {
+        //     NumberAnimation { target: flipable; property: "flipAngle"; duration: 1000 ; easing.type: Easing.OutCubic}
+        // }
         back: Item{
             anchors.fill: flipable
             visible: flipable.flipAngle !== 0
@@ -129,14 +138,6 @@ FluWindow {
                     window.setHitTestVisible(layout_back_buttons)
                 }
             }
-            /*
-            FluRemoteLoader{
-                id:loader
-                lazy: true
-                anchors.fill: parent
-                source: "https://zhu-zichu.gitee.io/Qt_174_LieflatPage.qml"
-            }
-            */
         }
         front: Item{
             id:page_front
@@ -153,7 +154,7 @@ FluWindow {
                 //NoStack模式，每次切换都会销毁之前的页面然后创建一个新的页面，只需消耗少量内存
                 pageMode: FluNavigationViewType.NoStack
                 items: ItemsOriginal
-                footerItems:ItemsFooter
+                footerItems: ItemsFooter
                 topPadding:{
                     if(window.useSystemAppBar){
                         return 0
@@ -162,25 +163,34 @@ FluWindow {
                 }
                 displayMode: GlobalModel.displayMode
                 logo: "qrc:/res/img/favicon.png"
-                title:"Bluey Gallery"
-                /*
-                onLogoClicked:{
-                    clickCount += 1
-                    showSuccess("%1:%2".arg(qsTr("Click Time")).arg(clickCount))
-                    if(clickCount === 5){
-                        loader.reload()
-                        flipable.flipped = true
-                        clickCount = 0
-                    }
-                }
-                */
-                autoSuggestBox:FluAutoSuggestBox{
+                title: "Bluey Gallery"
+
+                autoSuggestBox: FluAutoSuggestBox{
                     iconSource: FluentIcons.Search
-                    items: ItemsOriginal.getSearchData()
+                    items: searchAll(text)
                     placeholderText: qsTr("Search")
                     onItemClicked:
                         (data)=>{
-                            ItemsOriginal.startPageByItem(data)
+                            var model = getDataByID(data.id);
+                            var img = Qt.resolvedUrl(PathHelper.getAbsolutePath(model.image_path))
+                            if(model.type === "Character") {
+                                FluRouter.navigate("/characterWindow", {
+                                                       "id": model.id,
+                                                       "name_zh": model.name_zh,
+                                                       "name_en": model.name_en,
+                                                       "breed": model.breed,
+                                                       "desc": model.description,
+                                                       "image": img})
+                            } else if(model.type === "Episode") {
+                                FluRouter.navigate("/episodeWindow", {
+                                                       "id": model.id,
+                                                       "title": model.title,
+                                                       "desc": model.description,
+                                                       "season": model.season,
+                                                       "episode": model.episode,
+                                                       "image": img})
+                            }
+
                         }
                 }
                 Component.onCompleted: {
@@ -197,6 +207,43 @@ FluWindow {
         }
     }
 
+    function searchAll(text) {
+        console.debug("Main Now searching: ", text);
+        var res = dbManager.searchAll(text);
+        // console.debug("Main Search got: ", JSON.stringify(res));
+        for(let i = 0; i < text; i++) {
+            var item = res[i];
+            res.push({title:item.title, key:item.id});
+        }
+        return res;
+    }
+
+    function getDataByID(id) {
+        var data_ori = dbManager.getDataByID(id);
+        var data = data_ori[0];
+        var result = {};
+        // console.debug("Data:", JSON.stringify(data));
+        if (data) {
+            if (data.id < 2000) {
+                result.type = "Character";
+                result.id = data["id"];
+                result.name_zh = data["name_zh"];
+                result.name_en = data["name_en"];
+                result.breed = data["breed"];
+                result.desc = data["description"];
+                result.image = data["image_path"];
+            } else {
+                result.type = "Episode";
+                result.id = data["id"];
+                result.title = data["title"]
+                result.description = data["description"];
+                result.season = data["season"];
+                result.episode = data["episode"];
+                result.image_path = data["image_path"];
+            }
+        }
+        return result;
+    }
 
     FluLoader{
         id:loader_reveal

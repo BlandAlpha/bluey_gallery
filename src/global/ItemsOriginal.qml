@@ -70,33 +70,6 @@ FluObject{
         }
     }
 
-    function getRandomCharacterData(){
-        // Change to Get Random Character Data From DB
-        var arr = []
-        var items = navigationView.getItems();
-        for(var i=0;i<items.length;i++){
-            var item = items[i]
-            if(item instanceof FluPaneItem && item.extra && item.extra.recentlyAdded){
-                arr.push(item)
-            }
-        }
-        arr.sort(function(o1,o2){ return o2.extra.order-o1.extra.order })
-        return arr
-    }
-
-    function getRandomSeriesData(){
-        // Change to Get Random Series Data From DB
-        var arr = []
-        var items = navigationView.getItems();
-        for(var i=0;i<items.length;i++){
-            var item = items[i]
-            if(item instanceof FluPaneItem && item.extra && item.extra.recentlyUpdated){
-                arr.push(item)
-            }
-        }
-        return arr
-    }
-
     function getSearchData(){
         // change to database search
         if(!navigationView){
@@ -104,6 +77,7 @@ FluObject{
         }
         var arr = []
         var items = navigationView.getItems();
+        console.debug("Search got: ", items)
         for(var i=0;i<items.length;i++){
             var item = items[i]
             if(item instanceof FluPaneItem){

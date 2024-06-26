@@ -182,6 +182,7 @@ FluScrollablePage{
                                            "episode": model.episode,
                                            "image": model.image_path
                         })
+                        console.log("EPISODE: Image: ", model.image_path);
                     }
                 }
             }

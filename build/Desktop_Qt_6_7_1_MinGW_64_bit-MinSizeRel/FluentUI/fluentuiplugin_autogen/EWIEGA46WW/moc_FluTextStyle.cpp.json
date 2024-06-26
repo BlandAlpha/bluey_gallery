@@ -1,0 +1,183 @@
+{
+    "classes": [
+        {
+            "classInfos": [
+                {
+                    "name": "QML.Element",
+                    "value": "FluTextStyle"
+                },
+                {
+                    "name": "QML.Singleton",
+                    "value": "true"
+                }
+            ],
+            "className": "FluTextStyle",
+            "object": true,
+            "properties": [
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 0,
+                    "member": "_family",
+                    "name": "family",
+                    "notify": "familyChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 1,
+                    "member": "_Caption",
+                    "name": "Caption",
+                    "notify": "CaptionChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QFont",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 2,
+                    "member": "_Body",
+                    "name": "Body",
+                    "notify": "BodyChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QFont",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 3,
+                    "member": "_BodyStrong",
+                    "name": "BodyStrong",
+                    "notify": "BodyStrongChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QFont",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 4,
+                    "member": "_Subtitle",
+                    "name": "Subtitle",
+                    "notify": "SubtitleChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QFont",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 5,
+                    "member": "_Title",
+                    "name": "Title",
+                    "notify": "TitleChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QFont",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 6,
+                    "member": "_TitleLarge",
+                    "name": "TitleLarge",
+                    "notify": "TitleLargeChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QFont",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 7,
+                    "member": "_Display",
+                    "name": "Display",
+                    "notify": "DisplayChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QFont",
+                    "user": false
+                }
+            ],
+            "qualifiedClassName": "FluTextStyle",
+            "signals": [
+                {
+                    "access": "public",
+                    "name": "familyChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "CaptionChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "BodyChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "BodyStrongChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "SubtitleChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "TitleChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "TitleLargeChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "DisplayChanged",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "FluTextStyle.h",
+    "outputRevision": 68
+}

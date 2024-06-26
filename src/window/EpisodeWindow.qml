@@ -31,22 +31,22 @@ FluWindow {
 
         spacing: 24
 
-        anchors{
-            top: parent.top
-            left: parent.left
-            right: parent.right
-            topMargin: 16
-            leftMargin: 16
-            rightMargin: 16
-        }
+        // anchors{
+        //     top: parent.top
+        //     left: parent.left
+        //     right: parent.right
+        //     topMargin: 16
+        //     leftMargin: 16
+        //     rightMargin: 16
+        // }
+        width: parent.width
 
         FluFrame {
             id: frame
-            Layout.preferredWidth: parent.width
-            anchors {
-                leftMargin: 12
-                rightMargin: 12
-            }
+            Layout.fillWidth: true
+            Layout.leftMargin: 16
+            Layout.rightMargin: 16
+            Layout.topMargin: 16
             padding: 16
 
             RowLayout {
