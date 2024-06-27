@@ -308,7 +308,7 @@ QVariantList DatabaseManager::getDataByID(int id) {
 
     if (id < 2000) {
         // Character
-        QSqlQuery query;
+        QSqlQuery query(m_db);
         query.prepare("SELECT * FROM Characters WHERE ID = ?");
         query.addBindValue(id);
         if (!query.exec()) {
@@ -330,7 +330,7 @@ QVariantList DatabaseManager::getDataByID(int id) {
         return data;
     } else if (id > 2000) {
         // Episode
-        QSqlQuery query;
+        QSqlQuery query(m_db);
         query.prepare("SELECT * FROM Episodes WHERE ID = ?");
         query.addBindValue(id);
         if (!query.exec()) {
@@ -414,16 +414,18 @@ QVariantList DatabaseManager::searchCharacters(const QString &name) {
 }
 
 QVariantList DatabaseManager::searchAll(const QString &searchTerm) {
-    newDatabaseConnection("mainSearch");
     QVariantList results;
 
     if (!m_db.isOpen()) {
-        qDebug() << "Database is not open!";
+        newDatabaseConnection("mainSearch");
+        if (!m_db.isOpen()) {
+            qDebug() << "Database is not open!";
+        }
         return results;
     }
 
     // Search Episodes
-    QSqlQuery episodeQuery;
+    QSqlQuery episodeQuery(m_db);
     episodeQuery.prepare("SELECT ID, Title FROM Episodes WHERE Title LIKE ?");
     episodeQuery.addBindValue("%" + searchTerm + "%");
 
@@ -441,7 +443,7 @@ QVariantList DatabaseManager::searchAll(const QString &searchTerm) {
     }
 
     // Search Characters
-    QSqlQuery characterQuery;
+    QSqlQuery characterQuery(m_db);
     characterQuery.prepare("SELECT ID, Name_zh FROM Characters WHERE Name_zh LIKE ? OR Name_en LIKE ?");
     characterQuery.addBindValue("%" + searchTerm + "%");
     characterQuery.addBindValue("%" + searchTerm + "%");

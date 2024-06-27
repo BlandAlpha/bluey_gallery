@@ -310,8 +310,8 @@ FluWindow {
         anchors {
             top: c_layout.top
             right: c_layout.right
-            topMargin: 12
-            rightMargin: 12
+            topMargin: 16 + 12
+            rightMargin: 16 + 12
         }
     }
 

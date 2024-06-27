@@ -230,8 +230,8 @@ FluWindow {
                 result.name_zh = data["name_zh"];
                 result.name_en = data["name_en"];
                 result.breed = data["breed"];
-                result.desc = data["description"];
-                result.image = data["image_path"];
+                result.description = data["description"];
+                result.image_path = data["image_path"];
             } else {
                 result.type = "Episode";
                 result.id = data["id"];
