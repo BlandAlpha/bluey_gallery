@@ -36,14 +36,37 @@
     </message>
 </context>
 <context>
+    <name>CharacterAddWindow</name>
+    <message>
+        <location filename="window/CharacterAddWindow.qml" line="98"/>
+        <source>输入角色中文名</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="window/CharacterAddWindow.qml" line="111"/>
+        <source>输入角色英文名</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="window/CharacterAddWindow.qml" line="124"/>
+        <source>输入角色品种</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="window/CharacterAddWindow.qml" line="139"/>
+        <source>输入角色简介</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>CharacterWindow</name>
     <message>
-        <location filename="window/CharacterWindow.qml" line="88"/>
+        <location filename="window/CharacterWindow.qml" line="80"/>
         <source>Seen in these Episodes</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="window/CharacterWindow.qml" line="121"/>
+        <location filename="window/CharacterWindow.qml" line="111"/>
         <source>Edit</source>
         <translation type="unfinished"></translation>
     </message>
@@ -215,24 +238,24 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page/Episodes.qml" line="242"/>
+        <location filename="page/Episodes.qml" line="243"/>
         <source>Season 1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page/Episodes.qml" line="246"/>
-        <location filename="page/Episodes.qml" line="269"/>
-        <location filename="page/Episodes.qml" line="292"/>
+        <location filename="page/Episodes.qml" line="247"/>
+        <location filename="page/Episodes.qml" line="270"/>
+        <location filename="page/Episodes.qml" line="293"/>
         <source>Add Episode</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page/Episodes.qml" line="265"/>
+        <location filename="page/Episodes.qml" line="266"/>
         <source>Season 2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page/Episodes.qml" line="288"/>
+        <location filename="page/Episodes.qml" line="289"/>
         <source>Season 3</source>
         <translation type="unfinished"></translation>
     </message>
@@ -240,67 +263,67 @@
 <context>
     <name>Home</name>
     <message>
-        <location filename="page/Home.qml" line="40"/>
+        <location filename="page/Home.qml" line="41"/>
         <source>Episodes</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page/Home.qml" line="41"/>
+        <location filename="page/Home.qml" line="42"/>
         <source>Check out different Bluey episodes and explore interesting stories of the Heelers.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page/Home.qml" line="49"/>
+        <location filename="page/Home.qml" line="50"/>
         <source>Characters</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page/Home.qml" line="50"/>
+        <location filename="page/Home.qml" line="51"/>
         <source>Check out the different Bluey characters and get to know these fun and lively characters.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page/Home.qml" line="58"/>
+        <location filename="page/Home.qml" line="59"/>
         <source>Show</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page/Home.qml" line="59"/>
+        <location filename="page/Home.qml" line="60"/>
         <source>Learn about Bluey&apos;s worldview and what its creators have to say about the animation.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page/Home.qml" line="67"/>
+        <location filename="page/Home.qml" line="68"/>
         <source>Add</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page/Home.qml" line="68"/>
+        <location filename="page/Home.qml" line="69"/>
         <source>Didn&apos;t find the page you wanted? Manually add episode or character pages.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page/Home.qml" line="107"/>
+        <location filename="page/Home.qml" line="109"/>
         <source>Welcome to</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page/Home.qml" line="113"/>
+        <location filename="page/Home.qml" line="115"/>
         <source>Bluey Gallery</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page/Home.qml" line="117"/>
+        <location filename="page/Home.qml" line="119"/>
         <source>Have fun exploring the animated characters, plot descriptions, and more of Bluey.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page/Home.qml" line="316"/>
+        <location filename="page/Home.qml" line="233"/>
         <source>Explore Characters</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page/Home.qml" line="336"/>
+        <location filename="page/Home.qml" line="253"/>
         <source>Explore Episodes</source>
         <translation type="unfinished"></translation>
     </message>
@@ -486,29 +509,28 @@
 <context>
     <name>main</name>
     <message>
-        <location filename="main.qml" line="17"/>
+        <location filename="main.qml" line="18"/>
         <source>Bluey Gallery</source>
-        <oldsource>bluey_gallery</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="main.qml" line="67"/>
-        <location filename="main.qml" line="71"/>
+        <location filename="main.qml" line="76"/>
+        <location filename="main.qml" line="80"/>
         <source>Quit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="main.qml" line="68"/>
+        <location filename="main.qml" line="77"/>
         <source>Are you sure you want to exit the program?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="main.qml" line="72"/>
+        <location filename="main.qml" line="81"/>
         <source>Cancel</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="main.qml" line="180"/>
+        <location filename="main.qml" line="171"/>
         <source>Search</source>
         <translation type="unfinished"></translation>
     </message>

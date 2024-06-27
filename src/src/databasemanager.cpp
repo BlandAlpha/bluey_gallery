@@ -23,6 +23,21 @@ DatabaseManager::~DatabaseManager() {
     m_db.close();
 }
 
+void DatabaseManager::newDatabaseConnection(const QString& connectionName) {
+    if (QSqlDatabase::contains(connectionName)) {
+        m_db = QSqlDatabase::database(connectionName);
+    } else {
+        m_db = QSqlDatabase::addDatabase("QSQLITE", connectionName);
+        m_db.setDatabaseName(dbPath);
+
+        if (!m_db.open()) {
+            qWarning() << "Error: Unable to connect to database!" << m_db.lastError().text();
+        } else {
+            qDebug() << "Success: Database Opened:" << m_db.databaseName();
+        }
+    }
+}
+
 void DatabaseManager::resetDatabase() {
     m_db.close();
     QFile::remove(dbPath); // 删除当前数据库文件
@@ -54,7 +69,7 @@ QVariantList DatabaseManager::getCharacters() {
 
     QSqlQuery query(m_db);
     if (!query.exec("SELECT * FROM Characters;")) {
-        qDebug() << "Query execution failed:" << query.lastError().text();
+        qDebug() << "getCharacters:: Query execution failed:" << query.lastError().text();
         return characters;
     }
 
@@ -68,9 +83,7 @@ QVariantList DatabaseManager::getCharacters() {
         character["description"] = query.value("Description");
         character["image_path"] = query.value("ImagePath");
         characters.append(character);
-        // qDebug() << "Now getting:" << character["name_en"];
     }
-    // qDebug() << "---Characters Done---";
     return characters;
 }
 
@@ -84,7 +97,7 @@ QVariantList DatabaseManager::getEpisodes() {
 
     QSqlQuery query(m_db);
     if (!query.exec("SELECT * FROM Episodes;")) {
-        qDebug() << "Query execution failed:" << query.lastError().text();
+        qDebug() << "getEpisodes:: Query execution failed:" << query.lastError().text();
         return episodes;
     }
 
@@ -286,4 +299,167 @@ QVariantList DatabaseManager::getRandomEpisodes(int limit) {
     return episodes;
 }
 
+QVariantList DatabaseManager::getDataByID(int id) {
+    QVariantList data;
+    if (!m_db.isOpen()) {
+        qDebug() << "Database is not open!";
+        return data;
+    }
 
+    if (id < 2000) {
+        // Character
+        QSqlQuery query(m_db);
+        query.prepare("SELECT * FROM Characters WHERE ID = ?");
+        query.addBindValue(id);
+        if (!query.exec()) {
+            qDebug() << "Character query execution failed:" << query.lastError().text();
+            return data;
+        }
+
+        while (query.next()) {
+            QVariantMap character;
+            character["id"] = query.value("ID");
+            character["name_en"] = query.value("Name_en");
+            character["name_zh"] = query.value("Name_zh");
+            character["breed"] = query.value("Breed");
+            character["description"] = query.value("Description");
+            character["image_path"] = query.value("ImagePath");
+            qDebug() << "ID getting:" << character["name_zh"];
+            data.append(character);
+        }
+        return data;
+    } else if (id > 2000) {
+        // Episode
+        QSqlQuery query(m_db);
+        query.prepare("SELECT * FROM Episodes WHERE ID = ?");
+        query.addBindValue(id);
+        if (!query.exec()) {
+            qDebug() << "Episodes query execution failed:" << query.lastError().text();
+            return data;
+        }
+
+        while (query.next()) {
+            QVariantMap episode;
+            episode["id"] = query.value("ID");
+            episode["season"] = query.value("Season");
+            episode["episode"] = query.value("Episode");
+            episode["title"] = query.value("Title");
+            episode["description"] = query.value("Description");
+            episode["image_path"] = query.value("ImagePath");
+            qDebug() << "ID getting:" << episode["title"];
+            data.append(episode);
+        }
+        return data;
+    } else {
+        qDebug() << "ID not supported!";
+        return data;
+    }
+}
+
+
+QVariantList DatabaseManager::searchEpisodes(const QString &title) {
+    QVariantList episodes;
+
+    if (!m_db.isOpen()) {
+        qDebug() << "Database is not open!";
+        return episodes;
+    }
+
+    QSqlQuery query;
+    query.prepare("SELECT ID, Title FROM Episodes WHERE Title LIKE ?");
+    query.addBindValue("%" + title + "%");
+
+    if (!query.exec()) {
+        qDebug() << "Query execution failed:" << query.lastError().text();
+        return episodes;
+    }
+
+    while (query.next()) {
+        QVariantMap episode;
+        episode["id"] = query.value("ID");
+        episode["title"] = query.value("Title");
+        episodes.append(episode);
+        qDebug() << episode["title"] << "searched!";
+    }
+
+    return episodes;
+}
+
+QVariantList DatabaseManager::searchCharacters(const QString &name) {
+    QVariantList characters;
+
+    if (!m_db.isOpen()) {
+        qDebug() << "Database is not open!";
+        return characters;
+    }
+
+    QSqlQuery query;
+    query.prepare("SELECT ID, Name_zh FROM Characters WHERE Name_zh LIKE ?");
+    query.addBindValue("%" + name + "%");
+
+    if (!query.exec()) {
+        qDebug() << "Query execution failed:" << query.lastError().text();
+        return characters;
+    }
+
+    while (query.next()) {
+        QVariantMap character;
+        character["id"] = query.value("ID");
+        character["name_zh"] = query.value("Name_zh");
+        characters.append(character);
+        qDebug() << character["name_zh"] << "searched!";
+    }
+
+    return characters;
+}
+
+QVariantList DatabaseManager::searchAll(const QString &searchTerm) {
+    QVariantList results;
+
+    if (!m_db.isOpen()) {
+        newDatabaseConnection("mainSearch");
+        if (!m_db.isOpen()) {
+            qDebug() << "Database is not open!";
+        }
+        return results;
+    }
+
+    // Search Episodes
+    QSqlQuery episodeQuery(m_db);
+    episodeQuery.prepare("SELECT ID, Title FROM Episodes WHERE Title LIKE ?");
+    episodeQuery.addBindValue("%" + searchTerm + "%");
+
+    if (!episodeQuery.exec()) {
+        qDebug() << "Episode query execution failed:" << episodeQuery.lastError().text();
+        return results;
+    }
+
+    while (episodeQuery.next()) {
+        QVariantMap episode;
+        episode["id"] = episodeQuery.value("ID");
+        episode["title"] = episodeQuery.value("Title");
+        results.append(episode);
+        qDebug() << episode["title"] << "searched in Episodes!";
+    }
+
+    // Search Characters
+    QSqlQuery characterQuery(m_db);
+    characterQuery.prepare("SELECT ID, Name_zh FROM Characters WHERE Name_zh LIKE ? OR Name_en LIKE ?");
+    characterQuery.addBindValue("%" + searchTerm + "%");
+    characterQuery.addBindValue("%" + searchTerm + "%");
+
+    if (!characterQuery.exec()) {
+        qDebug() << "Character query execution failed:" << characterQuery.lastError().text();
+        return results;
+    }
+
+    while (characterQuery.next()) {
+        QVariantMap character;
+        character["id"] = characterQuery.value("ID");
+        character["title"] = characterQuery.value("Name_zh");
+        results.append(character);
+        qDebug() << character["title"] << "searched in Characters!";
+    }
+
+    return results;
+}

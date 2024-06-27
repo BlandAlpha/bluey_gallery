@@ -1,0 +1,17 @@
+{
+    "classes": [
+        {
+            "className": "FluentUIPlugin",
+            "object": true,
+            "qualifiedClassName": "FluentUIPlugin",
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QQmlEngineExtensionPlugin"
+                }
+            ]
+        }
+    ],
+    "inputFile": "fluentuiplugin_FluentUIPlugin.cpp",
+    "outputRevision": 68
+}

@@ -1,0 +1,201 @@
+{
+    "classes": [
+        {
+            "classInfos": [
+                {
+                    "name": "QML.Element",
+                    "value": "FluFrameless"
+                }
+            ],
+            "className": "FluFrameless",
+            "methods": [
+                {
+                    "access": "public",
+                    "name": "showFullScreen",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "showMaximized",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "showMinimized",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "showNormal",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "type": "QQuickItem*"
+                        }
+                    ],
+                    "name": "setHitTestVisible",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "onDestruction",
+                    "returnType": "void"
+                }
+            ],
+            "object": true,
+            "properties": [
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 0,
+                    "member": "_appbar",
+                    "name": "appbar",
+                    "notify": "appbarChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QQuickItem*",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 1,
+                    "member": "_maximizeButton",
+                    "name": "maximizeButton",
+                    "notify": "maximizeButtonChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QQuickItem*",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 2,
+                    "member": "_minimizedButton",
+                    "name": "minimizedButton",
+                    "notify": "minimizedButtonChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QQuickItem*",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 3,
+                    "member": "_closeButton",
+                    "name": "closeButton",
+                    "notify": "closeButtonChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QQuickItem*",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 4,
+                    "member": "_topmost",
+                    "name": "topmost",
+                    "notify": "topmostChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "bool",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 5,
+                    "member": "_disabled",
+                    "name": "disabled",
+                    "notify": "disabledChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "bool",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 6,
+                    "member": "_fixSize",
+                    "name": "fixSize",
+                    "notify": "fixSizeChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "bool",
+                    "user": false
+                }
+            ],
+            "qualifiedClassName": "FluFrameless",
+            "signals": [
+                {
+                    "access": "public",
+                    "name": "appbarChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "maximizeButtonChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "minimizedButtonChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "closeButtonChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "topmostChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "disabledChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "fixSizeChanged",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QQuickItem"
+                },
+                {
+                    "access": "public",
+                    "name": "QAbstractNativeEventFilter"
+                }
+            ]
+        }
+    ],
+    "inputFile": "FluFrameless.h",
+    "outputRevision": 68
+}

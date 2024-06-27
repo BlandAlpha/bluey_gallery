@@ -1,0 +1,4723 @@
+[
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "FluSheetType"
+                    }
+                ],
+                "className": "FluSheetType",
+                "enums": [
+                    {
+                        "isClass": false,
+                        "isFlag": false,
+                        "name": "Position",
+                        "values": [
+                            "Left",
+                            "Top",
+                            "Right",
+                            "Bottom"
+                        ]
+                    }
+                ],
+                "namespace": true,
+                "qualifiedClassName": "FluSheetType"
+            },
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "FluThemeType"
+                    }
+                ],
+                "className": "FluThemeType",
+                "enums": [
+                    {
+                        "isClass": false,
+                        "isFlag": false,
+                        "name": "DarkMode",
+                        "values": [
+                            "System",
+                            "Light",
+                            "Dark"
+                        ]
+                    }
+                ],
+                "namespace": true,
+                "qualifiedClassName": "FluThemeType"
+            },
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "FluTimelineType"
+                    }
+                ],
+                "className": "FluTimelineType",
+                "enums": [
+                    {
+                        "isClass": false,
+                        "isFlag": false,
+                        "name": "Mode",
+                        "values": [
+                            "Left",
+                            "Right",
+                            "Alternate"
+                        ]
+                    }
+                ],
+                "namespace": true,
+                "qualifiedClassName": "FluTimelineType"
+            },
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "FluPageType"
+                    }
+                ],
+                "className": "FluPageType",
+                "enums": [
+                    {
+                        "isClass": false,
+                        "isFlag": false,
+                        "name": "LaunchMode",
+                        "values": [
+                            "Standard",
+                            "SingleTask",
+                            "SingleTop",
+                            "SingleInstance"
+                        ]
+                    }
+                ],
+                "namespace": true,
+                "qualifiedClassName": "FluPageType"
+            },
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "FluWindowType"
+                    }
+                ],
+                "className": "FluWindowType",
+                "enums": [
+                    {
+                        "isClass": false,
+                        "isFlag": false,
+                        "name": "LaunchMode",
+                        "values": [
+                            "Standard",
+                            "SingleTask",
+                            "SingleInstance"
+                        ]
+                    }
+                ],
+                "namespace": true,
+                "qualifiedClassName": "FluWindowType"
+            },
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "FluTreeViewType"
+                    }
+                ],
+                "className": "FluTreeViewType",
+                "enums": [
+                    {
+                        "isClass": false,
+                        "isFlag": false,
+                        "name": "SelectionMode",
+                        "values": [
+                            "None",
+                            "Single",
+                            "Multiple"
+                        ]
+                    }
+                ],
+                "namespace": true,
+                "qualifiedClassName": "FluTreeViewType"
+            },
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "FluStatusLayoutType"
+                    }
+                ],
+                "className": "FluStatusLayoutType",
+                "enums": [
+                    {
+                        "isClass": false,
+                        "isFlag": false,
+                        "name": "StatusMode",
+                        "values": [
+                            "Loading",
+                            "Empty",
+                            "Error",
+                            "Success"
+                        ]
+                    }
+                ],
+                "namespace": true,
+                "qualifiedClassName": "FluStatusLayoutType"
+            },
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "FluContentDialogType"
+                    }
+                ],
+                "className": "FluContentDialogType",
+                "enums": [
+                    {
+                        "isClass": false,
+                        "isFlag": false,
+                        "name": "ButtonFlag",
+                        "values": [
+                            "NeutralButton",
+                            "NegativeButton",
+                            "PositiveButton"
+                        ]
+                    }
+                ],
+                "namespace": true,
+                "qualifiedClassName": "FluContentDialogType"
+            },
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "FluTimePickerType"
+                    }
+                ],
+                "className": "FluTimePickerType",
+                "enums": [
+                    {
+                        "isClass": false,
+                        "isFlag": false,
+                        "name": "HourFormat",
+                        "values": [
+                            "H",
+                            "HH"
+                        ]
+                    }
+                ],
+                "namespace": true,
+                "qualifiedClassName": "FluTimePickerType"
+            },
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "FluCalendarViewType"
+                    }
+                ],
+                "className": "FluCalendarViewType",
+                "enums": [
+                    {
+                        "isClass": false,
+                        "isFlag": false,
+                        "name": "DisplayMode",
+                        "values": [
+                            "Month",
+                            "Year",
+                            "Decade"
+                        ]
+                    }
+                ],
+                "namespace": true,
+                "qualifiedClassName": "FluCalendarViewType"
+            },
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "FluTabViewType"
+                    }
+                ],
+                "className": "FluTabViewType",
+                "enums": [
+                    {
+                        "isClass": false,
+                        "isFlag": false,
+                        "name": "TabWidthBehavior",
+                        "values": [
+                            "Equal",
+                            "SizeToContent",
+                            "Compact"
+                        ]
+                    },
+                    {
+                        "isClass": false,
+                        "isFlag": false,
+                        "name": "CloseButtonVisibility",
+                        "values": [
+                            "Never",
+                            "Always",
+                            "OnHover"
+                        ]
+                    }
+                ],
+                "namespace": true,
+                "qualifiedClassName": "FluTabViewType"
+            },
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "FluNavigationViewType"
+                    }
+                ],
+                "className": "FluNavigationViewType",
+                "enums": [
+                    {
+                        "isClass": false,
+                        "isFlag": false,
+                        "name": "DisplayMode",
+                        "values": [
+                            "Open",
+                            "Compact",
+                            "Minimal",
+                            "Auto"
+                        ]
+                    },
+                    {
+                        "isClass": false,
+                        "isFlag": false,
+                        "name": "PageMode",
+                        "values": [
+                            "Stack",
+                            "NoStack"
+                        ]
+                    }
+                ],
+                "namespace": true,
+                "qualifiedClassName": "FluNavigationViewType"
+            }
+        ],
+        "inputFile": "Def.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "FluAccentColor"
+                    }
+                ],
+                "className": "FluAccentColor",
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "member": "_darkest",
+                        "name": "darkest",
+                        "notify": "darkestChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QColor",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "member": "_darker",
+                        "name": "darker",
+                        "notify": "darkerChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QColor",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 2,
+                        "member": "_dark",
+                        "name": "dark",
+                        "notify": "darkChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QColor",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 3,
+                        "member": "_normal",
+                        "name": "normal",
+                        "notify": "normalChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QColor",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 4,
+                        "member": "_light",
+                        "name": "light",
+                        "notify": "lightChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QColor",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 5,
+                        "member": "_lighter",
+                        "name": "lighter",
+                        "notify": "lighterChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QColor",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 6,
+                        "member": "_lightest",
+                        "name": "lightest",
+                        "notify": "lightestChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QColor",
+                        "user": false
+                    }
+                ],
+                "qualifiedClassName": "FluAccentColor",
+                "signals": [
+                    {
+                        "access": "public",
+                        "name": "darkestChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "darkerChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "darkChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "normalChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "lightChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "lighterChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "lightestChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "FluAccentColor.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "FluApp"
+                    },
+                    {
+                        "name": "QML.Singleton",
+                        "value": "true"
+                    }
+                ],
+                "className": "FluApp",
+                "methods": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "target",
+                                "type": "QObject*"
+                            },
+                            {
+                                "name": "locale",
+                                "type": "QLocale"
+                            }
+                        ],
+                        "name": "init",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "target",
+                                "type": "QObject*"
+                            }
+                        ],
+                        "isCloned": true,
+                        "name": "init",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "keyword",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "iconDatas",
+                        "returnType": "QJsonArray"
+                    },
+                    {
+                        "access": "public",
+                        "isCloned": true,
+                        "name": "iconDatas",
+                        "returnType": "QJsonArray"
+                    }
+                ],
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "member": "_useSystemAppBar",
+                        "name": "useSystemAppBar",
+                        "notify": "useSystemAppBarChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "member": "_windowIcon",
+                        "name": "windowIcon",
+                        "notify": "windowIconChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 2,
+                        "member": "_locale",
+                        "name": "locale",
+                        "notify": "localeChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QLocale",
+                        "user": false
+                    }
+                ],
+                "qualifiedClassName": "FluApp",
+                "signals": [
+                    {
+                        "access": "public",
+                        "name": "useSystemAppBarChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "windowIconChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "localeChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "FluApp.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "FluCaptcha"
+                    }
+                ],
+                "className": "FluCaptcha",
+                "methods": [
+                    {
+                        "access": "public",
+                        "name": "refresh",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "code",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "verify",
+                        "returnType": "bool"
+                    }
+                ],
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "member": "_font",
+                        "name": "font",
+                        "notify": "fontChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QFont",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "member": "_ignoreCase",
+                        "name": "ignoreCase",
+                        "notify": "ignoreCaseChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false
+                    }
+                ],
+                "qualifiedClassName": "FluCaptcha",
+                "signals": [
+                    {
+                        "access": "public",
+                        "name": "fontChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "ignoreCaseChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QQuickPaintedItem"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "FluCaptcha.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "FluColors"
+                    },
+                    {
+                        "name": "QML.Singleton",
+                        "value": "true"
+                    }
+                ],
+                "className": "FluColors",
+                "methods": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "primaryColor",
+                                "type": "QColor"
+                            }
+                        ],
+                        "name": "createAccentColor",
+                        "returnType": "FluAccentColor*"
+                    }
+                ],
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "member": "_Transparent",
+                        "name": "Transparent",
+                        "notify": "TransparentChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QColor",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "member": "_Black",
+                        "name": "Black",
+                        "notify": "BlackChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QColor",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 2,
+                        "member": "_White",
+                        "name": "White",
+                        "notify": "WhiteChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QColor",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 3,
+                        "member": "_Grey10",
+                        "name": "Grey10",
+                        "notify": "Grey10Changed",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QColor",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 4,
+                        "member": "_Grey20",
+                        "name": "Grey20",
+                        "notify": "Grey20Changed",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QColor",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 5,
+                        "member": "_Grey30",
+                        "name": "Grey30",
+                        "notify": "Grey30Changed",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QColor",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 6,
+                        "member": "_Grey40",
+                        "name": "Grey40",
+                        "notify": "Grey40Changed",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QColor",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 7,
+                        "member": "_Grey50",
+                        "name": "Grey50",
+                        "notify": "Grey50Changed",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QColor",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 8,
+                        "member": "_Grey60",
+                        "name": "Grey60",
+                        "notify": "Grey60Changed",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QColor",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 9,
+                        "member": "_Grey70",
+                        "name": "Grey70",
+                        "notify": "Grey70Changed",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QColor",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 10,
+                        "member": "_Grey80",
+                        "name": "Grey80",
+                        "notify": "Grey80Changed",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QColor",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 11,
+                        "member": "_Grey90",
+                        "name": "Grey90",
+                        "notify": "Grey90Changed",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QColor",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 12,
+                        "member": "_Grey100",
+                        "name": "Grey100",
+                        "notify": "Grey100Changed",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QColor",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 13,
+                        "member": "_Grey110",
+                        "name": "Grey110",
+                        "notify": "Grey110Changed",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QColor",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 14,
+                        "member": "_Grey120",
+                        "name": "Grey120",
+                        "notify": "Grey120Changed",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QColor",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 15,
+                        "member": "_Grey130",
+                        "name": "Grey130",
+                        "notify": "Grey130Changed",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QColor",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 16,
+                        "member": "_Grey140",
+                        "name": "Grey140",
+                        "notify": "Grey140Changed",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QColor",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 17,
+                        "member": "_Grey150",
+                        "name": "Grey150",
+                        "notify": "Grey150Changed",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QColor",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 18,
+                        "member": "_Grey160",
+                        "name": "Grey160",
+                        "notify": "Grey160Changed",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QColor",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 19,
+                        "member": "_Grey170",
+                        "name": "Grey170",
+                        "notify": "Grey170Changed",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QColor",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 20,
+                        "member": "_Grey180",
+                        "name": "Grey180",
+                        "notify": "Grey180Changed",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QColor",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 21,
+                        "member": "_Grey190",
+                        "name": "Grey190",
+                        "notify": "Grey190Changed",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QColor",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 22,
+                        "member": "_Grey200",
+                        "name": "Grey200",
+                        "notify": "Grey200Changed",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QColor",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 23,
+                        "member": "_Grey210",
+                        "name": "Grey210",
+                        "notify": "Grey210Changed",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QColor",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 24,
+                        "member": "_Grey220",
+                        "name": "Grey220",
+                        "notify": "Grey220Changed",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QColor",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 25,
+                        "member": "_Yellow",
+                        "name": "Yellow",
+                        "notify": "YellowChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "FluAccentColor*",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 26,
+                        "member": "_Orange",
+                        "name": "Orange",
+                        "notify": "OrangeChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "FluAccentColor*",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 27,
+                        "member": "_Red",
+                        "name": "Red",
+                        "notify": "RedChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "FluAccentColor*",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 28,
+                        "member": "_Magenta",
+                        "name": "Magenta",
+                        "notify": "MagentaChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "FluAccentColor*",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 29,
+                        "member": "_Purple",
+                        "name": "Purple",
+                        "notify": "PurpleChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "FluAccentColor*",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 30,
+                        "member": "_Blue",
+                        "name": "Blue",
+                        "notify": "BlueChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "FluAccentColor*",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 31,
+                        "member": "_Teal",
+                        "name": "Teal",
+                        "notify": "TealChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "FluAccentColor*",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 32,
+                        "member": "_Green",
+                        "name": "Green",
+                        "notify": "GreenChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "FluAccentColor*",
+                        "user": false
+                    }
+                ],
+                "qualifiedClassName": "FluColors",
+                "signals": [
+                    {
+                        "access": "public",
+                        "name": "TransparentChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "BlackChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "WhiteChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "Grey10Changed",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "Grey20Changed",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "Grey30Changed",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "Grey40Changed",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "Grey50Changed",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "Grey60Changed",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "Grey70Changed",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "Grey80Changed",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "Grey90Changed",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "Grey100Changed",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "Grey110Changed",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "Grey120Changed",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "Grey130Changed",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "Grey140Changed",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "Grey150Changed",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "Grey160Changed",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "Grey170Changed",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "Grey180Changed",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "Grey190Changed",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "Grey200Changed",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "Grey210Changed",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "Grey220Changed",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "YellowChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "OrangeChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "RedChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "MagentaChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "PurpleChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "BlueChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "TealChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "GreenChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "FluColors.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "FluFrameless"
+                    }
+                ],
+                "className": "FluFrameless",
+                "methods": [
+                    {
+                        "access": "public",
+                        "name": "showFullScreen",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "showMaximized",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "showMinimized",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "showNormal",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "type": "QQuickItem*"
+                            }
+                        ],
+                        "name": "setHitTestVisible",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "onDestruction",
+                        "returnType": "void"
+                    }
+                ],
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "member": "_appbar",
+                        "name": "appbar",
+                        "notify": "appbarChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QQuickItem*",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "member": "_maximizeButton",
+                        "name": "maximizeButton",
+                        "notify": "maximizeButtonChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QQuickItem*",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 2,
+                        "member": "_minimizedButton",
+                        "name": "minimizedButton",
+                        "notify": "minimizedButtonChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QQuickItem*",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 3,
+                        "member": "_closeButton",
+                        "name": "closeButton",
+                        "notify": "closeButtonChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QQuickItem*",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 4,
+                        "member": "_topmost",
+                        "name": "topmost",
+                        "notify": "topmostChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 5,
+                        "member": "_disabled",
+                        "name": "disabled",
+                        "notify": "disabledChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 6,
+                        "member": "_fixSize",
+                        "name": "fixSize",
+                        "notify": "fixSizeChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false
+                    }
+                ],
+                "qualifiedClassName": "FluFrameless",
+                "signals": [
+                    {
+                        "access": "public",
+                        "name": "appbarChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "maximizeButtonChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "minimizedButtonChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "closeButtonChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "topmostChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "disabledChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "fixSizeChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QQuickItem"
+                    },
+                    {
+                        "access": "public",
+                        "name": "QAbstractNativeEventFilter"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "FluFrameless.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "FluQrCodeItem"
+                    }
+                ],
+                "className": "FluQrCodeItem",
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "member": "_text",
+                        "name": "text",
+                        "notify": "textChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "member": "_color",
+                        "name": "color",
+                        "notify": "colorChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QColor",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 2,
+                        "member": "_bgColor",
+                        "name": "bgColor",
+                        "notify": "bgColorChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QColor",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 3,
+                        "member": "_size",
+                        "name": "size",
+                        "notify": "sizeChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "int",
+                        "user": false
+                    }
+                ],
+                "qualifiedClassName": "FluQrCodeItem",
+                "signals": [
+                    {
+                        "access": "public",
+                        "name": "textChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "colorChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "bgColorChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "sizeChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QQuickPaintedItem"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "FluQrCodeItem.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "FluRectangle"
+                    }
+                ],
+                "className": "FluRectangle",
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "member": "_color",
+                        "name": "color",
+                        "notify": "colorChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QColor",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "member": "_radius",
+                        "name": "radius",
+                        "notify": "radiusChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QList<int>",
+                        "user": false
+                    }
+                ],
+                "qualifiedClassName": "FluRectangle",
+                "signals": [
+                    {
+                        "access": "public",
+                        "name": "colorChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "radiusChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QQuickPaintedItem"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "FluRectangle.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "FluTableSortProxyModel"
+                    }
+                ],
+                "className": "FluTableSortProxyModel",
+                "methods": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "rowIndex",
+                                "type": "int"
+                            }
+                        ],
+                        "name": "getRow",
+                        "returnType": "QVariant"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "rowIndex",
+                                "type": "int"
+                            },
+                            {
+                                "name": "val",
+                                "type": "QVariant"
+                            }
+                        ],
+                        "name": "setRow",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "rowIndex",
+                                "type": "int"
+                            },
+                            {
+                                "name": "rows",
+                                "type": "int"
+                            }
+                        ],
+                        "name": "removeRow",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "comparator",
+                                "type": "QJSValue"
+                            }
+                        ],
+                        "name": "setComparator",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "filter",
+                                "type": "QJSValue"
+                            }
+                        ],
+                        "name": "setFilter",
+                        "returnType": "void"
+                    }
+                ],
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "member": "_model",
+                        "name": "model",
+                        "notify": "modelChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QAbstractTableModel*",
+                        "user": false
+                    }
+                ],
+                "qualifiedClassName": "FluTableSortProxyModel",
+                "signals": [
+                    {
+                        "access": "public",
+                        "name": "modelChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QSortFilterProxyModel"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "FluTableSortProxyModel.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "FluTextStyle"
+                    },
+                    {
+                        "name": "QML.Singleton",
+                        "value": "true"
+                    }
+                ],
+                "className": "FluTextStyle",
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "member": "_family",
+                        "name": "family",
+                        "notify": "familyChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "member": "_Caption",
+                        "name": "Caption",
+                        "notify": "CaptionChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QFont",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 2,
+                        "member": "_Body",
+                        "name": "Body",
+                        "notify": "BodyChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QFont",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 3,
+                        "member": "_BodyStrong",
+                        "name": "BodyStrong",
+                        "notify": "BodyStrongChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QFont",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 4,
+                        "member": "_Subtitle",
+                        "name": "Subtitle",
+                        "notify": "SubtitleChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QFont",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 5,
+                        "member": "_Title",
+                        "name": "Title",
+                        "notify": "TitleChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QFont",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 6,
+                        "member": "_TitleLarge",
+                        "name": "TitleLarge",
+                        "notify": "TitleLargeChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QFont",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 7,
+                        "member": "_Display",
+                        "name": "Display",
+                        "notify": "DisplayChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QFont",
+                        "user": false
+                    }
+                ],
+                "qualifiedClassName": "FluTextStyle",
+                "signals": [
+                    {
+                        "access": "public",
+                        "name": "familyChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "CaptionChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "BodyChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "BodyStrongChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "SubtitleChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "TitleChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "TitleLargeChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "DisplayChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "FluTextStyle.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "FluTheme"
+                    },
+                    {
+                        "name": "QML.Singleton",
+                        "value": "true"
+                    }
+                ],
+                "className": "FluTheme",
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "dark",
+                        "notify": "darkChanged",
+                        "read": "dark",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "member": "_accentColor",
+                        "name": "accentColor",
+                        "notify": "accentColorChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "FluAccentColor*",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 2,
+                        "member": "_primaryColor",
+                        "name": "primaryColor",
+                        "notify": "primaryColorChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QColor",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 3,
+                        "member": "_backgroundColor",
+                        "name": "backgroundColor",
+                        "notify": "backgroundColorChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QColor",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 4,
+                        "member": "_dividerColor",
+                        "name": "dividerColor",
+                        "notify": "dividerColorChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QColor",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 5,
+                        "member": "_windowBackgroundColor",
+                        "name": "windowBackgroundColor",
+                        "notify": "windowBackgroundColorChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QColor",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 6,
+                        "member": "_windowActiveBackgroundColor",
+                        "name": "windowActiveBackgroundColor",
+                        "notify": "windowActiveBackgroundColorChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QColor",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 7,
+                        "member": "_fontPrimaryColor",
+                        "name": "fontPrimaryColor",
+                        "notify": "fontPrimaryColorChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QColor",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 8,
+                        "member": "_fontSecondaryColor",
+                        "name": "fontSecondaryColor",
+                        "notify": "fontSecondaryColorChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QColor",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 9,
+                        "member": "_fontTertiaryColor",
+                        "name": "fontTertiaryColor",
+                        "notify": "fontTertiaryColorChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QColor",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 10,
+                        "member": "_itemNormalColor",
+                        "name": "itemNormalColor",
+                        "notify": "itemNormalColorChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QColor",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 11,
+                        "member": "_frameColor",
+                        "name": "frameColor",
+                        "notify": "frameColorChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QColor",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 12,
+                        "member": "_frameActiveColor",
+                        "name": "frameActiveColor",
+                        "notify": "frameActiveColorChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QColor",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 13,
+                        "member": "_itemHoverColor",
+                        "name": "itemHoverColor",
+                        "notify": "itemHoverColorChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QColor",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 14,
+                        "member": "_itemPressColor",
+                        "name": "itemPressColor",
+                        "notify": "itemPressColorChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QColor",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 15,
+                        "member": "_itemCheckColor",
+                        "name": "itemCheckColor",
+                        "notify": "itemCheckColorChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QColor",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 16,
+                        "member": "_desktopImagePath",
+                        "name": "desktopImagePath",
+                        "notify": "desktopImagePathChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 17,
+                        "member": "_darkMode",
+                        "name": "darkMode",
+                        "notify": "darkModeChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "int",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 18,
+                        "member": "_nativeText",
+                        "name": "nativeText",
+                        "notify": "nativeTextChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 19,
+                        "member": "_animationEnabled",
+                        "name": "animationEnabled",
+                        "notify": "animationEnabledChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 20,
+                        "member": "_blurBehindWindowEnabled",
+                        "name": "blurBehindWindowEnabled",
+                        "notify": "blurBehindWindowEnabledChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false
+                    }
+                ],
+                "qualifiedClassName": "FluTheme",
+                "signals": [
+                    {
+                        "access": "public",
+                        "name": "accentColorChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "primaryColorChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "backgroundColorChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "dividerColorChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "windowBackgroundColorChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "windowActiveBackgroundColorChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "fontPrimaryColorChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "fontSecondaryColorChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "fontTertiaryColorChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "itemNormalColorChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "frameColorChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "frameActiveColorChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "itemHoverColorChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "itemPressColorChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "itemCheckColorChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "desktopImagePathChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "darkModeChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "nativeTextChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "animationEnabledChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "blurBehindWindowEnabledChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "darkChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "FluTheme.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "FluTools"
+                    },
+                    {
+                        "name": "QML.Singleton",
+                        "value": "true"
+                    }
+                ],
+                "className": "FluTools",
+                "methods": [
+                    {
+                        "access": "public",
+                        "name": "qtMajor",
+                        "returnType": "int"
+                    },
+                    {
+                        "access": "public",
+                        "name": "qtMinor",
+                        "returnType": "int"
+                    },
+                    {
+                        "access": "public",
+                        "name": "isMacos",
+                        "returnType": "bool"
+                    },
+                    {
+                        "access": "public",
+                        "name": "isLinux",
+                        "returnType": "bool"
+                    },
+                    {
+                        "access": "public",
+                        "name": "isWin",
+                        "returnType": "bool"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "text",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "clipText",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "uuid",
+                        "returnType": "QString"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "fileName",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "readFile",
+                        "returnType": "QString"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "val",
+                                "type": "bool"
+                            }
+                        ],
+                        "name": "setQuitOnLastWindowClosed",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "shape",
+                                "type": "Qt::CursorShape"
+                            }
+                        ],
+                        "name": "setOverrideCursor",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "restoreOverrideCursor",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "html",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "html2PlantText",
+                        "returnType": "QString"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "url",
+                                "type": "QUrl"
+                            }
+                        ],
+                        "name": "toLocalPath",
+                        "returnType": "QString"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "p",
+                                "type": "QObject*"
+                            }
+                        ],
+                        "name": "deleteLater",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "url",
+                                "type": "QUrl"
+                            }
+                        ],
+                        "name": "getFileNameByUrl",
+                        "returnType": "QString"
+                    },
+                    {
+                        "access": "public",
+                        "name": "getVirtualGeometry",
+                        "returnType": "QRect"
+                    },
+                    {
+                        "access": "public",
+                        "name": "getApplicationDirPath",
+                        "returnType": "QString"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "path",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "getUrlByFilePath",
+                        "returnType": "QUrl"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "type": "QColor"
+                            },
+                            {
+                                "name": "alpha",
+                                "type": "qreal"
+                            }
+                        ],
+                        "name": "withOpacity",
+                        "returnType": "QColor"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "text",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "md5",
+                        "returnType": "QString"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "text",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "sha256",
+                        "returnType": "QString"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "text",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "toBase64",
+                        "returnType": "QString"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "text",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "fromBase64",
+                        "returnType": "QString"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "dirPath",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "removeDir",
+                        "returnType": "bool"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "filePath",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "removeFile",
+                        "returnType": "bool"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "path",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "showFileInFolder",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "isSoftware",
+                        "returnType": "bool"
+                    },
+                    {
+                        "access": "public",
+                        "name": "currentTimestamp",
+                        "returnType": "qint64"
+                    },
+                    {
+                        "access": "public",
+                        "name": "cursorPos",
+                        "returnType": "QPoint"
+                    },
+                    {
+                        "access": "public",
+                        "name": "windowIcon",
+                        "returnType": "QIcon"
+                    },
+                    {
+                        "access": "public",
+                        "name": "cursorScreenIndex",
+                        "returnType": "int"
+                    },
+                    {
+                        "access": "public",
+                        "name": "windowBuildNumber",
+                        "returnType": "int"
+                    },
+                    {
+                        "access": "public",
+                        "name": "isWindows11OrGreater",
+                        "returnType": "bool"
+                    },
+                    {
+                        "access": "public",
+                        "name": "isWindows10OrGreater",
+                        "returnType": "bool"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "window",
+                                "type": "QQuickWindow*"
+                            }
+                        ],
+                        "name": "desktopAvailableGeometry",
+                        "returnType": "QRect"
+                    },
+                    {
+                        "access": "public",
+                        "name": "getWallpaperFilePath",
+                        "returnType": "QString"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "image",
+                                "type": "QImage"
+                            },
+                            {
+                                "name": "bright",
+                                "type": "double"
+                            }
+                        ],
+                        "name": "imageMainColor",
+                        "returnType": "QColor"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "image",
+                                "type": "QImage"
+                            }
+                        ],
+                        "isCloned": true,
+                        "name": "imageMainColor",
+                        "returnType": "QColor"
+                    }
+                ],
+                "object": true,
+                "qualifiedClassName": "FluTools",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "FluTools.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "className": "FluTreeNode",
+                "methods": [
+                    {
+                        "access": "public",
+                        "name": "depth",
+                        "returnType": "int"
+                    },
+                    {
+                        "access": "public",
+                        "name": "isExpanded",
+                        "returnType": "bool"
+                    },
+                    {
+                        "access": "public",
+                        "name": "data",
+                        "returnType": "QVariantMap"
+                    },
+                    {
+                        "access": "public",
+                        "name": "hasChildren",
+                        "returnType": "bool"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "index",
+                                "type": "int"
+                            }
+                        ],
+                        "name": "hasNextNodeByIndex",
+                        "returnType": "bool"
+                    },
+                    {
+                        "access": "public",
+                        "name": "checked",
+                        "returnType": "bool"
+                    },
+                    {
+                        "access": "public",
+                        "name": "hideLineFooter",
+                        "returnType": "bool"
+                    }
+                ],
+                "object": true,
+                "properties": [
+                    {
+                        "constant": true,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "data",
+                        "read": "data",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QVariantMap",
+                        "user": false
+                    },
+                    {
+                        "constant": true,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "name": "depth",
+                        "read": "depth",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "int",
+                        "user": false
+                    },
+                    {
+                        "constant": true,
+                        "designable": true,
+                        "final": false,
+                        "index": 2,
+                        "name": "isExpanded",
+                        "read": "isExpanded",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false
+                    },
+                    {
+                        "constant": true,
+                        "designable": true,
+                        "final": false,
+                        "index": 3,
+                        "name": "checked",
+                        "read": "checked",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false
+                    }
+                ],
+                "qualifiedClassName": "FluTreeNode",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            },
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "FluTreeModel"
+                    },
+                    {
+                        "name": "QML.AddedInVersion",
+                        "value": "65281"
+                    }
+                ],
+                "className": "FluTreeModel",
+                "methods": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "row",
+                                "type": "int"
+                            },
+                            {
+                                "name": "count",
+                                "type": "int"
+                            }
+                        ],
+                        "name": "removeRows",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "row",
+                                "type": "int"
+                            },
+                            {
+                                "name": "data",
+                                "type": "QList<FluTreeNode*>"
+                            }
+                        ],
+                        "name": "insertRows",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "row",
+                                "type": "int"
+                            }
+                        ],
+                        "name": "getRow",
+                        "returnType": "QObject*"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "row",
+                                "type": "int"
+                            },
+                            {
+                                "name": "data",
+                                "type": "QVariantMap"
+                            }
+                        ],
+                        "name": "setRow",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "data",
+                                "type": "QList<FluTreeNode*>"
+                            }
+                        ],
+                        "name": "setData",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "data",
+                                "type": "QList<QMap<QString,QVariant>>"
+                            }
+                        ],
+                        "name": "setDataSource",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "row",
+                                "type": "int"
+                            }
+                        ],
+                        "name": "collapse",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "row",
+                                "type": "int"
+                            }
+                        ],
+                        "name": "expand",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "row",
+                                "type": "int"
+                            }
+                        ],
+                        "name": "getNode",
+                        "returnType": "FluTreeNode*"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "row",
+                                "type": "int"
+                            }
+                        ],
+                        "name": "refreshNode",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "row",
+                                "type": "int"
+                            },
+                            {
+                                "name": "checked",
+                                "type": "bool"
+                            }
+                        ],
+                        "name": "checkRow",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "row",
+                                "type": "int"
+                            }
+                        ],
+                        "name": "hitHasChildrenExpanded",
+                        "returnType": "bool"
+                    },
+                    {
+                        "access": "public",
+                        "name": "allExpand",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "allCollapse",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "selectionModel",
+                        "returnType": "QVariant"
+                    }
+                ],
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "member": "_dataSourceSize",
+                        "name": "dataSourceSize",
+                        "notify": "dataSourceSizeChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "int",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "member": "_columnSource",
+                        "name": "columnSource",
+                        "notify": "columnSourceChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QList<QVariantMap>",
+                        "user": false
+                    }
+                ],
+                "qualifiedClassName": "FluTreeModel",
+                "signals": [
+                    {
+                        "access": "public",
+                        "name": "dataSourceSizeChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "columnSourceChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QAbstractItemModel"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "FluTreeModel.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "FluWatermark"
+                    }
+                ],
+                "className": "FluWatermark",
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "member": "_text",
+                        "name": "text",
+                        "notify": "textChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "member": "_gap",
+                        "name": "gap",
+                        "notify": "gapChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QPoint",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 2,
+                        "member": "_offset",
+                        "name": "offset",
+                        "notify": "offsetChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QPoint",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 3,
+                        "member": "_textColor",
+                        "name": "textColor",
+                        "notify": "textColorChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QColor",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 4,
+                        "member": "_rotate",
+                        "name": "rotate",
+                        "notify": "rotateChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "int",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 5,
+                        "member": "_textSize",
+                        "name": "textSize",
+                        "notify": "textSizeChanged",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "int",
+                        "user": false
+                    }
+                ],
+                "qualifiedClassName": "FluWatermark",
+                "signals": [
+                    {
+                        "access": "public",
+                        "name": "textChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "gapChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "offsetChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "textColorChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "rotateChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "textSizeChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QQuickPaintedItem"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "FluWatermark.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "FluentIcons"
+                    }
+                ],
+                "className": "Fluent_Icons",
+                "enums": [
+                    {
+                        "isClass": true,
+                        "isFlag": false,
+                        "name": "Fluent_IconType",
+                        "values": [
+                            "GlobalNavButton",
+                            "Wifi",
+                            "Bluetooth",
+                            "Connect",
+                            "InternetSharing",
+                            "VPN",
+                            "Brightness",
+                            "MapPin",
+                            "QuietHours",
+                            "Airplane",
+                            "Tablet",
+                            "QuickNote",
+                            "RememberedDevice",
+                            "ChevronDown",
+                            "ChevronUp",
+                            "Edit",
+                            "Add",
+                            "Cancel",
+                            "More",
+                            "Settings",
+                            "Video",
+                            "Mail",
+                            "People",
+                            "Phone",
+                            "Pin",
+                            "Shop",
+                            "Stop",
+                            "Link",
+                            "Filter",
+                            "AllApps",
+                            "Zoom",
+                            "ZoomOut",
+                            "Microphone",
+                            "Search",
+                            "Camera",
+                            "Attach",
+                            "Send",
+                            "SendFill",
+                            "WalkSolid",
+                            "InPrivate",
+                            "FavoriteList",
+                            "PageSolid",
+                            "Forward",
+                            "Back",
+                            "Refresh",
+                            "Share",
+                            "Lock",
+                            "ReportHacked",
+                            "EMI",
+                            "FavoriteStar",
+                            "FavoriteStarFill",
+                            "ReadingMode",
+                            "Favicon",
+                            "Remove",
+                            "Checkbox",
+                            "CheckboxComposite",
+                            "CheckboxFill",
+                            "CheckboxIndeterminate",
+                            "CheckboxCompositeReversed",
+                            "CheckMark",
+                            "BackToWindow",
+                            "FullScreen",
+                            "ResizeTouchLarger",
+                            "ResizeTouchSmaller",
+                            "ResizeMouseSmall",
+                            "ResizeMouseMedium",
+                            "ResizeMouseWide",
+                            "ResizeMouseTall",
+                            "ResizeMouseLarge",
+                            "SwitchUser",
+                            "Print",
+                            "Up",
+                            "Down",
+                            "OEM",
+                            "Delete",
+                            "Save",
+                            "Mute",
+                            "BackSpaceQWERTY",
+                            "ReturnKey",
+                            "UpArrowShiftKey",
+                            "Cloud",
+                            "Flashlight",
+                            "RotationLock",
+                            "CommandPrompt",
+                            "SIPMove",
+                            "SIPUndock",
+                            "SIPRedock",
+                            "EraseTool",
+                            "UnderscoreSpace",
+                            "GripperTool",
+                            "Dialpad",
+                            "PageLeft",
+                            "PageRight",
+                            "MultiSelect",
+                            "KeyboardLeftHanded",
+                            "KeyboardRightHanded",
+                            "KeyboardClassic",
+                            "KeyboardSplit",
+                            "Volume",
+                            "Play",
+                            "Pause",
+                            "ChevronLeft",
+                            "ChevronRight",
+                            "InkingTool",
+                            "Emoji2",
+                            "GripperBarHorizontal",
+                            "System",
+                            "Personalize",
+                            "Devices",
+                            "SearchAndApps",
+                            "Globe",
+                            "TimeLanguage",
+                            "EaseOfAccess",
+                            "UpdateRestore",
+                            "HangUp",
+                            "ContactInfo",
+                            "Unpin",
+                            "Contact",
+                            "Memo",
+                            "IncomingCall",
+                            "Paste",
+                            "PhoneBook",
+                            "LEDLight",
+                            "Error",
+                            "GripperBarVertical",
+                            "Unlock",
+                            "Slideshow",
+                            "Calendar",
+                            "GripperResize",
+                            "Megaphone",
+                            "Trim",
+                            "NewWindow",
+                            "SaveLocal",
+                            "Color",
+                            "DataSense",
+                            "SaveAs",
+                            "Light",
+                            "AspectRatio",
+                            "DataSenseBar",
+                            "Redo",
+                            "Undo",
+                            "Crop",
+                            "OpenWith",
+                            "Rotate",
+                            "RedEye",
+                            "SetlockScreen",
+                            "MapPin2",
+                            "Package",
+                            "Warning",
+                            "ReadingList",
+                            "Education",
+                            "ShoppingCart",
+                            "Train",
+                            "Flag",
+                            "Move",
+                            "Page",
+                            "TaskView",
+                            "BrowsePhotos",
+                            "HalfStarLeft",
+                            "HalfStarRight",
+                            "Record",
+                            "TouchPointer",
+                            "LangJPN",
+                            "Ferry",
+                            "Highlight",
+                            "ActionCenterNotification",
+                            "PowerButton",
+                            "ResizeTouchNarrower",
+                            "ResizeTouchShorter",
+                            "DrivingMode",
+                            "RingerSilent",
+                            "OtherUser",
+                            "Admin",
+                            "CC",
+                            "SDCard",
+                            "CallForwarding",
+                            "SettingsDisplaySound",
+                            "TVMonitor",
+                            "Speakers",
+                            "Headphone",
+                            "DeviceLaptopPic",
+                            "DeviceLaptopNoPic",
+                            "DeviceMonitorRightPic",
+                            "DeviceMonitorLeftPic",
+                            "DeviceMonitorNoPic",
+                            "Game",
+                            "HorizontalTabKey",
+                            "StreetsideSplitMinimize",
+                            "StreetsideSplitExpand",
+                            "Car",
+                            "Walk",
+                            "Bus",
+                            "TiltUp",
+                            "TiltDown",
+                            "CallControl",
+                            "RotateMapRight",
+                            "RotateMapLeft",
+                            "Home",
+                            "ParkingLocation",
+                            "MapCompassTop",
+                            "MapCompassBottom",
+                            "IncidentTriangle",
+                            "Touch",
+                            "MapDirections",
+                            "StartPoint",
+                            "StopPoint",
+                            "EndPoint",
+                            "History",
+                            "Location",
+                            "MapLayers",
+                            "Accident",
+                            "Work",
+                            "Construction",
+                            "Recent",
+                            "Bank",
+                            "DownloadMap",
+                            "InkingToolFill2",
+                            "HighlightFill2",
+                            "EraseToolFill",
+                            "EraseToolFill2",
+                            "Dictionary",
+                            "DictionaryAdd",
+                            "ToolTip",
+                            "ChromeBack",
+                            "ProvisioningPackage",
+                            "AddRemoteDevice",
+                            "FolderOpen",
+                            "Ethernet",
+                            "ShareBroadband",
+                            "DirectAccess",
+                            "DialUp",
+                            "DefenderApp",
+                            "BatteryCharging9",
+                            "Battery10",
+                            "Pinned",
+                            "PinFill",
+                            "PinnedFill",
+                            "PeriodKey",
+                            "PuncKey",
+                            "RevToggleKey",
+                            "RightArrowKeyTime1",
+                            "RightArrowKeyTime2",
+                            "LeftQuote",
+                            "RightQuote",
+                            "DownShiftKey",
+                            "UpShiftKey",
+                            "PuncKey0",
+                            "PuncKeyLeftBottom",
+                            "RightArrowKeyTime3",
+                            "RightArrowKeyTime4",
+                            "Battery0",
+                            "Battery1",
+                            "Battery2",
+                            "Battery3",
+                            "Battery4",
+                            "Battery5",
+                            "Battery6",
+                            "Battery7",
+                            "Battery8",
+                            "Battery9",
+                            "BatteryCharging0",
+                            "BatteryCharging1",
+                            "BatteryCharging2",
+                            "BatteryCharging3",
+                            "BatteryCharging4",
+                            "BatteryCharging5",
+                            "BatteryCharging6",
+                            "BatteryCharging7",
+                            "BatteryCharging8",
+                            "BatterySaver0",
+                            "BatterySaver1",
+                            "BatterySaver2",
+                            "BatterySaver3",
+                            "BatterySaver4",
+                            "BatterySaver5",
+                            "BatterySaver6",
+                            "BatterySaver7",
+                            "BatterySaver8",
+                            "SignalBars1",
+                            "SignalBars2",
+                            "SignalBars3",
+                            "SignalBars4",
+                            "SignalBars5",
+                            "SignalNotConnected",
+                            "Wifi1",
+                            "Wifi2",
+                            "Wifi3",
+                            "MobSIMLock",
+                            "MobSIMMissing",
+                            "Vibrate",
+                            "RoamingInternational",
+                            "RoamingDomestic",
+                            "CallForwardInternational",
+                            "CallForwardRoaming",
+                            "JpnRomanji",
+                            "JpnRomanjiLock",
+                            "JpnRomanjiShift",
+                            "JpnRomanjiShiftLock",
+                            "StatusDataTransfer",
+                            "StatusDataTransferVPN",
+                            "StatusDualSIM2",
+                            "StatusDualSIM2VPN",
+                            "StatusDualSIM1",
+                            "StatusDualSIM1VPN",
+                            "StatusSGLTE",
+                            "StatusSGLTECell",
+                            "StatusSGLTEDataVPN",
+                            "StatusVPN",
+                            "WifiHotspot",
+                            "LanguageKor",
+                            "LanguageCht",
+                            "LanguageChs",
+                            "USB",
+                            "InkingToolFill",
+                            "View",
+                            "HighlightFill",
+                            "Previous",
+                            "Next",
+                            "Clear",
+                            "Sync",
+                            "Download",
+                            "Help",
+                            "Upload",
+                            "Emoji",
+                            "TwoPage",
+                            "LeaveChat",
+                            "MailForward",
+                            "RotateCamera",
+                            "ClosePane",
+                            "OpenPane",
+                            "PreviewLink",
+                            "AttachCamera",
+                            "ZoomIn",
+                            "Bookmarks",
+                            "Document",
+                            "ProtectedDocument",
+                            "OpenInNewWindow",
+                            "MailFill",
+                            "ViewAll",
+                            "VideoChat",
+                            "Switch",
+                            "Rename",
+                            "Go",
+                            "SurfaceHub",
+                            "Remote",
+                            "Click",
+                            "Shuffle",
+                            "Movies",
+                            "SelectAll",
+                            "Orientation",
+                            "Import",
+                            "ImportAll",
+                            "Folder",
+                            "Webcam",
+                            "Picture",
+                            "Caption",
+                            "ChromeClose",
+                            "ShowResults",
+                            "Message",
+                            "Leaf",
+                            "CalendarDay",
+                            "CalendarWeek",
+                            "Characters",
+                            "MailReplyAll",
+                            "Read",
+                            "ShowBcc",
+                            "HideBcc",
+                            "Cut",
+                            "PaymentCard",
+                            "Copy",
+                            "Important",
+                            "MailReply",
+                            "Sort",
+                            "MobileTablet",
+                            "DisconnectDrive",
+                            "MapDrive",
+                            "ContactPresence",
+                            "Priority",
+                            "GotoToday",
+                            "Font",
+                            "FontColor",
+                            "Contact2",
+                            "FolderFill",
+                            "Audio",
+                            "Permissions",
+                            "DisableUpdates",
+                            "Unfavorite",
+                            "OpenLocal",
+                            "Italic",
+                            "Underline",
+                            "Bold",
+                            "MoveToFolder",
+                            "LikeDislike",
+                            "Dislike",
+                            "Like",
+                            "AlignRight",
+                            "AlignCenter",
+                            "AlignLeft",
+                            "OpenFile",
+                            "ClearSelection",
+                            "FontDecrease",
+                            "FontIncrease",
+                            "FontSize",
+                            "CellPhone",
+                            "Reshare",
+                            "Tag",
+                            "RepeatOne",
+                            "RepeatAll",
+                            "Calculator",
+                            "Directions",
+                            "Library",
+                            "ChatBubbles",
+                            "PostUpdate",
+                            "NewFolder",
+                            "CalendarReply",
+                            "UnsyncFolder",
+                            "SyncFolder",
+                            "BlockContact",
+                            "SwitchApps",
+                            "AddFriend",
+                            "Accept",
+                            "GoToStart",
+                            "BulletedList",
+                            "Scan",
+                            "Preview",
+                            "Group",
+                            "ZeroBars",
+                            "OneBar",
+                            "TwoBars",
+                            "ThreeBars",
+                            "FourBars",
+                            "World",
+                            "Comment",
+                            "MusicInfo",
+                            "DockLeft",
+                            "DockRight",
+                            "DockBottom",
+                            "Repair",
+                            "Accounts",
+                            "DullSound",
+                            "Manage",
+                            "Street",
+                            "Printer3D",
+                            "RadioBullet",
+                            "Stopwatch",
+                            "Photo",
+                            "ActionCenter",
+                            "FullCircleMask",
+                            "ChromeMinimize",
+                            "ChromeMaximize",
+                            "ChromeRestore",
+                            "Annotation",
+                            "BackSpaceQWERTYSm",
+                            "BackSpaceQWERTYMd",
+                            "Swipe",
+                            "Fingerprint",
+                            "Handwriting",
+                            "ChromeBackToWindow",
+                            "ChromeFullScreen",
+                            "KeyboardStandard",
+                            "KeyboardDismiss",
+                            "Completed",
+                            "ChromeAnnotate",
+                            "Label",
+                            "IBeam",
+                            "IBeamOutline",
+                            "FlickDown",
+                            "FlickUp",
+                            "FlickLeft",
+                            "FlickRight",
+                            "FeedbackApp",
+                            "MusicAlbum",
+                            "Streaming",
+                            "Code",
+                            "ReturnToWindow",
+                            "LightningBolt",
+                            "Info",
+                            "CalculatorMultiply",
+                            "CalculatorAddition",
+                            "CalculatorSubtract",
+                            "CalculatorDivide",
+                            "CalculatorSquareroot",
+                            "CalculatorPercentage",
+                            "CalculatorNegate",
+                            "CalculatorEqualTo",
+                            "CalculatorBackspace",
+                            "Component",
+                            "DMC",
+                            "Dock",
+                            "MultimediaDMS",
+                            "MultimediaDVR",
+                            "MultimediaPMP",
+                            "PrintfaxPrinterFile",
+                            "Sensor",
+                            "StorageOptical",
+                            "Communications",
+                            "Headset",
+                            "Projector",
+                            "Health",
+                            "Wire",
+                            "Webcam2",
+                            "Input",
+                            "Mouse",
+                            "Smartcard",
+                            "SmartcardVirtual",
+                            "MediaStorageTower",
+                            "ReturnKeySm",
+                            "GameConsole",
+                            "Network",
+                            "StorageNetworkWireless",
+                            "StorageTape",
+                            "ChevronUpSmall",
+                            "ChevronDownSmall",
+                            "ChevronLeftSmall",
+                            "ChevronRightSmall",
+                            "ChevronUpMed",
+                            "ChevronDownMed",
+                            "ChevronLeftMed",
+                            "ChevronRightMed",
+                            "Devices2",
+                            "ExpandTile",
+                            "PC1",
+                            "PresenceChicklet",
+                            "PresenceChickletVideo",
+                            "Reply",
+                            "SetTile",
+                            "Type",
+                            "Korean",
+                            "HalfAlpha",
+                            "FullAlpha",
+                            "Key12On",
+                            "ChineseChangjie",
+                            "QWERTYOn",
+                            "QWERTYOff",
+                            "ChineseQuick",
+                            "Japanese",
+                            "FullHiragana",
+                            "FullKatakana",
+                            "HalfKatakana",
+                            "ChineseBoPoMoFo",
+                            "ChinesePinyin",
+                            "ConstructionCone",
+                            "XboxOneConsole",
+                            "Volume0",
+                            "Volume1",
+                            "Volume2",
+                            "Volume3",
+                            "BatteryUnknown",
+                            "WifiAttentionOverlay",
+                            "Robot",
+                            "TapAndSend",
+                            "FitPage",
+                            "PasswordKeyShow",
+                            "PasswordKeyHide",
+                            "BidiLtr",
+                            "BidiRtl",
+                            "ForwardSm",
+                            "CommaKey",
+                            "DashKey",
+                            "DullSoundKey",
+                            "HalfDullSound",
+                            "RightDoubleQuote",
+                            "LeftDoubleQuote",
+                            "PuncKeyRightBottom",
+                            "PuncKey1",
+                            "PuncKey2",
+                            "PuncKey3",
+                            "PuncKey4",
+                            "PuncKey5",
+                            "PuncKey6",
+                            "PuncKey9",
+                            "PuncKey7",
+                            "PuncKey8",
+                            "Frigid",
+                            "Unknown",
+                            "AreaChart",
+                            "CheckList",
+                            "Diagnostic",
+                            "Equalizer",
+                            "Process",
+                            "Processing",
+                            "ReportDocument",
+                            "VideoSolid",
+                            "MixedMediaBadge",
+                            "DisconnectDisplay",
+                            "Shield",
+                            "Info2",
+                            "ActionCenterAsterisk",
+                            "Beta",
+                            "SaveCopy",
+                            "List",
+                            "Asterisk",
+                            "ErrorBadge",
+                            "CircleRing",
+                            "CircleFill",
+                            "MergeCall",
+                            "PrivateCall",
+                            "Record2",
+                            "AllAppsMirrored",
+                            "BookmarksMirrored",
+                            "BulletedListMirrored",
+                            "CallForwardInternationalMirrored",
+                            "CallForwardRoamingMirrored",
+                            "ChromeBackMirrored",
+                            "ClearSelectionMirrored",
+                            "ClosePaneMirrored",
+                            "ContactInfoMirrored",
+                            "DockRightMirrored",
+                            "DockLeftMirrored",
+                            "ExpandTileMirrored",
+                            "GoMirrored",
+                            "GripperResizeMirrored",
+                            "HelpMirrored",
+                            "ImportMirrored",
+                            "ImportAllMirrored",
+                            "LeaveChatMirrored",
+                            "ListMirrored",
+                            "MailForwardMirrored",
+                            "MailReplyMirrored",
+                            "MailReplyAllMirrored",
+                            "OpenPaneMirrored",
+                            "OpenWithMirrored",
+                            "ParkingLocationMirrored",
+                            "ResizeMouseMediumMirrored",
+                            "ResizeMouseSmallMirrored",
+                            "ResizeMouseTallMirrored",
+                            "ResizeTouchNarrowerMirrored",
+                            "SendMirrored",
+                            "SendFillMirrored",
+                            "ShowResultsMirrored",
+                            "Media",
+                            "SyncError",
+                            "Devices3",
+                            "SlowMotionOn",
+                            "Lightbulb",
+                            "StatusCircle",
+                            "StatusTriangle",
+                            "StatusError",
+                            "StatusWarning",
+                            "Puzzle",
+                            "CalendarSolid",
+                            "HomeSolid",
+                            "ParkingLocationSolid",
+                            "ContactSolid",
+                            "ConstructionSolid",
+                            "AccidentSolid",
+                            "Ringer",
+                            "PDF",
+                            "ThoughtBubble",
+                            "HeartBroken",
+                            "BatteryCharging10",
+                            "BatterySaver9",
+                            "BatterySaver10",
+                            "CallForwardingMirrored",
+                            "MultiSelectMirrored",
+                            "Broom",
+                            "ForwardCall",
+                            "Trackers",
+                            "Market",
+                            "PieSingle",
+                            "StockUp",
+                            "StockDown",
+                            "Design",
+                            "Website",
+                            "Drop",
+                            "Radar",
+                            "BusSolid",
+                            "FerrySolid",
+                            "StartPointSolid",
+                            "StopPointSolid",
+                            "EndPointSolid",
+                            "AirplaneSolid",
+                            "TrainSolid",
+                            "WorkSolid",
+                            "ReminderFill",
+                            "Reminder",
+                            "Heart",
+                            "HeartFill",
+                            "EthernetError",
+                            "EthernetWarning",
+                            "StatusConnecting1",
+                            "StatusConnecting2",
+                            "StatusUnsecure",
+                            "WifiError0",
+                            "WifiError1",
+                            "WifiError2",
+                            "WifiError3",
+                            "WifiError4",
+                            "WifiWarning0",
+                            "WifiWarning1",
+                            "WifiWarning2",
+                            "WifiWarning3",
+                            "WifiWarning4",
+                            "Devices4",
+                            "NUIIris",
+                            "NUIFace",
+                            "GatewayRouter",
+                            "EditMirrored",
+                            "NUIFPStartSlideHand",
+                            "NUIFPStartSlideAction",
+                            "NUIFPContinueSlideHand",
+                            "NUIFPContinueSlideAction",
+                            "NUIFPRollRightHand",
+                            "NUIFPRollRightHandAction",
+                            "NUIFPRollLeftHand",
+                            "NUIFPRollLeftAction",
+                            "NUIFPPressHand",
+                            "NUIFPPressAction",
+                            "NUIFPPressRepeatHand",
+                            "NUIFPPressRepeatAction",
+                            "StatusErrorFull",
+                            "TaskViewExpanded",
+                            "Certificate",
+                            "BackSpaceQWERTYLg",
+                            "ReturnKeyLg",
+                            "FastForward",
+                            "Rewind",
+                            "Photo2",
+                            "MobBattery0",
+                            "MobBattery1",
+                            "MobBattery2",
+                            "MobBattery3",
+                            "MobBattery4",
+                            "MobBattery5",
+                            "MobBattery6",
+                            "MobBattery7",
+                            "MobBattery8",
+                            "MobBattery9",
+                            "MobBattery10",
+                            "MobBatteryCharging0",
+                            "MobBatteryCharging1",
+                            "MobBatteryCharging2",
+                            "MobBatteryCharging3",
+                            "MobBatteryCharging4",
+                            "MobBatteryCharging5",
+                            "MobBatteryCharging6",
+                            "MobBatteryCharging7",
+                            "MobBatteryCharging8",
+                            "MobBatteryCharging9",
+                            "MobBatteryCharging10",
+                            "MobBatterySaver0",
+                            "MobBatterySaver1",
+                            "MobBatterySaver2",
+                            "MobBatterySaver3",
+                            "MobBatterySaver4",
+                            "MobBatterySaver5",
+                            "MobBatterySaver6",
+                            "MobBatterySaver7",
+                            "MobBatterySaver8",
+                            "MobBatterySaver9",
+                            "MobBatterySaver10",
+                            "DictionaryCloud",
+                            "ResetDrive",
+                            "VolumeBars",
+                            "Project",
+                            "AdjustHologram",
+                            "CloudDownload",
+                            "MobWifiCallBars",
+                            "MobWifiCall0",
+                            "MobWifiCall1",
+                            "MobWifiCall2",
+                            "MobWifiCall3",
+                            "MobWifiCall4",
+                            "Family",
+                            "LockFeedback",
+                            "DeviceDiscovery",
+                            "WindDirection",
+                            "RightArrowKeyTime0",
+                            "Bug",
+                            "TabletMode",
+                            "StatusCircleLeft",
+                            "StatusTriangleLeft",
+                            "StatusErrorLeft",
+                            "StatusWarningLeft",
+                            "MobBatteryUnknown",
+                            "NetworkTower",
+                            "CityNext",
+                            "CityNext2",
+                            "Courthouse",
+                            "Groceries",
+                            "Sustainable",
+                            "BuildingEnergy",
+                            "ToggleFilled",
+                            "ToggleBorder",
+                            "SliderThumb",
+                            "ToggleThumb",
+                            "MiracastLogoSmall",
+                            "MiracastLogoLarge",
+                            "PLAP",
+                            "Badge",
+                            "SignalRoaming",
+                            "MobileLocked",
+                            "InsiderHubApp",
+                            "PersonalFolder",
+                            "HomeGroup",
+                            "MyNetwork",
+                            "KeyboardFull",
+                            "Cafe",
+                            "MobSignal1",
+                            "MobSignal2",
+                            "MobSignal3",
+                            "MobSignal4",
+                            "MobSignal5",
+                            "MobWifi1",
+                            "MobWifi2",
+                            "MobWifi3",
+                            "MobWifi4",
+                            "MobAirplane",
+                            "MobBluetooth",
+                            "MobActionCenter",
+                            "MobLocation",
+                            "MobWifiHotspot",
+                            "LanguageJpn",
+                            "MobQuietHours",
+                            "MobDrivingMode",
+                            "SpeedOff",
+                            "SpeedMedium",
+                            "SpeedHigh",
+                            "ThisPC",
+                            "MusicNote",
+                            "FileExplorer",
+                            "FileExplorerApp",
+                            "LeftArrowKeyTime0",
+                            "MicOff",
+                            "MicSleep",
+                            "MicError",
+                            "PlaybackRate1x",
+                            "PlaybackRateOther",
+                            "CashDrawer",
+                            "BarcodeScanner",
+                            "ReceiptPrinter",
+                            "MagStripeReader",
+                            "CompletedSolid",
+                            "CompanionApp",
+                            "Favicon2",
+                            "SwipeRevealArt",
+                            "MicOn",
+                            "MicClipping",
+                            "TabletSelected",
+                            "MobileSelected",
+                            "LaptopSelected",
+                            "TVMonitorSelected",
+                            "DeveloperTools",
+                            "MobCallForwarding",
+                            "MobCallForwardingMirrored",
+                            "BodyCam",
+                            "PoliceCar",
+                            "Draw",
+                            "DrawSolid",
+                            "LowerBrightness",
+                            "ScrollUpDown",
+                            "DateTime",
+                            "HoloLens",
+                            "Tiles",
+                            "PartyLeader",
+                            "AppIconDefault",
+                            "Calories",
+                            "POI",
+                            "BandBattery0",
+                            "BandBattery1",
+                            "BandBattery2",
+                            "BandBattery3",
+                            "BandBattery4",
+                            "BandBattery5",
+                            "BandBattery6",
+                            "AddSurfaceHub",
+                            "DevUpdate",
+                            "Unit",
+                            "AddTo",
+                            "RemoveFrom",
+                            "RadioBtnOff",
+                            "RadioBtnOn",
+                            "RadioBullet2",
+                            "ExploreContent",
+                            "Blocked2",
+                            "ScrollMode",
+                            "ZoomMode",
+                            "PanMode",
+                            "WiredUSB",
+                            "WirelessUSB",
+                            "USBSafeConnect",
+                            "ActionCenterNotificationMirrored",
+                            "ActionCenterMirrored",
+                            "SubscriptionAdd",
+                            "ResetDevice",
+                            "SubscriptionAddMirrored",
+                            "QRCode",
+                            "Feedback",
+                            "Hide",
+                            "Subtitles",
+                            "SubtitlesAudio",
+                            "OpenFolderHorizontal",
+                            "CalendarMirrored",
+                            "MobeSIM",
+                            "MobeSIMNoProfile",
+                            "MobeSIMLocked",
+                            "MobeSIMBusy",
+                            "SignalError",
+                            "StreamingEnterprise",
+                            "Headphone0",
+                            "Headphone1",
+                            "Headphone2",
+                            "Headphone3",
+                            "Apps",
+                            "KeyboardBrightness",
+                            "KeyboardLowerBrightness",
+                            "SkipBack10",
+                            "SkipForward30",
+                            "TreeFolderFolder",
+                            "TreeFolderFolderFill",
+                            "TreeFolderFolderOpen",
+                            "TreeFolderFolderOpenFill",
+                            "MultimediaDMP",
+                            "KeyboardOneHanded",
+                            "Narrator",
+                            "EmojiTabPeople",
+                            "EmojiTabSmilesAnimals",
+                            "EmojiTabCelebrationObjects",
+                            "EmojiTabFoodPlants",
+                            "EmojiTabTransitPlaces",
+                            "EmojiTabSymbols",
+                            "EmojiTabTextSmiles",
+                            "EmojiTabFavorites",
+                            "EmojiSwatch",
+                            "ConnectApp",
+                            "CompanionDeviceFramework",
+                            "Ruler",
+                            "FingerInking",
+                            "StrokeErase",
+                            "PointErase",
+                            "ClearAllInk",
+                            "Pencil",
+                            "Marker",
+                            "InkingCaret",
+                            "InkingColorOutline",
+                            "InkingColorFill",
+                            "HardDrive",
+                            "NetworkAdapter",
+                            "Touchscreen",
+                            "NetworkPrinter",
+                            "CloudPrinter",
+                            "KeyboardShortcut",
+                            "BrushSize",
+                            "NarratorForward",
+                            "NarratorForwardMirrored",
+                            "SyncBadge12",
+                            "RingerBadge12",
+                            "AsteriskBadge12",
+                            "ErrorBadge12",
+                            "CircleRingBadge12",
+                            "CircleFillBadge12",
+                            "ImportantBadge12",
+                            "MailBadge12",
+                            "PauseBadge12",
+                            "PlayBadge12",
+                            "PenWorkspace",
+                            "CaretLeft8",
+                            "CaretRight8",
+                            "CaretUp8",
+                            "CaretDown8",
+                            "CaretLeftSolid8",
+                            "CaretRightSolid8",
+                            "CaretUpSolid8",
+                            "CaretDownSolid8",
+                            "Strikethrough",
+                            "Export",
+                            "ExportMirrored",
+                            "ButtonMenu",
+                            "CloudSearch",
+                            "PinyinIMELogo",
+                            "CalligraphyPen",
+                            "ReplyMirrored",
+                            "LockscreenDesktop",
+                            "TaskViewSettings",
+                            "MiniExpand2Mirrored",
+                            "MiniContract2Mirrored",
+                            "Play36",
+                            "PenPalette",
+                            "GuestUser",
+                            "SettingsBattery",
+                            "TaskbarPhone",
+                            "LockScreenGlance",
+                            "GenericScan",
+                            "ImageExport",
+                            "WifiEthernet",
+                            "ActionCenterQuiet",
+                            "ActionCenterQuietNotification",
+                            "TrackersMirrored",
+                            "DateTimeMirrored",
+                            "Wheel",
+                            "VirtualMachineGroup",
+                            "ButtonView2",
+                            "PenWorkspaceMirrored",
+                            "PenPaletteMirrored",
+                            "StrokeEraseMirrored",
+                            "PointEraseMirrored",
+                            "ClearAllInkMirrored",
+                            "BackgroundToggle",
+                            "Marquee",
+                            "ChromeCloseContrast",
+                            "ChromeMinimizeContrast",
+                            "ChromeMaximizeContrast",
+                            "ChromeRestoreContrast",
+                            "TrafficLight",
+                            "Replay",
+                            "Eyedropper",
+                            "LineDisplay",
+                            "PINPad",
+                            "SignatureCapture",
+                            "ChipCardCreditCardReader",
+                            "MarketDown",
+                            "PlayerSettings",
+                            "LandscapeOrientation",
+                            "Flow",
+                            "Touchpad",
+                            "Speech",
+                            "KnowledgeArticle",
+                            "Relationship",
+                            "ZipFolder",
+                            "DefaultAPN",
+                            "UserAPN",
+                            "DoublePinyin",
+                            "BlueLight",
+                            "CaretSolidLeft",
+                            "CaretSolidDown",
+                            "CaretSolidRight",
+                            "CaretSolidUp",
+                            "ButtonA",
+                            "ButtonB",
+                            "ButtonY",
+                            "ButtonX",
+                            "ArrowUp8",
+                            "ArrowDown8",
+                            "ArrowRight8",
+                            "ArrowLeft8",
+                            "QuarentinedItems",
+                            "QuarentinedItemsMirrored",
+                            "Protractor",
+                            "ChecklistMirrored",
+                            "StatusCircle7",
+                            "StatusCheckmark7",
+                            "StatusErrorCircle7",
+                            "Connected",
+                            "PencilFill",
+                            "CalligraphyFill",
+                            "QuarterStarLeft",
+                            "QuarterStarRight",
+                            "ThreeQuarterStarLeft",
+                            "ThreeQuarterStarRight",
+                            "QuietHoursBadge12",
+                            "BackMirrored",
+                            "ForwardMirrored",
+                            "ChromeBackContrast",
+                            "ChromeBackContrastMirrored",
+                            "ChromeBackToWindowContrast",
+                            "ChromeFullScreenContrast",
+                            "GridView",
+                            "ClipboardList",
+                            "ClipboardListMirrored",
+                            "OutlineQuarterStarLeft",
+                            "OutlineQuarterStarRight",
+                            "OutlineHalfStarLeft",
+                            "OutlineHalfStarRight",
+                            "OutlineThreeQuarterStarLeft",
+                            "OutlineThreeQuarterStarRight",
+                            "SpatialVolume0",
+                            "SpatialVolume1",
+                            "SpatialVolume2",
+                            "SpatialVolume3",
+                            "ApplicationGuard",
+                            "OutlineStarLeftHalf",
+                            "OutlineStarRightHalf",
+                            "ChromeAnnotateContrast",
+                            "DefenderBadge12",
+                            "DetachablePC",
+                            "LeftStick",
+                            "RightStick",
+                            "TriggerLeft",
+                            "TriggerRight",
+                            "BumperLeft",
+                            "BumperRight",
+                            "Dpad",
+                            "EnglishPunctuation",
+                            "ChinesePunctuation",
+                            "HMD",
+                            "CtrlSpatialRight",
+                            "PaginationDotOutline10",
+                            "PaginationDotSolid10",
+                            "StrokeErase2",
+                            "SmallErase",
+                            "LargeErase",
+                            "FolderHorizontal",
+                            "MicrophoneListening",
+                            "StatusExclamationCircle7",
+                            "Video360",
+                            "GiftboxOpen",
+                            "StatusCircleOuter",
+                            "StatusCircleInner",
+                            "StatusCircleRing",
+                            "StatusTriangleOuter",
+                            "StatusTriangleInner",
+                            "StatusTriangleExclamation",
+                            "StatusCircleExclamation",
+                            "StatusCircleErrorX",
+                            "StatusCircleCheckmark",
+                            "StatusCircleInfo",
+                            "StatusCircleBlock",
+                            "StatusCircleBlock2",
+                            "StatusCircleQuestionMark",
+                            "StatusCircleSync",
+                            "Dial1",
+                            "Dial2",
+                            "Dial3",
+                            "Dial4",
+                            "Dial5",
+                            "Dial6",
+                            "Dial7",
+                            "Dial8",
+                            "Dial9",
+                            "Dial10",
+                            "Dial11",
+                            "Dial12",
+                            "Dial13",
+                            "Dial14",
+                            "Dial15",
+                            "Dial16",
+                            "DialShape1",
+                            "DialShape2",
+                            "DialShape3",
+                            "DialShape4",
+                            "ClosedCaptionsInternational",
+                            "TollSolid",
+                            "TrafficCongestionSolid",
+                            "ExploreContentSingle",
+                            "CollapseContent",
+                            "CollapseContentSingle",
+                            "InfoSolid",
+                            "GroupList",
+                            "CaretBottomRightSolidCenter8",
+                            "ProgressRingDots",
+                            "Checkbox14",
+                            "CheckboxComposite14",
+                            "CheckboxIndeterminateCombo14",
+                            "CheckboxIndeterminateCombo",
+                            "StatusPause7",
+                            "CharacterAppearance",
+                            "Lexicon",
+                            "ScreenTime",
+                            "HeadlessDevice",
+                            "NetworkSharing",
+                            "EyeGaze",
+                            "ToggleLeft",
+                            "ToggleRight",
+                            "WindowsInsider",
+                            "ChromeSwitch",
+                            "ChromeSwitchContast",
+                            "StatusCheckmark",
+                            "StatusCheckmarkLeft",
+                            "KeyboardLeftAligned",
+                            "KeyboardRightAligned",
+                            "KeyboardSettings",
+                            "NetworkPhysical",
+                            "IOT",
+                            "UnknownMirrored",
+                            "ViewDashboard",
+                            "ExploitProtectionSettings",
+                            "KeyboardNarrow",
+                            "Keyboard12Key",
+                            "KeyboardDock",
+                            "KeyboardUndock",
+                            "KeyboardLeftDock",
+                            "KeyboardRightDock",
+                            "Ear",
+                            "PointerHand",
+                            "Bullseye",
+                            "DocumentApproval",
+                            "LocaleLanguage",
+                            "PassiveAuthentication",
+                            "ColorSolid",
+                            "NetworkOffline",
+                            "NetworkConnected",
+                            "NetworkConnectedCheckmark",
+                            "SignOut",
+                            "StatusInfo",
+                            "StatusInfoLeft",
+                            "NearbySharing",
+                            "CtrlSpatialLeft",
+                            "InteractiveDashboard",
+                            "DeclineCall",
+                            "ClippingTool",
+                            "RectangularClipping",
+                            "FreeFormClipping",
+                            "CopyTo",
+                            "IDBadge",
+                            "DynamicLock",
+                            "PenTips",
+                            "PenTipsMirrored",
+                            "HWPJoin",
+                            "HWPInsert",
+                            "HWPStrikeThrough",
+                            "HWPScratchOut",
+                            "HWPSplit",
+                            "HWPNewLine",
+                            "HWPOverwrite",
+                            "MobWifiWarning1",
+                            "MobWifiWarning2",
+                            "MobWifiWarning3",
+                            "MobWifiWarning4",
+                            "MicLocationCombo",
+                            "Globe2",
+                            "SpecialEffectSize",
+                            "GIF",
+                            "Sticker2",
+                            "SurfaceHubSelected",
+                            "HoloLensSelected",
+                            "Earbud",
+                            "MixVolumes",
+                            "Safe",
+                            "LaptopSecure",
+                            "PrintDefault",
+                            "PageMirrored",
+                            "LandscapeOrientationMirrored",
+                            "ColorOff",
+                            "PrintAllPages",
+                            "PrintCustomRange",
+                            "PageMarginPortraitNarrow",
+                            "PageMarginPortraitNormal",
+                            "PageMarginPortraitModerate",
+                            "PageMarginPortraitWide",
+                            "PageMarginLandscapeNarrow",
+                            "PageMarginLandscapeNormal",
+                            "PageMarginLandscapeModerate",
+                            "PageMarginLandscapeWide",
+                            "CollateLandscape",
+                            "CollatePortrait",
+                            "CollatePortraitSeparated",
+                            "DuplexLandscapeOneSided",
+                            "DuplexLandscapeOneSidedMirrored",
+                            "DuplexLandscapeTwoSidedLongEdge",
+                            "DuplexLandscapeTwoSidedLongEdgeMirrored",
+                            "DuplexLandscapeTwoSidedShortEdge",
+                            "DuplexLandscapeTwoSidedShortEdgeMirrored",
+                            "DuplexPortraitOneSided",
+                            "DuplexPortraitOneSidedMirrored",
+                            "DuplexPortraitTwoSidedLongEdge",
+                            "DuplexPortraitTwoSidedLongEdgeMirrored",
+                            "DuplexPortraitTwoSidedShortEdge",
+                            "DuplexPortraitTwoSidedShortEdgeMirrored",
+                            "PPSOneLandscape",
+                            "PPSTwoLandscape",
+                            "PPSTwoPortrait",
+                            "PPSFourLandscape",
+                            "PPSFourPortrait",
+                            "HolePunchOff",
+                            "HolePunchPortraitLeft",
+                            "HolePunchPortraitRight",
+                            "HolePunchPortraitTop",
+                            "HolePunchPortraitBottom",
+                            "HolePunchLandscapeLeft",
+                            "HolePunchLandscapeRight",
+                            "HolePunchLandscapeTop",
+                            "HolePunchLandscapeBottom",
+                            "StaplingOff",
+                            "StaplingPortraitTopLeft",
+                            "StaplingPortraitTopRight",
+                            "StaplingPortraitBottomRight",
+                            "StaplingPortraitTwoLeft",
+                            "StaplingPortraitTwoRight",
+                            "StaplingPortraitTwoTop",
+                            "StaplingPortraitTwoBottom",
+                            "StaplingPortraitBookBinding",
+                            "StaplingLandscapeTopLeft",
+                            "StaplingLandscapeTopRight",
+                            "StaplingLandscapeBottomLeft",
+                            "StaplingLandscapeBottomRight",
+                            "StaplingLandscapeTwoLeft",
+                            "StaplingLandscapeTwoRight",
+                            "StaplingLandscapeTwoTop",
+                            "StaplingLandscapeTwoBottom",
+                            "StaplingLandscapeBookBinding",
+                            "StatusDataTransferRoaming",
+                            "MobSIMError",
+                            "CollateLandscapeSeparated",
+                            "PPSOnePortrait",
+                            "StaplingPortraitBottomLeft",
+                            "PlaySolid",
+                            "RepeatOff",
+                            "Set",
+                            "SetSolid",
+                            "FuzzyReading",
+                            "VerticalBattery0",
+                            "VerticalBattery1",
+                            "VerticalBattery2",
+                            "VerticalBattery3",
+                            "VerticalBattery4",
+                            "VerticalBattery5",
+                            "VerticalBattery6",
+                            "VerticalBattery7",
+                            "VerticalBattery8",
+                            "VerticalBattery9",
+                            "VerticalBattery10",
+                            "VerticalBatteryCharging0",
+                            "VerticalBatteryCharging1",
+                            "VerticalBatteryCharging2",
+                            "VerticalBatteryCharging3",
+                            "VerticalBatteryCharging4",
+                            "VerticalBatteryCharging5",
+                            "VerticalBatteryCharging6",
+                            "VerticalBatteryCharging7",
+                            "VerticalBatteryCharging8",
+                            "VerticalBatteryCharging9",
+                            "VerticalBatteryCharging10",
+                            "VerticalBatteryUnknown",
+                            "SIMError",
+                            "SIMMissing",
+                            "SIMLock",
+                            "eSIM",
+                            "eSIMNoProfile",
+                            "eSIMLocked",
+                            "eSIMBusy",
+                            "NoiseCancelation",
+                            "NoiseCancelationOff",
+                            "MusicSharing",
+                            "MusicSharingOff",
+                            "CircleShapeSolid",
+                            "WifiCallBars",
+                            "WifiCall0",
+                            "WifiCall1",
+                            "WifiCall2",
+                            "WifiCall3",
+                            "WifiCall4",
+                            "CHTLanguageBar",
+                            "ComposeMode",
+                            "ExpressiveInputEntry",
+                            "EmojiTabMoreSymbols",
+                            "WebSearch",
+                            "Kiosk",
+                            "RTTLogo",
+                            "VoiceCall",
+                            "GoToMessage",
+                            "ReturnToCall",
+                            "StartPresenting",
+                            "StopPresenting",
+                            "ProductivityMode",
+                            "SetHistoryStatus",
+                            "SetHistoryStatus2",
+                            "Keyboardsettings20",
+                            "OneHandedRight20",
+                            "OneHandedLeft20",
+                            "Split20",
+                            "Full20",
+                            "Handwriting20",
+                            "ChevronLeft20",
+                            "ChevronLeft32",
+                            "ChevronRight20",
+                            "ChevronRight32",
+                            "Event12",
+                            "MicOff2",
+                            "DeliveryOptimization",
+                            "CancelMedium",
+                            "SearchMedium",
+                            "AcceptMedium",
+                            "RevealPasswordMedium",
+                            "DeleteWord",
+                            "DeleteWordFill",
+                            "DeleteLines",
+                            "DeleteLinesFill",
+                            "InstertWords",
+                            "InstertWordsFill",
+                            "JoinWords",
+                            "JoinWordsFill",
+                            "OverwriteWords",
+                            "OverwriteWordsFill",
+                            "AddNewLine",
+                            "AddNewLineFill",
+                            "OverwriteWordsKorean",
+                            "OverwriteWordsFillKorean",
+                            "EducationIcon",
+                            "WindowSnipping",
+                            "VideoCapture",
+                            "StatusSecured",
+                            "NarratorApp",
+                            "PowerButtonUpdate",
+                            "RestartUpdate",
+                            "UpdateStatusDot",
+                            "Eject",
+                            "Spelling",
+                            "SpellingKorean",
+                            "SpellingSerbian",
+                            "SpellingChinese",
+                            "FolderSelect",
+                            "SmartScreen",
+                            "ExploitProtection",
+                            "AddBold",
+                            "SubtractBold",
+                            "BackSolidBold",
+                            "ForwardSolidBold",
+                            "PauseBold",
+                            "ClickSolid",
+                            "SettingsSolid",
+                            "MicrophoneSolidBold",
+                            "SpeechSolidBold",
+                            "ClickedOutLoudSolidBold"
+                        ]
+                    }
+                ],
+                "namespace": true,
+                "qualifiedClassName": "Fluent_Icons"
+            }
+        ],
+        "inputFile": "FluentIconDef.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "className": "FluentUIPlugin",
+                "object": true,
+                "qualifiedClassName": "FluentUIPlugin",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QQmlEngineExtensionPlugin"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "fluentuiplugin_FluentUIPlugin.cpp",
+        "outputRevision": 68
+    }
+]

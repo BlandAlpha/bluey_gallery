@@ -20,7 +20,17 @@ public:
     Q_INVOKABLE QVariantList getRelatedCharacters(int episodeId);
     Q_INVOKABLE QVariantList getRandomCharacters(int limit);
     Q_INVOKABLE QVariantList getRandomEpisodes(int limit);
+    Q_INVOKABLE QVariantList getDataByID(int id);
+
+    Q_INVOKABLE QVariantList searchEpisodes(const QString &title);
+    Q_INVOKABLE QVariantList searchCharacters(const QString &name);
+    Q_INVOKABLE QVariantList searchAll(const QString &searchTerm);
+
+
     Q_INVOKABLE void resetDatabase(); // 提供给QML调用的重置函数
+
+    Q_INVOKABLE void newDatabaseConnection(const QString& connectionName);
+
 private:
     QSqlDatabase m_db;
     void initializeDatabase();

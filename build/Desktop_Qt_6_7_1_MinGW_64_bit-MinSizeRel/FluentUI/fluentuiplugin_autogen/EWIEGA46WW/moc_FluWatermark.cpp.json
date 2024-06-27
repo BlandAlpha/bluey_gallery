@@ -1,0 +1,141 @@
+{
+    "classes": [
+        {
+            "classInfos": [
+                {
+                    "name": "QML.Element",
+                    "value": "FluWatermark"
+                }
+            ],
+            "className": "FluWatermark",
+            "object": true,
+            "properties": [
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 0,
+                    "member": "_text",
+                    "name": "text",
+                    "notify": "textChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 1,
+                    "member": "_gap",
+                    "name": "gap",
+                    "notify": "gapChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QPoint",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 2,
+                    "member": "_offset",
+                    "name": "offset",
+                    "notify": "offsetChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QPoint",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 3,
+                    "member": "_textColor",
+                    "name": "textColor",
+                    "notify": "textColorChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QColor",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 4,
+                    "member": "_rotate",
+                    "name": "rotate",
+                    "notify": "rotateChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "int",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 5,
+                    "member": "_textSize",
+                    "name": "textSize",
+                    "notify": "textSizeChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "int",
+                    "user": false
+                }
+            ],
+            "qualifiedClassName": "FluWatermark",
+            "signals": [
+                {
+                    "access": "public",
+                    "name": "textChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "gapChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "offsetChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "textColorChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "rotateChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "textSizeChanged",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QQuickPaintedItem"
+                }
+            ]
+        }
+    ],
+    "inputFile": "FluWatermark.h",
+    "outputRevision": 68
+}

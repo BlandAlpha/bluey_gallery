@@ -74,6 +74,7 @@ FluScrollablePage{
         }
     }
 
+    // Banner Item
     Item{
         Layout.fillWidth: true
         Layout.preferredHeight: 480
@@ -121,7 +122,7 @@ FluScrollablePage{
             }
         }
 
-        // 首页Banner大卡片组件
+        // Banner card component
         Component{
             id:com_grallery
             Item{
@@ -228,91 +229,6 @@ FluScrollablePage{
         }
     }
 
-    // Explore Card Component
-    Component{
-        id:com_item
-        Item{
-            property string desc: modelData.extra.desc
-            width: 320
-            height: 120
-            FluFrame{
-                radius: 8
-                width: 300
-                height: 100
-                anchors.centerIn: parent
-                Rectangle{
-                    anchors.fill: parent
-                    radius: 8
-                    color:{
-                        if(item_mouse.containsMouse){
-                            return FluTheme.itemHoverColor
-                        }
-                        return FluTheme.itemNormalColor
-                    }
-                }
-                Image{
-                    id:item_icon
-                    height: 40
-                    width: 40
-                    source: modelData.extra.image
-                    anchors{
-                        left: parent.left
-                        leftMargin: 20
-                        verticalCenter: parent.verticalCenter
-                    }
-                }
-                FluText{
-                    id:item_title
-                    text:modelData.title
-                    font: FluTextStyle.BodyStrong
-                    anchors{
-                        left: item_icon.right
-                        leftMargin: 20
-                        top: item_icon.top
-                    }
-                }
-                FluText{
-                    id:item_desc
-                    text:desc
-                    color:FluColors.Grey120
-                    wrapMode: Text.WordWrap
-                    elide: Text.ElideRight
-                    font: FluTextStyle.Caption
-                    maximumLineCount: 2
-                    anchors{
-                        left: item_title.left
-                        right: parent.right
-                        rightMargin: 20
-                        top: item_title.bottom
-                        topMargin: 5
-                    }
-                }
-
-                Rectangle{
-                    height: 12
-                    width: 12
-                    radius:  6
-                    color: FluTheme.primaryColor
-                    anchors{
-                        right: parent.right
-                        top: parent.top
-                        rightMargin: 14
-                        topMargin: 14
-                    }
-                }
-
-                MouseArea{
-                    id:item_mouse
-                    anchors.fill: parent
-                    hoverEnabled: true
-                    onClicked: {
-                        ItemsOriginal.startPageByItem(modelData)
-                    }
-                }
-            }
-        }
-    }
-
     FluText {
         text: qsTr("Explore Characters")
         font: FluTextStyle.Title
@@ -352,9 +268,9 @@ FluScrollablePage{
         delegate: com_episode
     }
 
+    // Character Card Component
     property int characterCardHeight: 330
     property int characterCardWidth: 200
-    // Character Card Component
     Component {
         id: com_character
         Item {
@@ -451,12 +367,12 @@ FluScrollablePage{
         }
     }
 
+    // Episode Card Component
     property int frameHeight: 120
     property int frameWidth: 500
     property real aspectRatio: 16 / 9
     property int imageHeight: frameHeight
     property int imageWidth: Math.round(imageHeight * aspectRatio)
-    // Episode Card Component
     Component {
         id: com_episode
         Item {
@@ -491,8 +407,6 @@ FluScrollablePage{
                         radius: [8,0,0,8]
                         width: imageWidth
                         height: imageHeight
-                        anchors.left: parent.left
-                        anchors.verticalCenter: parent.verticalCenter
                         Image {
                             sourceSize: Qt.size(1280, 720)
                             fillMode: Image.PreserveAspectFit
@@ -503,11 +417,7 @@ FluScrollablePage{
                     }
 
                     Column {
-                        anchors {
-                            left: item_screenshot.right
-                            leftMargin: 12
-                            horizontalCenter: parent.horizontalCenter
-                        }
+                        Layout.leftMargin: 8
                         spacing: 6
                         FluText {
                             id: item_title
@@ -517,7 +427,6 @@ FluScrollablePage{
                         FluText {
                             id:item_se
                             text: "第" + season + "季，第" + episode + "集"
-                            // text: season + episode
                             font: FluTextStyle.Body
                             color: FluColors.Grey120
                         }

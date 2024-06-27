@@ -148,7 +148,7 @@ FluScrollablePage{
                     anchors.fill: parent
                     hoverEnabled: true
                     onClicked: {
-                        console.debug("Now transmitting ID:", model.id)
+                        console.debug("Now transmitting", model.name_zh)
                         FluRouter.navigate("/characterWindow", {
                                             "id": model.id,
                                             "name_zh": model.name_zh,
@@ -168,6 +168,9 @@ FluScrollablePage{
         anchors.left: parent.left
         anchors.leftMargin: 24
         text: "添加角色"
+        onClicked: {
+            FluRouter.navigate("/characterAddWindow")
+        }
     }
 
     GridView {

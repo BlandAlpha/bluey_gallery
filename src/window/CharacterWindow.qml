@@ -26,29 +26,21 @@ FluWindow {
 
     ColumnLayout{
         id: c_layout
-
         spacing: 24
-
-        anchors{
-            top: parent.top
-            left: parent.left
-            right: parent.right
-            topMargin: 16
-            leftMargin: 16
-            rightMargin: 16
-        }
+        width: parent.width
 
         FluFrame {
             id: frame
-            Layout.preferredWidth: parent.width
-            anchors {
-                leftMargin: 12
-                rightMargin: 12
-            }
+            Layout.fillWidth: true
+            Layout.leftMargin: 16
+            Layout.rightMargin: 16
+            Layout.topMargin: 16
             padding: 16
 
             RowLayout {
-                anchors.left: parent.left
+                // anchors.left: parent.left
+                Layout.leftMargin: 16
+                Layout.rightMargin: 16
                 spacing: 24
                 Image {
                     id: avatar
@@ -93,11 +85,9 @@ FluWindow {
         ListView {
             id: relateEpisodeList
             model: episodesModel
-            anchors{
-                left: parent.left
-                right: parent.right
-                bottom: parent.bottom
-            }
+            Layout.leftMargin: 16
+            Layout.rightMargin: 16
+            Layout.fillWidth: true
             height: 160
             orientation: ListView.Horizontal
             header: Item{height: 8;width: 8}
@@ -125,8 +115,8 @@ FluWindow {
         anchors {
             top: c_layout.top
             right: c_layout.right
-            topMargin: 12
-            rightMargin: 12
+            topMargin: 16 + 12
+            rightMargin: 16 + 12
         }
     }
 
@@ -148,14 +138,6 @@ FluWindow {
             property string img: model.image_path
             width: frameWidth
             height: frameHeight
-            // clip: true
-            // FluShadow{
-            //     id: cardShadow1
-            //     radius: 8
-            //     elevation: 2
-
-            //     anchors.fill: item_card
-            // }
             FluFrame {
                 id: item_card
                 radius: 8
@@ -180,8 +162,6 @@ FluWindow {
                         radius: [8,0,0,8]
                         width: imageWidth
                         height: imageHeight
-                        anchors.left: parent.left
-                        anchors.verticalCenter: parent.verticalCenter
                         Image {
                             sourceSize: Qt.size(1280, 720)
                             fillMode: Image.PreserveAspectCrop
@@ -192,11 +172,7 @@ FluWindow {
                     }
 
                     Column {
-                        anchors {
-                            left: item_screenshot.right
-                            leftMargin: 12
-                            horizontalCenter: parent.horizontalCenter
-                        }
+                        Layout.leftMargin: 8
                         spacing: 6
                         FluText {
                             id: item_title
@@ -206,7 +182,6 @@ FluWindow {
                         FluText {
                             id:item_se
                             text: "第" + season + "季，第" + episode + "集"
-                            // text: season + episode
                             font: FluTextStyle.Body
                             color: FluColors.Grey120
                         }

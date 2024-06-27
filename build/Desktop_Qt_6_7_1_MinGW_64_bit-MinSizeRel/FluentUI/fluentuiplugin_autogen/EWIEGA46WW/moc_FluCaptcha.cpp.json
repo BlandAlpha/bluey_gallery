@@ -1,0 +1,83 @@
+{
+    "classes": [
+        {
+            "classInfos": [
+                {
+                    "name": "QML.Element",
+                    "value": "FluCaptcha"
+                }
+            ],
+            "className": "FluCaptcha",
+            "methods": [
+                {
+                    "access": "public",
+                    "name": "refresh",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "code",
+                            "type": "QString"
+                        }
+                    ],
+                    "name": "verify",
+                    "returnType": "bool"
+                }
+            ],
+            "object": true,
+            "properties": [
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 0,
+                    "member": "_font",
+                    "name": "font",
+                    "notify": "fontChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QFont",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 1,
+                    "member": "_ignoreCase",
+                    "name": "ignoreCase",
+                    "notify": "ignoreCaseChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "bool",
+                    "user": false
+                }
+            ],
+            "qualifiedClassName": "FluCaptcha",
+            "signals": [
+                {
+                    "access": "public",
+                    "name": "fontChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "ignoreCaseChanged",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QQuickPaintedItem"
+                }
+            ]
+        }
+    ],
+    "inputFile": "FluCaptcha.h",
+    "outputRevision": 68
+}
