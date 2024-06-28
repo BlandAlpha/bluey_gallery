@@ -619,12 +619,12 @@
         <translation>语言</translation>
     </message>
     <message>
-        <location filename="page/Settings.qml" line="143"/>
+        <location filename="page/Settings.qml" line="149"/>
         <source>Reset Database</source>
         <translation type="unfinished">重置数据库</translation>
     </message>
     <message>
-        <location filename="page/Settings.qml" line="148"/>
+        <location filename="page/Settings.qml" line="154"/>
         <source>Reset</source>
         <translation type="unfinished">重置</translation>
     </message>
