@@ -18,6 +18,7 @@ FluWindow {
 
     property string imagePath: ""
     property var selectedEpisodes: []
+    property var selectedEpisodesId: []
 
     DatabaseManager {
         id: dbManager
@@ -256,10 +257,66 @@ FluWindow {
                 FluFilledButton {
                     text: "添加"
                     horizontalPadding: 24
+                    FluTooltip{
+                        visible: button_1.hovered
+                        text:button_1.text
+                        delay: 1800
+                    }
+                    Timer {
+                        id: closeWindowTimer
+                        interval: 2000
+                        repeat: false
+                        running: false
+                        onTriggered: FluRouter.removeWindow(window)
+                    }
+
+                    onClicked: {
+                        if(imagePath.text !== "" && nameEnField.text !== "") {
+                            var newImageDir = "/img/characters"
+                            var newImagePath = newImageDir+ "/" + nameEnField.text;
+                            // 复制图片，添加条目
+                            if(dbManager.copyImage(imagePath, newImageDir, nameEnField.text)) {
+                                var newId = dbManager.addCharacter(
+                                    nameEnField.text,
+                                    nameZhField.text,
+                                    breedField.text,
+                                    descField.text,
+                                    newImagePath
+                                );
+                                console.log("Binding Episodes:", selectedEpisodesId);
+                                // 绑定剧集
+                                dbManager.bindEpisodes(newId, selectedEpisodesId)
+                                console.log("New character ID:", newId);
+                                showSuccess("添加成功")
+                                closeWindowTimer.start()
+                            } else {
+                                console.log("Failed to copy image");
+                                showError("拷贝图片失败")
+                            }
+                        } else {
+                            console.log("Image path is empty");
+                            showError("所选图片或必填字段为空")
+                        }
+                    }
                 }
                 FluButton {
                     text: "取消"
                     horizontalPadding: 24
+                    onClicked: {
+                        dialog_close.open()
+                    }
+                }
+            }
+
+            FluContentDialog{
+                id: dialog_close
+                title: qsTr("Warning")
+                message: qsTr("The changes you have made will not be saved")
+                buttonFlags: FluContentDialogType.NegativeButton | FluContentDialogType.PositiveButton
+                positiveText: qsTr("Confirm")
+                negativeText: qsTr("Cancel")
+                onPositiveClicked:{
+                    FluRouter.removeWindow(window)
                 }
             }
         }
@@ -280,18 +337,20 @@ FluWindow {
     function addSelectedEpisode(episode) {
         if (!selectedEpisodes.some(ep => ep.id === episode.id)) {
             selectedEpisodes.push(episode)
+            selectedEpisodesId.push(episode.id)
             selectedEpisodesList.model = selectedEpisodes
         }
-        console.log("Current episodes:", JSON.stringify(selectedEpisodes))
+        console.log("Current episodes:", selectedEpisodesId)
     }
 
     function removeSelectedEpisode(episode) {
         var index = selectedEpisodes.findIndex(ep => ep.id === episode.id)
         if (index !== -1) {
             selectedEpisodes.splice(index, 1)
+            selectedEpisodesId.splice(index, 1)
             selectedEpisodesList.model = selectedEpisodes
         }
-        console.log("Current episodes:", JSON.stringify(selectedEpisodes))
+        console.log("Current episodes:", selectedEpisodesId)
     }
 
     function addCharacter() {

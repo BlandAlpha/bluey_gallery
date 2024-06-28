@@ -38,23 +38,43 @@
 <context>
     <name>CharacterAddWindow</name>
     <message>
-        <location filename="window/CharacterAddWindow.qml" line="98"/>
+        <location filename="window/CharacterAddWindow.qml" line="99"/>
         <source>输入角色中文名</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="window/CharacterAddWindow.qml" line="111"/>
+        <location filename="window/CharacterAddWindow.qml" line="112"/>
         <source>输入角色英文名</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="window/CharacterAddWindow.qml" line="124"/>
+        <location filename="window/CharacterAddWindow.qml" line="125"/>
         <source>输入角色品种</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="window/CharacterAddWindow.qml" line="139"/>
+        <location filename="window/CharacterAddWindow.qml" line="140"/>
         <source>输入角色简介</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="window/CharacterAddWindow.qml" line="313"/>
+        <source>Warning</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="window/CharacterAddWindow.qml" line="314"/>
+        <source>The changes you have made will not be saved</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="window/CharacterAddWindow.qml" line="316"/>
+        <source>Confirm</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="window/CharacterAddWindow.qml" line="317"/>
+        <source>Cancel</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -66,8 +86,30 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="window/CharacterWindow.qml" line="111"/>
-        <source>Edit</source>
+        <location filename="window/CharacterWindow.qml" line="112"/>
+        <source>Delete</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="window/CharacterWindow.qml" line="141"/>
+        <source>Delete This Character?</source>
+        <oldsource>Delete Character</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="window/CharacterWindow.qml" line="142"/>
+        <source>This action cannot be withdrawn</source>
+        <oldsource>Are you sure you want to delete the entry? This action cannot be withdrawn</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="window/CharacterWindow.qml" line="144"/>
+        <source>Confirm</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="window/CharacterWindow.qml" line="145"/>
+        <source>Cancel</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -213,6 +255,39 @@
     </message>
 </context>
 <context>
+    <name>EpisodeAddWindow</name>
+    <message>
+        <location filename="window/EpisodeAddWindow.qml" line="101"/>
+        <source>输入剧集名称</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="window/EpisodeAddWindow.qml" line="143"/>
+        <source>输入剧情简介</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="window/EpisodeAddWindow.qml" line="317"/>
+        <source>Warning</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="window/EpisodeAddWindow.qml" line="318"/>
+        <source>The changes you have made will not be saved</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="window/EpisodeAddWindow.qml" line="320"/>
+        <source>Confirm</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="window/EpisodeAddWindow.qml" line="321"/>
+        <source>Cancel</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>EpisodeWindow</name>
     <message>
         <location filename="window/EpisodeWindow.qml" line="170"/>
@@ -220,8 +295,28 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="window/EpisodeWindow.qml" line="306"/>
-        <source>Edit</source>
+        <location filename="window/EpisodeWindow.qml" line="307"/>
+        <source>Delete</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="window/EpisodeWindow.qml" line="321"/>
+        <source>Delete This Episode?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="window/EpisodeWindow.qml" line="322"/>
+        <source>This action cannot be withdrawn</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="window/EpisodeWindow.qml" line="324"/>
+        <source>Confirm</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="window/EpisodeWindow.qml" line="325"/>
+        <source>Cancel</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -244,18 +339,18 @@
     </message>
     <message>
         <location filename="page/Episodes.qml" line="247"/>
-        <location filename="page/Episodes.qml" line="270"/>
-        <location filename="page/Episodes.qml" line="293"/>
+        <location filename="page/Episodes.qml" line="273"/>
+        <location filename="page/Episodes.qml" line="299"/>
         <source>Add Episode</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page/Episodes.qml" line="266"/>
+        <location filename="page/Episodes.qml" line="269"/>
         <source>Season 2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page/Episodes.qml" line="289"/>
+        <location filename="page/Episodes.qml" line="295"/>
         <source>Season 3</source>
         <translation type="unfinished"></translation>
     </message>
@@ -372,79 +467,94 @@
 <context>
     <name>Settings</name>
     <message>
-        <location filename="page/Settings.qml" line="11"/>
+        <location filename="page/Settings.qml" line="12"/>
         <source>Settings</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page/Settings.qml" line="15"/>
+        <location filename="page/Settings.qml" line="20"/>
         <source>Restart now?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page/Settings.qml" line="16"/>
+        <location filename="page/Settings.qml" line="21"/>
         <source>This action requires a restart of the program to take effect.</source>
         <oldsource>This action requires a restart of the program to take effect, is it restarted?</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page/Settings.qml" line="18"/>
+        <location filename="page/Settings.qml" line="23"/>
         <source>Cancel</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page/Settings.qml" line="19"/>
+        <location filename="page/Settings.qml" line="24"/>
         <source>OK</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page/Settings.qml" line="38"/>
+        <location filename="page/Settings.qml" line="42"/>
         <source>Dark Mode</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page/Settings.qml" line="43"/>
+        <location filename="page/Settings.qml" line="46"/>
         <source>System</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page/Settings.qml" line="43"/>
+        <location filename="page/Settings.qml" line="46"/>
         <source>Light</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page/Settings.qml" line="43"/>
+        <location filename="page/Settings.qml" line="46"/>
         <source>Dark</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page/Settings.qml" line="68"/>
+        <location filename="page/Settings.qml" line="66"/>
         <source>Navigation View Display Mode</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page/Settings.qml" line="73"/>
+        <location filename="page/Settings.qml" line="70"/>
         <source>Open</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page/Settings.qml" line="73"/>
+        <location filename="page/Settings.qml" line="70"/>
         <source>Compact</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page/Settings.qml" line="73"/>
+        <location filename="page/Settings.qml" line="70"/>
         <source>Minimal</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page/Settings.qml" line="73"/>
+        <location filename="page/Settings.qml" line="70"/>
         <source>Auto</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="page/Settings.qml" line="110"/>
+        <location filename="page/Settings.qml" line="101"/>
         <source>Language</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page/Settings.qml" line="133"/>
+        <source>Reset Database</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page/Settings.qml" line="138"/>
+        <source>Reset</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="page/Settings.qml" line="142"/>
+        <source>Database Reset Successfully</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

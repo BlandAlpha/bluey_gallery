@@ -27,5 +27,6 @@
         <file>page/Show.qml</file>
         <file>window/EpisodeWindow.qml</file>
         <file>window/CharacterAddWindow.qml</file>
+        <file>window/EpisodeAddWindow.qml</file>
     </qresource>
 </RCC>

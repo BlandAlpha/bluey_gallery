@@ -35,7 +35,8 @@ FluLauncher {
             "/": "qrc:/main.qml",
             "/characterWindow": "qrc:/window/CharacterWindow.qml",
             "/episodeWindow": "qrc:/window/EpisodeWindow.qml",
-            "/characterAddWindow": "qrc:/window/CharacterAddWindow.qml"
+            "/characterAddWindow": "qrc:/window/CharacterAddWindow.qml",
+            "/episodeAddWindow": "qrc:/window/EpisodeAddWindow.qml"
         }
         FluRouter.navigate("/")
     }

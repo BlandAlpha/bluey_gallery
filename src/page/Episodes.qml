@@ -245,6 +245,9 @@ FluScrollablePage{
             }
             FluFilledButton {
                 text: qsTr("Add Episode")
+                onClicked: {
+                    FluRouter.navigate("/episodeAddWindow", {"season": 1})
+                }
             }
         }
         GridView{
@@ -268,6 +271,9 @@ FluScrollablePage{
             }
             FluFilledButton {
                 text: qsTr("Add Episode")
+                onClicked: {
+                    FluRouter.navigate("/episodeAddWindow", {"season": 2})
+                }
             }
         }
         GridView{
@@ -291,6 +297,9 @@ FluScrollablePage{
             }
             FluFilledButton {
                 text: qsTr("Add Episode")
+                onClicked: {
+                    FluRouter.navigate("/episodeAddWindow", {"season": 3})
+                }
             }
         }
         GridView{
