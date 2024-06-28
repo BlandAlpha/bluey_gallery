@@ -28,7 +28,6 @@ FluLauncher {
         FluApp.init(app,Qt.locale(TranslateHelper.current))
         // Change app icon
         FluApp.windowIcon = "qrc:/res/img/favicon.png"
-        // FluApp.useSystemAppBar = SettingsHelper.getUseSystemAppBar()
         FluTheme.darkMode = SettingsHelper.getDarkMode()
         FluTheme.animationEnabled = true
         FluRouter.routes = {

@@ -37,7 +37,7 @@ FluScrollablePage{
     ListModel{
         id: model_header
         ListElement{
-            icon: "qrc:/res/img/cinema.png"
+            icon: "qrc:/res/img/clapper-board.png"
             title: qsTr("Episodes")
             desc: qsTr("Check out different Bluey episodes and explore interesting stories of the Heelers.")
             index: 1
@@ -46,7 +46,7 @@ FluScrollablePage{
             }
         }
         ListElement{
-            icon: "qrc:/res/img/characters.png"
+            icon: "qrc:/res/img/dogface.png"
             title: qsTr("Characters")
             desc: qsTr("Check out the different Bluey characters and get to know these fun and lively characters.")
             index: 2
@@ -55,19 +55,10 @@ FluScrollablePage{
             }
         }
         ListElement{
-            icon: "qrc:/res/img/info.png"
+            icon: "qrc:/res/img/television.png"
             title: qsTr("Show")
             desc: qsTr("Learn about Bluey's worldview and what its creators have to say about the animation.")
             index: 3
-            clicked: function(model){
-                ItemsOriginal.setCurrentIndex(model.index)
-            }
-        }
-        ListElement{
-            icon: "qrc:/res/img/add.png"
-            title: qsTr("Add")
-            desc: qsTr("Didn't find the page you wanted? Manually add episode or character pages.")
-            index: 4
             clicked: function(model){
                 ItemsOriginal.setCurrentIndex(model.index)
             }
@@ -167,9 +158,12 @@ FluScrollablePage{
                         Image {
                             Layout.topMargin: 24
                             // Layout.leftMargin: 16
-                            Layout.preferredWidth: 56
-                            Layout.preferredHeight: 56
+                            Layout.preferredWidth: 60
+                            Layout.preferredHeight: 60
                             source: model.icon
+                            sourceSize: Qt.size(368, 368)
+
+
                         }
                         FluText{
                             text: model.title

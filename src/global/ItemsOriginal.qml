@@ -59,39 +59,6 @@ FluObject{
         }
     }
 
-    FluPaneItem{
-        id:item_add
-        title: qsTr("Edit")
-        menuDelegate: paneItemMenu
-        icon: FluentIcons.Edit
-        url: "qrc:/page/Edit.qml"
-        onTap: {
-            navigationView.push(url)
-        }
-    }
-
-    function getSearchData(){
-        // change to database search
-        if(!navigationView){
-            return
-        }
-        var arr = []
-        var items = navigationView.getItems();
-        console.debug("Search got: ", items)
-        for(var i=0;i<items.length;i++){
-            var item = items[i]
-            if(item instanceof FluPaneItem){
-                if (item.parent instanceof FluPaneItemExpander)
-                {
-                    arr.push({title:`${item.parent.title} -> ${item.title}`,key:item.key})
-                }
-                else
-                    arr.push({title:item.title,key:item.key})
-            }
-        }
-        return arr
-    }
-
     function setCurrentIndex(index){
         navigationView.setCurrentIndex(index)
     }

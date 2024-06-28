@@ -57,6 +57,8 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         src/charactermodel.h src/charactermodel.cpp
         src/episodemodel.h src/episodemodel.cpp
         src/helper/pathhelper.h src/helper/pathhelper.cpp
+        res/img/clapper-board.png res/img/dogface.png res/img/television.png
+
 
 
 

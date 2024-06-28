@@ -27,10 +27,10 @@ This project is a **School Project**, therefore long-term maintenance is NOT pla
 
 ### Roadmap:
 
-- [ ] **[PRIORITY]** Adding and editing database entries;
 - [ ] Loading page;
-- [ ] Restore original database;
 - [ ] Creator's commentary (Show page)
+- [x] Restore original database;
+- [x] Adding and editing database entries;
 - [x] Database search;
 - [x] Randomized display of entries on the home page;
 - [x] Independent page display for Character and Episode items;

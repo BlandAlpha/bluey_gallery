@@ -27,9 +27,23 @@ FluScrollablePage{
         }
     }
 
+    FluContentDialog{
+        id: dialog_reset
+        title: qsTr("Reset Database?")
+        message: qsTr("This action cannot be withdrawn")
+        buttonFlags: FluContentDialogType.NegativeButton | FluContentDialogType.PositiveButton
+        positiveText: qsTr("Confirm")
+        negativeText: qsTr("Cancel")
+        onPositiveClicked:{
+            dbManager.resetDatabase()
+            showSuccess(qsTr("Database Reset Successfully"))
+        }
+    }
+
     ColumnLayout {
         spacing: 16
         Layout.rightMargin: 8
+        Layout.topMargin: 16
 
         // 深色模式
         FluFrame{
@@ -119,10 +133,6 @@ FluScrollablePage{
             }
         }
 
-        MenuSeparator{
-            Layout.fillWidth: true
-        }
-
         // 重置数据库
         FluFrame {
             Layout.fillWidth: true
@@ -137,9 +147,7 @@ FluScrollablePage{
                 FluButton {
                     text: qsTr("Reset")
                     onClicked: {
-                        console.log("Database Reset")
-                        dbManager.resetDatabase()
-                        showSuccess(qsTr("Database Reset Successfully"))
+                        dialog_reset.open()
                     }
                 }
             }

@@ -30,4 +30,12 @@ FluObject{
         }
     }
 
+    function setCurrentIndex(index){
+        navigationView.setCurrentIndex(index)
+    }
+
+    function startPageByItem(data){
+        navigationView.startPageByItem(data)
+    }
+
 }
