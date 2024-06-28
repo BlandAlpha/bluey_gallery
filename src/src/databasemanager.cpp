@@ -716,7 +716,7 @@ bool DatabaseManager::deleteEpisode(int episodeId) {
     }
 
     // 删除 EpisodesCharacters 表中相关的行
-    query.prepare("DELETE FROM EpisodesCharacters WHERE EpisodeID = ?");
+    query.prepare("DELETE FROM EpisodesCharacters WHERE EpisodesID = ?");
     query.addBindValue(episodeId);
 
     if (!query.exec()) {

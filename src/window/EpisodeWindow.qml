@@ -328,6 +328,7 @@ FluWindow {
             if(dbManager.deleteEpisode(argument.id)) {
                 console.debug("Successfully Deleted:", argument.title)
                 showSuccess("删除成功")
+
             } else {
                 console.debug("Delete failed")
                 showError("删除失败")

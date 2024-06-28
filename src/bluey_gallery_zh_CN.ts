@@ -138,24 +138,24 @@
         <translation type="unfinished">删除</translation>
     </message>
     <message>
-        <location filename="window/CharacterWindow.qml" line="141"/>
+        <location filename="window/CharacterWindow.qml" line="138"/>
         <source>Delete This Character?</source>
         <oldsource>Delete Character</oldsource>
-        <translation type="unfinished">删除改角色？</translation>
+        <translation type="unfinished">删除该角色？</translation>
     </message>
     <message>
-        <location filename="window/CharacterWindow.qml" line="142"/>
+        <location filename="window/CharacterWindow.qml" line="139"/>
         <source>This action cannot be withdrawn</source>
         <oldsource>Are you sure you want to delete the entry? This action cannot be withdrawn</oldsource>
         <translation type="unfinished">此操作不能撤回</translation>
     </message>
     <message>
-        <location filename="window/CharacterWindow.qml" line="144"/>
+        <location filename="window/CharacterWindow.qml" line="141"/>
         <source>Confirm</source>
         <translation type="unfinished">确认</translation>
     </message>
     <message>
-        <location filename="window/CharacterWindow.qml" line="145"/>
+        <location filename="window/CharacterWindow.qml" line="142"/>
         <source>Cancel</source>
         <translation type="unfinished">取消</translation>
     </message>
@@ -380,7 +380,7 @@
     <message>
         <location filename="window/EpisodeWindow.qml" line="321"/>
         <source>Delete This Episode?</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">删除该集？</translation>
     </message>
     <message>
         <location filename="window/EpisodeWindow.qml" line="322"/>

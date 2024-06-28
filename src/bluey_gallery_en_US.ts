@@ -91,24 +91,24 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="window/CharacterWindow.qml" line="141"/>
+        <location filename="window/CharacterWindow.qml" line="138"/>
         <source>Delete This Character?</source>
         <oldsource>Delete Character</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="window/CharacterWindow.qml" line="142"/>
+        <location filename="window/CharacterWindow.qml" line="139"/>
         <source>This action cannot be withdrawn</source>
         <oldsource>Are you sure you want to delete the entry? This action cannot be withdrawn</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="window/CharacterWindow.qml" line="144"/>
+        <location filename="window/CharacterWindow.qml" line="141"/>
         <source>Confirm</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="window/CharacterWindow.qml" line="145"/>
+        <location filename="window/CharacterWindow.qml" line="142"/>
         <source>Cancel</source>
         <translation type="unfinished"></translation>
     </message>

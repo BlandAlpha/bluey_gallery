@@ -130,9 +130,6 @@ FluWindow {
         }
         onClicked: {
             dialog_delete.open()
-            if(dialog_delete.onPositiveClickListener()) {
-                showSuccess("删除成功")
-            }
         }
     }
 
@@ -147,8 +144,11 @@ FluWindow {
             console.debug("Now Deleting", argument.id)
             if(dbManager.deleteCharacter(argument.id)) {
                 console.debug("Successfully Deleted:", argument.name_zh)
+                showSuccess("删除成功")
+
             } else {
                 console.debug("Delete failed")
+                showError("删除失败")
             }
         }
     }
