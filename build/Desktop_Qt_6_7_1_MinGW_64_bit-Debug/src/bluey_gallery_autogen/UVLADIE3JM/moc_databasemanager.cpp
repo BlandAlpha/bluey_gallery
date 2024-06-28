@@ -56,6 +56,23 @@ constexpr auto qt_meta_stringdata_CLASSDatabaseManagerENDCLASS = QtMocHelpers::s
     "name",
     "searchAll",
     "searchTerm",
+    "copyImage",
+    "sourcePath",
+    "targetDir",
+    "nameEn",
+    "addCharacter",
+    "nameZh",
+    "breed",
+    "description",
+    "imagePath",
+    "addEpisode",
+    "episode",
+    "bindEpisodes",
+    "episodeIds",
+    "bindCharacters",
+    "characterIds",
+    "deleteCharacter",
+    "deleteEpisode",
     "resetDatabase",
     "newDatabaseConnection",
     "connectionName"
@@ -71,7 +88,7 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSDatabaseManagerENDCLASS[] = {
       12,       // revision
        0,       // classname
        0,    0, // classinfo
-      13,   14, // methods
+      20,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -79,19 +96,26 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSDatabaseManagerENDCLASS[] = {
        0,       // signalCount
 
  // methods: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    0,   92,    2, 0x02,    1 /* Public */,
-       3,    0,   93,    2, 0x02,    2 /* Public */,
-       4,    1,   94,    2, 0x02,    3 /* Public */,
-       6,    1,   97,    2, 0x02,    5 /* Public */,
-       8,    1,  100,    2, 0x02,    7 /* Public */,
-      10,    1,  103,    2, 0x02,    9 /* Public */,
-      12,    1,  106,    2, 0x02,   11 /* Public */,
-      13,    1,  109,    2, 0x02,   13 /* Public */,
-      15,    1,  112,    2, 0x02,   15 /* Public */,
-      17,    1,  115,    2, 0x02,   17 /* Public */,
-      19,    1,  118,    2, 0x02,   19 /* Public */,
-      21,    0,  121,    2, 0x02,   21 /* Public */,
-      22,    1,  122,    2, 0x02,   22 /* Public */,
+       1,    0,  134,    2, 0x02,    1 /* Public */,
+       3,    0,  135,    2, 0x02,    2 /* Public */,
+       4,    1,  136,    2, 0x02,    3 /* Public */,
+       6,    1,  139,    2, 0x02,    5 /* Public */,
+       8,    1,  142,    2, 0x02,    7 /* Public */,
+      10,    1,  145,    2, 0x02,    9 /* Public */,
+      12,    1,  148,    2, 0x02,   11 /* Public */,
+      13,    1,  151,    2, 0x02,   13 /* Public */,
+      15,    1,  154,    2, 0x02,   15 /* Public */,
+      17,    1,  157,    2, 0x02,   17 /* Public */,
+      19,    1,  160,    2, 0x02,   19 /* Public */,
+      21,    3,  163,    2, 0x02,   21 /* Public */,
+      25,    5,  170,    2, 0x02,   25 /* Public */,
+      30,    5,  181,    2, 0x02,   31 /* Public */,
+      32,    2,  192,    2, 0x02,   37 /* Public */,
+      34,    2,  197,    2, 0x02,   40 /* Public */,
+      36,    1,  202,    2, 0x02,   43 /* Public */,
+      37,    1,  205,    2, 0x02,   45 /* Public */,
+      38,    0,  208,    2, 0x02,   47 /* Public */,
+      39,    1,  209,    2, 0x02,   48 /* Public */,
 
  // methods: parameters
     QMetaType::QVariantList,
@@ -105,8 +129,15 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSDatabaseManagerENDCLASS[] = {
     QMetaType::QVariantList, QMetaType::QString,   16,
     QMetaType::QVariantList, QMetaType::QString,   18,
     QMetaType::QVariantList, QMetaType::QString,   20,
-    QMetaType::Void,
-    QMetaType::Void, QMetaType::QString,   23,
+    QMetaType::Bool, QMetaType::QString, QMetaType::QString, QMetaType::QString,   22,   23,   24,
+    QMetaType::Int, QMetaType::QString, QMetaType::QString, QMetaType::QString, QMetaType::QString, QMetaType::QString,   24,   26,   27,   28,   29,
+    QMetaType::Int, QMetaType::QString, QMetaType::QString, QMetaType::QString, QMetaType::QString, QMetaType::QString,   16,    5,   31,   28,   29,
+    QMetaType::Bool, QMetaType::Int, QMetaType::QVariantList,    7,   33,
+    QMetaType::Bool, QMetaType::Int, QMetaType::QVariantList,    9,   35,
+    QMetaType::Bool, QMetaType::Int,    7,
+    QMetaType::Bool, QMetaType::Int,    9,
+    QMetaType::Bool,
+    QMetaType::Void, QMetaType::QString,   40,
 
        0        // eod
 };
@@ -151,8 +182,41 @@ Q_CONSTINIT const QMetaObject DatabaseManager::staticMetaObject = { {
         // method 'searchAll'
         QtPrivate::TypeAndForceComplete<QVariantList, std::false_type>,
         QtPrivate::TypeAndForceComplete<const QString &, std::false_type>,
+        // method 'copyImage'
+        QtPrivate::TypeAndForceComplete<bool, std::false_type>,
+        QtPrivate::TypeAndForceComplete<const QString &, std::false_type>,
+        QtPrivate::TypeAndForceComplete<const QString &, std::false_type>,
+        QtPrivate::TypeAndForceComplete<const QString &, std::false_type>,
+        // method 'addCharacter'
+        QtPrivate::TypeAndForceComplete<int, std::false_type>,
+        QtPrivate::TypeAndForceComplete<const QString &, std::false_type>,
+        QtPrivate::TypeAndForceComplete<const QString &, std::false_type>,
+        QtPrivate::TypeAndForceComplete<const QString &, std::false_type>,
+        QtPrivate::TypeAndForceComplete<const QString &, std::false_type>,
+        QtPrivate::TypeAndForceComplete<const QString &, std::false_type>,
+        // method 'addEpisode'
+        QtPrivate::TypeAndForceComplete<int, std::false_type>,
+        QtPrivate::TypeAndForceComplete<const QString &, std::false_type>,
+        QtPrivate::TypeAndForceComplete<const QString &, std::false_type>,
+        QtPrivate::TypeAndForceComplete<const QString &, std::false_type>,
+        QtPrivate::TypeAndForceComplete<const QString &, std::false_type>,
+        QtPrivate::TypeAndForceComplete<const QString &, std::false_type>,
+        // method 'bindEpisodes'
+        QtPrivate::TypeAndForceComplete<bool, std::false_type>,
+        QtPrivate::TypeAndForceComplete<int, std::false_type>,
+        QtPrivate::TypeAndForceComplete<const QVariantList &, std::false_type>,
+        // method 'bindCharacters'
+        QtPrivate::TypeAndForceComplete<bool, std::false_type>,
+        QtPrivate::TypeAndForceComplete<int, std::false_type>,
+        QtPrivate::TypeAndForceComplete<const QVariantList &, std::false_type>,
+        // method 'deleteCharacter'
+        QtPrivate::TypeAndForceComplete<bool, std::false_type>,
+        QtPrivate::TypeAndForceComplete<int, std::false_type>,
+        // method 'deleteEpisode'
+        QtPrivate::TypeAndForceComplete<bool, std::false_type>,
+        QtPrivate::TypeAndForceComplete<int, std::false_type>,
         // method 'resetDatabase'
-        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<bool, std::false_type>,
         // method 'newDatabaseConnection'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         QtPrivate::TypeAndForceComplete<const QString &, std::false_type>
@@ -188,8 +252,23 @@ void DatabaseManager::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int 
             if (_a[0]) *reinterpret_cast< QVariantList*>(_a[0]) = std::move(_r); }  break;
         case 10: { QVariantList _r = _t->searchAll((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1])));
             if (_a[0]) *reinterpret_cast< QVariantList*>(_a[0]) = std::move(_r); }  break;
-        case 11: _t->resetDatabase(); break;
-        case 12: _t->newDatabaseConnection((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
+        case 11: { bool _r = _t->copyImage((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[2])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[3])));
+            if (_a[0]) *reinterpret_cast< bool*>(_a[0]) = std::move(_r); }  break;
+        case 12: { int _r = _t->addCharacter((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[2])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[3])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[4])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[5])));
+            if (_a[0]) *reinterpret_cast< int*>(_a[0]) = std::move(_r); }  break;
+        case 13: { int _r = _t->addEpisode((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[2])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[3])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[4])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[5])));
+            if (_a[0]) *reinterpret_cast< int*>(_a[0]) = std::move(_r); }  break;
+        case 14: { bool _r = _t->bindEpisodes((*reinterpret_cast< std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<QVariantList>>(_a[2])));
+            if (_a[0]) *reinterpret_cast< bool*>(_a[0]) = std::move(_r); }  break;
+        case 15: { bool _r = _t->bindCharacters((*reinterpret_cast< std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<QVariantList>>(_a[2])));
+            if (_a[0]) *reinterpret_cast< bool*>(_a[0]) = std::move(_r); }  break;
+        case 16: { bool _r = _t->deleteCharacter((*reinterpret_cast< std::add_pointer_t<int>>(_a[1])));
+            if (_a[0]) *reinterpret_cast< bool*>(_a[0]) = std::move(_r); }  break;
+        case 17: { bool _r = _t->deleteEpisode((*reinterpret_cast< std::add_pointer_t<int>>(_a[1])));
+            if (_a[0]) *reinterpret_cast< bool*>(_a[0]) = std::move(_r); }  break;
+        case 18: { bool _r = _t->resetDatabase();
+            if (_a[0]) *reinterpret_cast< bool*>(_a[0]) = std::move(_r); }  break;
+        case 19: _t->newDatabaseConnection((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
         default: ;
         }
     }
@@ -214,13 +293,13 @@ int DatabaseManager::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 13)
+        if (_id < 20)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 13;
+        _id -= 20;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 13)
+        if (_id < 20)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 13;
+        _id -= 20;
     }
     return _id;
 }

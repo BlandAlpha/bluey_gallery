@@ -28,14 +28,14 @@ FluLauncher {
         FluApp.init(app,Qt.locale(TranslateHelper.current))
         // Change app icon
         FluApp.windowIcon = "qrc:/res/img/favicon.png"
-        // FluApp.useSystemAppBar = SettingsHelper.getUseSystemAppBar()
         FluTheme.darkMode = SettingsHelper.getDarkMode()
         FluTheme.animationEnabled = true
         FluRouter.routes = {
             "/": "qrc:/main.qml",
             "/characterWindow": "qrc:/window/CharacterWindow.qml",
             "/episodeWindow": "qrc:/window/EpisodeWindow.qml",
-            "/characterAddWindow": "qrc:/window/CharacterAddWindow.qml"
+            "/characterAddWindow": "qrc:/window/CharacterAddWindow.qml",
+            "/episodeAddWindow": "qrc:/window/EpisodeAddWindow.qml"
         }
         FluRouter.navigate("/")
     }

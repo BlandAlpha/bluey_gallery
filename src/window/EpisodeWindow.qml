@@ -303,15 +303,36 @@ FluWindow {
     }
 
     FluFilledButton {
-        text: qsTr("Edit")
-        onClicked: {
-            // open edit page，也不管
-        }
+        id: delete_btn
+        text: qsTr("Delete")
         anchors {
             top: c_layout.top
             right: c_layout.right
             topMargin: 16 + 12
             rightMargin: 16 + 12
+        }
+        onClicked: {
+            dialog_delete.open()
+        }
+    }
+
+    FluContentDialog {
+        id: dialog_delete
+        title: qsTr("Delete This Episode?")
+        message: qsTr("This action cannot be withdrawn")
+        buttonFlags: FluContentDialogType.NegativeButton | FluContentDialogType.PositiveButton
+        positiveText: qsTr("Confirm")
+        negativeText: qsTr("Cancel")
+        onPositiveClicked:{
+            console.debug("Now Deleting", argument.id)
+            if(dbManager.deleteEpisode(argument.id)) {
+                console.debug("Successfully Deleted:", argument.title)
+                showSuccess("删除成功")
+
+            } else {
+                console.debug("Delete failed")
+                showError("删除失败")
+            }
         }
     }
 

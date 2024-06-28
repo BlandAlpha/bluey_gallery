@@ -19,7 +19,6 @@
         <file>res/img/mainBanner.jpg</file>
         <file>res/img/poster.jpg</file>
         <file>res/img/favicon.png</file>
-        <file>page/Edit.qml</file>
         <file>page/Characters.qml</file>
         <file>page/Episodes.qml</file>
         <file>res/img/episodesBanner.jpg</file>
@@ -27,5 +26,9 @@
         <file>page/Show.qml</file>
         <file>window/EpisodeWindow.qml</file>
         <file>window/CharacterAddWindow.qml</file>
+        <file>window/EpisodeAddWindow.qml</file>
+        <file>res/img/clapper-board.png</file>
+        <file>res/img/dogface.png</file>
+        <file>res/img/television.png</file>
     </qresource>
 </RCC>

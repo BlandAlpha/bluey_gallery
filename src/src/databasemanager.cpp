@@ -6,6 +6,7 @@
 #include <QFile>
 #include <QDebug>
 #include <QFileInfo>
+#include <QDir>
 
 DatabaseManager::DatabaseManager(QObject *parent)
 {
@@ -38,11 +39,12 @@ void DatabaseManager::newDatabaseConnection(const QString& connectionName) {
     }
 }
 
-void DatabaseManager::resetDatabase() {
+bool DatabaseManager::resetDatabase() {
     m_db.close();
     QFile::remove(dbPath); // 删除当前数据库文件
     initializeDatabase();  // 重新初始化数据库
     m_db.open();
+    return true;
 }
 
 void DatabaseManager::initializeDatabase() {
@@ -405,9 +407,9 @@ QVariantList DatabaseManager::searchCharacters(const QString &name) {
     while (query.next()) {
         QVariantMap character;
         character["id"] = query.value("ID");
-        character["name_zh"] = query.value("Name_zh");
+        character["title"] = query.value("Name_zh");
         characters.append(character);
-        qDebug() << character["name_zh"] << "searched!";
+        qDebug() << character["title"] << "searched!";
     }
 
     return characters;
@@ -417,6 +419,7 @@ QVariantList DatabaseManager::searchAll(const QString &searchTerm) {
     QVariantList results;
 
     if (!m_db.isOpen()) {
+        // 不和其他查询混合，删除会 Database is not open!
         newDatabaseConnection("mainSearch");
         if (!m_db.isOpen()) {
             qDebug() << "Database is not open!";
@@ -462,4 +465,282 @@ QVariantList DatabaseManager::searchAll(const QString &searchTerm) {
     }
 
     return results;
+}
+
+bool DatabaseManager::copyImage(const QString &sourcePath, const QString &targetDir, const QString &nameEn) {
+    // 去掉 file:/// 前缀
+    QString cleanSourcePath = sourcePath;
+    if (sourcePath.startsWith("file:///")) {
+        cleanSourcePath = sourcePath.mid(8);
+    }
+
+    // 设置目标路径并包含新的文件名
+    QString newFileName = nameEn + "." + QFileInfo(cleanSourcePath).suffix();
+    QString newImagePath = QDir::currentPath() + targetDir + "/" + newFileName;
+
+    // 确保目标目录存在
+    QDir dir(targetDir);
+    if (!dir.exists()) {
+        dir.mkpath(".");
+    }
+
+    // 检查目标文件是否已存在，如果存在则删除
+    if (QFile::exists(newImagePath)) {
+        QFile::remove(newImagePath);
+    }
+
+    // 复制文件到新路径
+    bool success = QFile::copy(cleanSourcePath, newImagePath);
+    if (!success) {
+        qWarning() << "Error: Unable to copy image from" << cleanSourcePath << "to" << newImagePath;
+        return false;
+    }
+
+    qDebug() << "Copying to new path:" << newImagePath;
+
+    return true;
+}
+
+int DatabaseManager::addCharacter(const QString &nameEn, const QString &nameZh, const QString &breed, const QString &description, const QString &imagePath) {
+    if (!m_db.isOpen()) {
+        qWarning() << "Error: Unable to open database!";
+        return -1;
+    }
+
+    // 获取当前最大角色ID
+    QSqlQuery maxIdQuery(m_db);
+    maxIdQuery.prepare("SELECT MAX(ID) FROM Characters");
+    if (!maxIdQuery.exec() || !maxIdQuery.next()) {
+        qWarning() << "Error: Failed to retrieve max ID" << maxIdQuery.lastError().text();
+        return -1;
+    }
+
+    int newId = 1001; // 初始值为1001
+    QVariant maxIdValue = maxIdQuery.value(0);
+    if (maxIdValue.isValid()) {
+        int maxId = maxIdValue.toInt();
+        newId = maxId + 1;
+    }
+
+    // 插入新角色记录
+    QSqlQuery query(m_db);
+    query.prepare("INSERT INTO Characters (ID, Name_zh, Name_en, Breed, Description, ImagePath) VALUES (?, ?, ?, ?, ?, ?)");
+    query.addBindValue(newId);
+    query.addBindValue(nameZh);
+    query.addBindValue(nameEn);
+    query.addBindValue(breed);
+    query.addBindValue(description);
+    query.addBindValue(imagePath);
+
+    if (!query.exec()) {
+        qDebug() << "Add character query execution failed:" << query.lastError().text();
+        return -1;
+    }
+
+    return newId;
+}
+
+int DatabaseManager::addEpisode(const QString &title, const QString &season, const QString &episode, const QString &description, const QString &imagePath) {
+    if (!m_db.isOpen()) {
+        qWarning() << "Error: Unable to open database!";
+        return -1;
+    }
+
+    int newId = 2000 + season.toInt() * 100 + episode.toInt();
+    qDebug() << "Episode new ID:" << newId;
+
+    // 插入新角色记录
+    QSqlQuery query(m_db);
+    query.prepare("INSERT INTO Episodes (ID, Season, Episode, Title, Description, ImagePath) VALUES (?, ?, ?, ?, ?, ?)");
+    query.addBindValue(newId);
+    query.addBindValue(season.toInt());
+    query.addBindValue(episode.toInt());
+    query.addBindValue(title);
+    query.addBindValue(description);
+    query.addBindValue(imagePath);
+
+    if (!query.exec()) {
+        qDebug() << "Add episode query execution failed:" << query.lastError().text();
+        return -1;
+    }
+
+    return newId;
+}
+
+bool DatabaseManager::bindEpisodes(int characterId, const QVariantList &episodeIds) {
+    if (!m_db.isOpen()) {
+        qDebug() << "Database is not open!";
+        return false;
+    }
+
+    QSqlQuery query(m_db);
+    bool success = true;
+
+    // 开始数据库事务
+    if (!m_db.transaction()) {
+        qDebug() << "Failed to start transaction:" << m_db.lastError().text();
+        return false;
+    }
+
+    // 插入每个剧集与角色的关联，foreach循环很适合在List中遍历
+    foreach (const QVariant &episodeIdVariant, episodeIds) {
+        int episodeId = episodeIdVariant.toInt();
+
+        query.prepare("INSERT INTO EpisodesCharacters (CharactersID, EpisodesID) VALUES (?, ?)");
+        query.addBindValue(characterId);
+        query.addBindValue(episodeId);
+
+        if (!query.exec()) {
+            qDebug() << "Failed to bind episode" << episodeId << "to character" << characterId << ":" << query.lastError().text();
+            success = false;
+            break;
+        }
+        qDebug() << "Now Binding episode" << episodeId << "to character" << characterId;
+    }
+
+    // 提交或回滚事务
+    if (success && !m_db.commit()) {
+        qDebug() << "Failed to commit transaction:" << m_db.lastError().text();
+        success = false;
+        m_db.rollback();
+    }
+
+    return success;
+}
+
+bool DatabaseManager::bindCharacters(int episodeId, const QVariantList &characterIds) {
+    if (!m_db.isOpen()) {
+        qDebug() << "Database is not open!";
+        return false;
+    }
+
+    QSqlQuery query(m_db);
+    bool success = true;
+
+    // 开始数据库事务
+    if (!m_db.transaction()) {
+        qDebug() << "Failed to start transaction:" << m_db.lastError().text();
+        return false;
+    }
+
+    // 插入每个剧集与角色的关联，foreach循环很适合在List中遍历
+    foreach (const QVariant &characterIdVariant, characterIds) {
+        int characterId = characterIdVariant.toInt();
+        qDebug() << "Current episode ID:" << episodeId;
+
+        query.prepare("INSERT INTO EpisodesCharacters (CharactersID, EpisodesID) VALUES (?, ?)");
+        query.addBindValue(characterId);
+        query.addBindValue(episodeId);
+
+        if (!query.exec()) {
+            qDebug() << "Failed to bind character" << characterId << "to episode" << episodeId << ":" << query.lastError().text();
+            success = false;
+            break;
+        }
+        qDebug() << "Now Binding character" << characterId << "to episode" << episodeId;
+    }
+
+    // 提交或回滚事务
+    if (success && !m_db.commit()) {
+        qDebug() << "Failed to commit transaction:" << m_db.lastError().text();
+        success = false;
+        m_db.rollback();
+    }
+
+    return success;
+}
+
+bool DatabaseManager::deleteCharacter(int characterId) {
+    newDatabaseConnection("deleteCharacter");
+
+    if (!m_db.isOpen()) {
+        qDebug() << "Database is not open!";
+        return false;
+    }
+
+    QSqlQuery query;
+
+    // 开始事务
+    if (!m_db.transaction()) {
+        qDebug() << "Failed to start transaction:" << m_db.lastError().text();
+        return false;
+    }
+
+    // 删除 EpisodesCharacters 表中相关的行
+    qDebug() << "Now Deleting From EpisodesCharacters";
+    query.prepare("DELETE FROM EpisodesCharacters WHERE CharactersID = ?");
+    query.addBindValue(characterId);
+
+    if (!query.exec()) {
+        qDebug() << "Failed to delete from EpisodesCharacters:" << query.lastError().text();
+        m_db.rollback(); // 发生错误时回滚事务
+        return false;
+    }
+
+    // 删除 Characters 表中相关的行
+    qDebug() << "Now Deleting From Characters";
+    query.prepare("DELETE FROM Characters WHERE ID = ?");
+    query.addBindValue(characterId);
+
+    if (!query.exec()) {
+        qDebug() << "Failed to delete from Characters:" << query.lastError().text();
+        m_db.rollback(); // 发生错误时回滚事务
+        return false;
+    }
+
+    // 提交事务
+    if (!m_db.commit()) {
+        qDebug() << "Failed to commit transaction:" << m_db.lastError().text();
+        return false;
+    }
+
+    qDebug() << "Character and related episodes deleted successfully!";
+
+    return true;
+}
+
+bool DatabaseManager::deleteEpisode(int episodeId) {
+    newDatabaseConnection("deleteEpisode");
+
+    if (!m_db.isOpen()) {
+        qDebug() << "Database is not open!";
+        return false;
+    }
+
+    QSqlQuery query;
+
+    // 开始事务
+    if (!m_db.transaction()) {
+        qDebug() << "Failed to start transaction:" << m_db.lastError().text();
+        return false;
+    }
+
+    // 删除 EpisodesCharacters 表中相关的行
+    query.prepare("DELETE FROM EpisodesCharacters WHERE EpisodesID = ?");
+    query.addBindValue(episodeId);
+
+    if (!query.exec()) {
+        qDebug() << "Failed to delete from EpisodesCharacters:" << query.lastError().text();
+        m_db.rollback(); // 发生错误时回滚事务
+        return false;
+    }
+
+    // 删除 Episodes 表中相关的行
+    query.prepare("DELETE FROM Episodes WHERE ID = ?");
+    query.addBindValue(episodeId);
+
+    if (!query.exec()) {
+        qDebug() << "Failed to delete from Episodes:" << query.lastError().text();
+        m_db.rollback(); // 发生错误时回滚事务
+        return false;
+    }
+
+    // 提交事务
+    if (!m_db.commit()) {
+        qDebug() << "Failed to commit transaction:" << m_db.lastError().text();
+        return false;
+    }
+
+    qDebug() << "Episode and related characters deleted successfully!";
+    return true;
 }
