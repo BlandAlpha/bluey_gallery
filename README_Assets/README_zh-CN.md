@@ -1,8 +1,5 @@
 ## Bluey Gallery
 
-> [!warning]
-> 该项目仍在开发中，请耐心等候。
-
 ### 简介
 
 ![Hero Page](bluey_gallery_zh.png)
