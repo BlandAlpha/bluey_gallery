@@ -2,9 +2,6 @@
 
 [切换到中文](README_Assets/README_zh-CN.md)
 
-> [!warning]
-> The project is still in development, please be patient.
-
 ### Introduction
 
 ![Hero Page](README_Assets/bluey_gallery_en.png)
